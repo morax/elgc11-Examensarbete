@@ -1,0 +1,1964 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage{psfrag}
+\usepackage{calc}
+\usepackage{pgfgantt}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+\hypersetup{colorlinks=false,citecolor=blue,urlcolor=blue}
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Kod}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+\usepackage[toc,page,titletoc]{appendix}
+\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixpagename}{Bilagor}
+\renewcommand{\appendixtocname}{\Large{Bilagor}}
+\noappendicestocpagenum
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings specially for swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Decimal comma
+\mathchardef\CommaOrdinary="013B
+\mathchardef\CommaPunct   ="613B
+\mathcode`,="8000
+{\catcode`\,=\active
+\gdef ,{\obeyspaces\futurelet\next\CommaCheck}}
+\def\CommaCheck{\if\space\next\CommaPunct\else\CommaOrdinary\fi}
+
+% Get rid of the spacing used in english typesetting
+\frenchspacing
+
+% Paragraph indentation style
+\setlength{\parindent}{1em}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Common abbreviations in Swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xspace}
+\newcommand{\bla}{bl.\hspace{0.1em}a.\xspace}
+\newcommand{\ca}{ca\xspace}
+\newcommand{\dvs}{dvs.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\kl}{kl.\xspace}
+\newcommand{\mfl}{m.\hspace{0.1em}fl.\xspace}
+\newcommand{\mm}{m.\hspace{0.1em}m.\xspace}
+\newcommand{\obs}{obs.\xspace}
+\newcommand{\osv}{osv.\xspace}
+\newcommand{\pga}{p.\hspace{0.1em}g.\hspace{0.1em}a.\xspace}
+\newcommand{\sk}{s.\hspace{0.1em}k.\xspace}
+\newcommand{\tillex}{t.\hspace{0.1em}ex.\xspace}
+
+% END
+
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+% \usepackage{appendix}
+% \renewcommand{\appendixtocname}{\Large{Bilagor}}
+
+
+%Settings
+
+\lstset{
+         basicstyle=\footnotesize\ttfamily,
+         numbers=left,               
+         numberstyle=\tiny,          
+         %stepnumber=2,               
+         numbersep=5pt,             
+         tabsize=2,                  
+         breaklines=true,                
+         frame=b,           
+         showspaces=false,           
+         showtabs=false,             
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false,     
+         texcl=true,
+         inputencoding=utf8,
+         language=Java,
+         stringstyle=\color{red}\ttfamily,
+         keywordstyle=\color{blue},
+         commentstyle=\color{ForestGreen},
+         extendedchars=\true,
+         escapeinside={\%*}{*)}
+         } 
+
+\captionsetup[figure]{textfont=it}
+\captionsetup[table]{textfont=it}
+\renewcommand{\arraystretch}{1.3} 
+
+\psfrag{l0}{$l_0$}
+\psfrag{l}{$l$}
+\psfrag{P}{$P$}
+\psfrag{delta}{$\delta$}
+\psfrag{y=kx+m}{$P=k\cdot\delta$}
+\psfrag{A}{$A$}
+\psfrag{B}{$B$}
+\psfrag{C}{$C$}
+\psfrag{D}{$D$}
+\psfrag{X}{$X$}
+
+\usepackage{tikz}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage[explicit]{titlesec}
+
+
+
+
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\sectionlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-2cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=Gold] (0,0) rectangle
+          (\paperwidth,3cm);
+        \node[anchor=east,xshift=.9\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=LightGrey]
+              {\color{black}\chapterlabel#1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-sec-bytype
+tabs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language swedish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Projektspecifikation
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Version 1.0 
+\begin_inset Newline newline
+\end_inset
+
+En del av kursen ELGC11 - Examensarbete 22,5 hp.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Vibrationsövervakning av Fortums maskinparker
+\end_layout
+
+\begin_layout Author
+Henrik Storm
+\begin_inset Newline newline
+\end_inset
+
+Simon Lundell
+\end_layout
+
+\begin_layout Address
+Karlstads Universitet, Fakulteten för teknik- och naturvetenskap
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Översikt
+\end_layout
+
+\begin_layout Subsection
+Bakgrund och affärssituation
+\end_layout
+
+\begin_layout Subsection
+Projektmål
+\end_layout
+
+\begin_layout Subsection
+Tidsgräns och kostnadsram
+\end_layout
+
+\begin_layout Itemize
+Projektet skall vara klart för överlämnande före kl 10.00 torsdagen den 24:e
+ maj 2012.
+\end_layout
+
+\begin_layout Section
+Intressentsituation
+\end_layout
+
+\begin_layout Standard
+Efter intressentanalys fastslogs följande nyckelintressenter:
+\end_layout
+
+\begin_layout Itemize
+Handledare 
+\end_layout
+
+\begin_layout Itemize
+Projektbeställare Peter A Blomberg, Fortum.
+\end_layout
+
+\begin_layout Itemize
+Examinator Peter Röjder, Karlstads Universitet.
+\end_layout
+
+\begin_layout Section
+Projektets omfattning
+\end_layout
+
+\begin_layout Subsection
+Krav
+\end_layout
+
+\begin_layout Standard
+Efter analys av projektmål, intervjuer med interna intressenter samt hänsyn
+ tagen till övriga nyckelintressenter upprättades bruttokravlista enligt
+ Tabell 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:Bruttokravlista"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Beskrivning av projektresultatet
+\end_layout
+
+\begin_layout Subsection
+Avgränsningar
+\end_layout
+
+\begin_layout Standard
+Projektet innefattar:
+\end_layout
+
+\begin_layout Standard
+Projektet avser ej:
+\end_layout
+
+\begin_layout Section
+Planer
+\end_layout
+
+\begin_layout Standard
+Utifrån tidigare nämda strategival har en WBS (Work breakdown structure)
+ utformats enligt Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Work-breakdown-structure"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="3">
+<features booktabs="true" islongtable="true" longtabularalignment="center">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="60text%">
+<row endhead="true" endfirsthead="true">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Aktivitet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Beskrivning
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row caption="true">
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Definition av arbetspaket
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Research inför möte
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Samla information om diverse givare, mätsystem, analysprogram och övervakningspr
+ogram från olika företag i en kalkyl.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sammanställning av projektspec
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Före möte:
+\end_layout
+
+\begin_layout Itemize
+Färdigställ en mall med de punkter som bör finnas med
+\end_layout
+
+\begin_layout Itemize
+Fyll i den så långt det är möjligt
+\end_layout
+
+\begin_layout Plain Layout
+Efter möte:
+\end_layout
+
+\begin_layout Itemize
+Definiera intressenter, avgränsningar, acceptanskriterier
+\end_layout
+
+\begin_layout Itemize
+Finjustera tidsplaneringen och Gantt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Befintligt mätsystem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysera funktion av nuvarande mätsystem
+\end_layout
+
+\begin_layout Itemize
+Lagring/presentation av data
+\end_layout
+
+\begin_layout Itemize
+Typ av mätningar
+\end_layout
+
+\begin_layout Itemize
+Kompabilitet med ny utrustning
+\end_layout
+
+\begin_layout Itemize
+Typ av mätutrustning (givare, mottagare m.m.)
+\end_layout
+
+\begin_layout Plain Layout
+Hitta passande tillskott eller identifiera överflödiga funktioner till nuvarande
+ system
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Generatorer och turbiner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frekvensanalys
+\end_layout
+
+\begin_layout Itemize
+Beräkningar med hjälp av ritningar/mätdata
+\end_layout
+
+\begin_layout Itemize
+Om det behövs besök på maskinpark för insamling av mätdata
+\end_layout
+
+\begin_layout Itemize
+Utför testmätning alternativt ta del av existerande rådata
+\end_layout
+
+\begin_layout Plain Layout
+Beräkna och identifiera gränsvärden utifrån frekvensanalysen som påverkar
+\end_layout
+
+\begin_layout Itemize
+lager
+\end_layout
+
+\begin_layout Itemize
+axlar
+\end_layout
+
+\begin_layout Itemize
+växlar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ekonomisk situation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysera befintligt system genom att
+\end_layout
+
+\begin_layout Itemize
+studera personal-, utrustnings- och installationskosntader
+\end_layout
+
+\begin_layout Itemize
+ta reda på kostnader för produktionsbortfall 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätutrustning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Utifrån tidigare analys (WBS 1.1) undersök om tänkbar utrustning har för
+ och nackdelar (pris/komplexitet/mätområden/...)
+\end_layout
+
+\begin_layout Plain Layout
+Med data från analysen (WBS 2) ta reda på vilka typer av givare som bör
+ användas (samt hur?)
+\end_layout
+
+\begin_layout Itemize
+Utrustning för eliminering av mätstörningar?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätdatalagring
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Konstruera en plan för mätdatalagring, om ett nytt system alternativt existerand
+e system fungerar att byggas ut.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ansvarsdistribution
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definiera vem som ska/bör göra vad i övervakningskedjan
+\end_layout
+
+\begin_layout Itemize
+Mätning
+\end_layout
+
+\begin_layout Itemize
+Övervakning
+\end_layout
+
+\begin_layout Itemize
+Analys för förebyggande skadeinverkan pga vibrationer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Utrustning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Konstruera ett datablad med komponenter och övervakningssystem samt flödesdiagra
+m för dess funktion och användande.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kostnadskalkyl
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sammanställ en kalkyl över investeringen med komponenter, personal, installation
+ och övriga kostnader.
+ 
+\end_layout
+
+\begin_layout Itemize
+Traditionell investeringskalkyl
+\end_layout
+
+\begin_layout Itemize
+FU kalkyl
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Slutrapport
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Före opponering
+\end_layout
+
+\begin_layout Itemize
+Programmera formateringsdefinitioner för examensrapporten i LaTeX
+\end_layout
+
+\begin_layout Itemize
+Skriv inledning/bakgrund/syfte
+\end_layout
+
+\begin_layout Itemize
+Skriv 
+\end_layout
+
+\begin_layout Itemize
+Skriv resultat
+\end_layout
+
+\begin_layout Itemize
+Skriv diskussion och felkällor
+\end_layout
+
+\begin_layout Itemize
+Skriv slutsats
+\end_layout
+
+\begin_layout Itemize
+Skriv sammanfattning (både engelsk och svensk)
+\end_layout
+
+\begin_layout Itemize
+Lämna in rapporten till handledare för bedömning.
+ 
+\emph on
+OBS!
+\emph default
+ senast 2012-05-24 kl 10.00
+\end_layout
+
+\begin_layout Plain Layout
+Efter opponering
+\end_layout
+
+\begin_layout Itemize
+Korrigera rapporten med hjälp av anvisningar från opponent
+\end_layout
+
+\begin_layout Itemize
+Lämna in slutrapporten till Examinator, Handledare och opponenter 
+\emph on
+OBS!
+\emph default
+ senast 2012-05-31 kl 10.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Förberedelse inför slutredovisning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Konstruera en powerpoint (beamer?)
+\end_layout
+
+\begin_layout Itemize
+Skriv manuskript för muntlig redovisning
+\end_layout
+
+\begin_layout Itemize
+Håll föredrag för någon utomstående och validera om materialet är brukbart
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Delmål
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Delmål
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="60text%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Aktivitet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Datum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Beskrivning
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Förstudie klar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2012-03-18 kl 18.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projektspec färdigställd och examensarbetet godkänt samt handledare utsett
+ på både företaget och Kau.
+ Även basinformation om olika typer av mätsystem är undersökt.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analys klar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2012-04-08 kl 18.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Delmålet är klart då en total bild av problemet är målad och all information
+ för utveckling av övervakningssystem finns.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Research klar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2012-04-22 kl 18.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vid delmålet är i stort sett arbetet slutfört och klart för sammanställning.
+ En muntlig presentation av arbetet är planerad och avläggs kl 10.00 följande
+ dag.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sammanställning klar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2012-05-30 kl 18.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Slutrapporten är klar för inlämning till examinator, handledare och opponenter
+ följande morgon kl 10.00
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Projektorganisation och kommunikation
+\end_layout
+
+\begin_layout Subsection
+Styrgrupp
+\end_layout
+
+\begin_layout Standard
+Följande medlemmar inefattas i styrgruppen:
+\end_layout
+
+\begin_layout Itemize
+Projektledare Henrik Storm och Simon Lundell
+\end_layout
+
+\begin_layout Itemize
+Handledare A och B
+\end_layout
+
+\begin_layout Itemize
+Projektbeställare Peter Blomberg
+\end_layout
+
+\begin_layout Itemize
+Examinator Peter Röjder
+\end_layout
+
+\begin_layout Standard
+Styrgruppen hålls så liten som möjligt.
+ Anledningarna till detta är att det är smidigare att samla en liten grupp
+ av människor och att de faktiskt inte behövs fler än dessa tre för att
+ fatta bra och relevanta beslut.
+\end_layout
+
+\begin_layout Subsection
+Dokumenthantering
+\end_layout
+
+\begin_layout Standard
+Alla dokument hanteras elektroniskt och arkiveras kontinuerligt på gitHub
+ samt projektplaneras på projekt.morax.org
+\end_layout
+
+\begin_layout Itemize
+Progressraport enligt <Fortum/överenskommelse/mall> skall tilldelas styrgruppen
+ och innehålla i stora drag hur arbetet fortskrider och om eventuella förhinder
+ föreskett samt en uppdaterad gantt.
+\end_layout
+
+\begin_layout Itemize
+Minnesanteckningar som sammanställs efter varje möte och läggs upp på projekt.mor
+ax.org
+\end_layout
+
+\begin_layout Section
+Överlämning av projektresultat
+\end_layout
+
+\begin_layout Subsection
+Överlämning till kund och mottagande interna enheter
+\end_layout
+
+\begin_layout Standard
+Överlämningen sker vid avslutat projekt i form av en redovisning på Karlstads
+ Universitet.
+ Följande personer är mottagare för projektresultatet:
+\end_layout
+
+\begin_layout Itemize
+Projektbeställare [ÄNDRA]
+\end_layout
+
+\begin_layout Itemize
+Handledare [ÄNDRA]
+\end_layout
+
+\begin_layout Itemize
+Examinator Peter Röjder
+\end_layout
+
+\begin_layout Itemize
+Opponent [ÄNDRA]
+\end_layout
+
+\begin_layout Standard
+som vid avslutad redovisning godkänner resultatet genom signatur på slutrapporte
+n.
+ Därefter anses projektet vara avslutat.
+ Skulle godkännande ej föreligga inkallas ett styrgruppsmöte där kompromisslösni
+ng diskuteras.
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Appendix TOC entry
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addappheadtotoc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kravlista
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="7">
+<features rotate="true" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Krav
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Beskrivning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Beställare
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+P.S.Ö.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Acceptanskriterier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Acceptansprocedurer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 nya parkeringsplatser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parkeringen direkt innanför infarten till campingen.
+ Budget 225000kr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB, Räddningstjänsten, turister, kommunen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50st nya parkeringsplatser.
+ Budgeten får ej överskrida 225000kr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Räkna antalet parkeringsplatser och totalkostnaden ej överskrider 225000kr.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1500m
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asfalterad yta som får tas i anspråk.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ytan som ska användas för de 50 parkeringplatserna får ej överskrida 1500m
+\begin_inset Formula $^{2}$
+\end_inset
+
+ asfalterad yta.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mäta ytan på asfalterat område.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stuga
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lämplig stuga 20-30 m
+\begin_inset Formula $^{2}$
+\end_inset
+
+ för uthyrningsverksamhet i anslutning till parkeringen.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB, intern mottagare, kommunen, turister
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stugan skall vara anpassad till uthyrningsverksamhet och skall ha en arbetsbänk
+ för eventuella reparationsjobb.
+ Stugan skall vara mellan 20-30 m
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8st vinteranpassade platser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8st vinteranpassade platser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB, turister
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8st platser med motorvärmare och centralt placerad belysning av parkeringen.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Räkna antalet anpassade vinterplatser med motorvärmare och kontroll av att
+ el är dragen till dessa samt att ljuset fungerar.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projektet slutfört före 31:a maj
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projektet måste vara klart före den 31:a maj då invigning sker den 1:a juni.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projektet överlämnat till intern mottagare före den 31:a maj.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inbjudande parkeringsplats
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parkeringen skall vara välkomnande.
+ Det skall finnas träd.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB, turister, intern mottagare, kommunen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parkeringen skall ha vegetation i form av 5 st träd/buskar.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fråga efter feedback från besökarna.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lokaler för underhåll
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lokaler där man kan reparera uthyrningsdetaljer.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB, intern mottagare.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Några lokaler som är anpassade för reparation av uthyrningsdetaljer.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-gantt.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

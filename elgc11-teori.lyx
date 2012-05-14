@@ -1,0 +1,3091 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage{psfrag}
+\usepackage{calc}
+\usepackage{pgfgantt}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Kod}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+\usepackage[toc,page,titletoc]{appendix}
+\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixpagename}{Bilagor}
+\renewcommand{\appendixtocname}{\Large{Bilagor}}
+\noappendicestocpagenum
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings specially for swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Decimal comma
+\mathchardef\CommaOrdinary="013B
+\mathchardef\CommaPunct   ="613B
+\mathcode`,="8000
+{\catcode`\,=\active
+\gdef ,{\obeyspaces\futurelet\next\CommaCheck}}
+\def\CommaCheck{\if\space\next\CommaPunct\else\CommaOrdinary\fi}
+
+% Get rid of the spacing used in english typesetting
+\frenchspacing
+
+% Paragraph indentation style
+%\setlength{\parindent}{1em}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Common abbreviations in Swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xspace}
+\newcommand{\bla}{bl.\hspace{0.1em}a.\xspace}
+\newcommand{\ca}{ca\xspace}
+\newcommand{\dvs}{dvs.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\kl}{kl.\xspace}
+\newcommand{\mfl}{m.\hspace{0.1em}fl.\xspace}
+\newcommand{\mm}{m.\hspace{0.1em}m.\xspace}
+\newcommand{\obs}{obs.\xspace}
+\newcommand{\osv}{osv.\xspace}
+\newcommand{\pga}{p.\hspace{0.1em}g.\hspace{0.1em}a.\xspace}
+\newcommand{\sk}{s.\hspace{0.1em}k.\xspace}
+\newcommand{\tillex}{t.\hspace{0.1em}ex.\xspace}
+
+% END
+
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+% \usepackage{appendix}
+% \renewcommand{\appendixtocname}{\Large{Bilagor}}
+
+
+%Settings
+
+\lstset{
+         basicstyle=\footnotesize\ttfamily,
+         numbers=left,               
+         numberstyle=\tiny,          
+         %stepnumber=2,               
+         numbersep=5pt,             
+         tabsize=2,                  
+         breaklines=true,                
+         frame=b,           
+         showspaces=false,           
+         showtabs=false,             
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false,     
+         texcl=true,
+         inputencoding=utf8,
+         language=Java,
+         stringstyle=\color{red}\ttfamily,
+         keywordstyle=\color{blue},
+         commentstyle=\color{ForestGreen},
+         extendedchars=\true,
+         escapeinside={\%*}{*)}
+         } 
+
+\captionsetup[figure]{textfont=it}
+\captionsetup[table]{textfont=it}
+\renewcommand{\arraystretch}{1.3} 
+
+\psfrag{l0}{$l_0$}
+\psfrag{l}{$l$}
+\psfrag{P}{$P$}
+\psfrag{delta}{$\delta$}
+\psfrag{y=kx+m}{$P=k\cdot\delta$}
+\psfrag{A}{$A$}
+\psfrag{B}{$B$}
+\psfrag{C}{$C$}
+\psfrag{D}{$D$}
+\psfrag{X}{$X$}
+
+\usepackage{tikz}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage[explicit]{titlesec}
+
+
+
+
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\sectionlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-2cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=Gold] (0,0) rectangle
+          (\paperwidth,3cm);
+        \node[anchor=east,xshift=.9\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=LightGrey]
+              {\color{black}\chapterlabel#1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+
+
+\usepackage{graphicx}
+
+%% Hack by Heiko Oberdiek (on de.comp.text.tex)
+\usepackage{tabularx}
+
+%% Redefine the standard table
+\let\ORIGtabular\tabular
+\let\ORIGendtabular\endtabular
+\let\ORIGtabularx\tabularx
+\renewcommand*{\tabularx}{%
+  \def\tabular{%
+    \let\endtabular\ORIGendtabular
+    \ORIGtabular
+  }%
+  \ORIGtabularx
+}
+
+\renewcommand{\tabular}{%
+%% The width of the table. Adjust if needed
+  \tabularx{\linewidth}%
+}
+
+\renewcommand{\endtabular}{\endtabularx} 
+\renewcommand{\arraystretch}{1.3}
+
+
+\usepackage[firstpage]{draftwatermark}
+
+\SetWatermarkFontSize{15 cm}
+\SetWatermarkScale{3}
+\SetWatermarkText{UTKAST}
+\end_preamble
+\options svgnames,liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot,twoside,parskip=half-
+\use_default_options true
+\master elgc11-examensarbete.lyx
+\begin_modules
+theorems-ams-bytype
+theorems-sec-bytype
+\end_modules
+\maintain_unincluded_children false
+\language swedish
+\language_package babel
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_numerical
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Referenser
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Teori
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Teori"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Vibrationsanalys
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Vibrationsanalys"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+För att kunna göra en bra vibrationsanalys och skörda fördelarna med detta
+ måste man veta varför man mäter vibrationer över huvud taget.
+ Genom att övervaka maskinens vibrationskaraktäristik får man en förståelse
+ om dess hälsa och kondition vilket man kan använda för att upptäcka skador
+ i tidigt skede och handla i god tid.
+ 
+\end_layout
+
+\begin_layout Standard
+Om man regelbundet övervakar maskinens kondition kan man upptäcka problem
+ som kan uppstå i framtiden och således korrigera dem före de inträffar
+ vilket kan spara mycket tid, pengar och frustration.
+ En maskin som vibrerar kraftigt har även sämre effektivitet vilket sin
+ tur påverkar produktionen.
+ 
+\end_layout
+
+\begin_layout Standard
+Motsatsen är att inte övervaka vibrationerna vilket ofta leder till att
+ maskinen körs tills den havererar.
+ Onödigt underhåll och byte av friska delar är även de en effekt som kan
+ elimineras med hjälp av vibrationsbevakning där underhållet schemaläggs
+ allt efter maskinens kondidion.
+\end_layout
+
+\begin_layout Subsection
+Vad är vibrationer?
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Vad-är-vibrationer?"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Maskinvibrationer är helt enkelt en reciprocerande rörelse hos en maskin
+ eller komponent som generellt uppkommer på grund av en eller fler av följande
+ orsaker: 
+\end_layout
+
+\begin_layout Itemize
+Upprepade kraftstötar
+\end_layout
+
+\begin_layout Itemize
+Glapp
+\end_layout
+
+\begin_layout Itemize
+Resonans
+\end_layout
+
+\begin_layout Subsection
+Potentiella fel
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Potentiella-fel"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Många typer fel kan detekteras med hjälp av vibrationsövervakning och Tabell
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Obalans"
+
+\end_inset
+
+ -- 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:Mekaniskt-glapp"
+
+\end_inset
+
+ visar en sammanfattning om vilka relevanta vibrationer som kan undersökas
+ på ett kraftverk 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "maskinvibration,Vibrationer-vibrationsorsaker"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Även systemets egenfrekvenser kan identifieras med hjälp av vibrationsmätning
+ via 
+\emph on
+coast-down
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "coast-down"
+description "diagnostiskt test i form av utrullningsprov för identifikation av egenfrekvenser."
+
+\end_inset
+
+
+\emph default
+, påtvingad excitation via tillförd obalansmassa eller slagimpulsprov.
+ Att köra turbinen i närheten av egenfrekvensen är extremt destruktivt då
+ mycket stora vibrationsamplituder uppkommer.
+ Detta sätt är både enklare samt mer pålitligt än beräkning av egenfrekvenser
+ då beräkningar av kritiskt varvtal inte skall accepteras som riktiga före
+ en kontroll utförts i verkligheten 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vibrationer-Resonanser_och_krit.varv"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+För utom kritiska varvtal är självexciterande resonanser så som Oil whip
+ i glidlager de särklass viktigaste vibrationerna att övervaka då en resonanssvä
+ngning bygger upp sig själv från nästan ingenting tills dess att systemets
+ mekaniska begränsningar sätter stopp för ökningen.
+ Smörjförhållandet i glidlagret blir då mycket dåliga och körningen bör
+ avstanna hastigt för att undvika lagerskador.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Vilka maskiner behöver övervakas?
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Vilka-maskiner-behöver"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+När man överväger valet av maskiner att övervaka bör man lägga prioritet
+ hos de som är kritiska.
+ Analogin är mycket snarlik den att att göra hälsokontroller på människor,
+ det är onödigt att skicka fullt friska personer på kontroll istället för
+ de som ligger i riskzonen och verkligen behöver det.
+\end_layout
+
+\begin_layout Standard
+Generellt bör följande typer av maskiner kontrolleras med regelbundet intervall
+ för att undvika långa och kostsamma problem
+\end_layout
+
+\begin_layout Enumerate
+Maskiner som bidrar med dyra, tidskrävande eller svåra reparationer vid
+ fel
+\end_layout
+
+\begin_layout Enumerate
+Maskiner är kritiska för produktionen eller drift av kraftverket
+\end_layout
+
+\begin_layout Enumerate
+Maskiner som är kända att gå sönder ofta
+\end_layout
+
+\begin_layout Enumerate
+Maskiner som kan påverka mänsklig eller miljömässig säkerhet
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/processfloede.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagram över processflöde för enkel identifikation av kritiska enheter
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagram-över-processflöde"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Insamling av data
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Insamling-av-data"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De parametrar som används vid vibrationsmätning i spektrum kan delas in
+ i fyra klasser
+\end_layout
+
+\begin_layout Itemize
+Hur datan 
+\emph on
+mäts
+\end_layout
+
+\begin_layout Itemize
+Hur 
+\emph on
+mycket
+\emph default
+ och hur 
+\emph on
+snabbt
+\emph default
+ man skall mäta
+\end_layout
+
+\begin_layout Itemize
+Hur datan 
+\emph on
+behandlas
+\end_layout
+
+\begin_layout Itemize
+Hur datan 
+\emph on
+presenteras
+\end_layout
+
+\begin_layout Subsubsection
+Hur datan mäts
+\end_layout
+
+\begin_layout Standard
+Här gäller det att använda rätt typ av givare placerad på rätt plats på
+ rätt sätt för att resultatet av mätningen skall bli så bra som möjligt.
+ Efter identifiering av intressanta maskinelement eller fenomén hos den
+ maskin man vill undersöka måste rätt typ av givare väljas för jobbet.
+ Det finns olika typer av givare och de vanligast förekommande är
+\end_layout
+
+\begin_layout Itemize
+Accelerometer 
+\end_layout
+
+\begin_layout Itemize
+Hastighetsgivare
+\end_layout
+
+\begin_layout Itemize
+Förflyttningsgivare
+\end_layout
+
+\begin_layout Standard
+Givaren skall sedan placeras i rätt dominerande plan så nära maskinelementet
+ som möjligt eftersom det likt hos människan är svårt att mäta hjärtslaget
+ genom att sätta stetoskopet på foten.
+ Vid mätning av lager bör man hålla sig så nära centerlinjen som möjligt.
+ Används en accelerometer för att mäta vibrationer bör monteringen göras
+ så fast som möjligt och på en yta fri från rost, färgflagor eller annat
+ skräp.
+ Detta för att förhindra förvrängningar av signalen och oönskat brus.
+\end_layout
+
+\begin_layout Subsubsection
+Hur mycket data och hur snabbt man skall mäta
+\end_layout
+
+\begin_layout Standard
+De parametrar som avgör hur mycket och hur snabbt data ska samlas är 
+\begin_inset Formula $F_{max}$
+\end_inset
+
+, spektrallinjer och överlappning.
+ Är 
+\series bold
+
+\begin_inset Formula $F_{max}$
+\end_inset
+
+
+\series default
+ värdet högt bidrar det med ett stort spann på vibrationsfrekvenser och
+ för att kunna samla den datan behöver man en snabb mätfrekvens även kallat
+ 
+\emph on
+sampling rate.
+ 
+\emph default
+Destå fler spektrallinjer ett spektrum har destå lättare är det för användaren
+ att analysera datan men fler spektrallinjer kräver långsammare mätningar.
+ 
+\end_layout
+
+\begin_layout Standard
+En rekomendation för bestämning av 
+\begin_inset Formula $F_{max}$
+\end_inset
+
+ är tre gånger antalet delar i maskinelementen multiplicerat med rotationsfrekve
+nsen.
+ För 
+\begin_inset Formula $F_{max}\leq30$
+\end_inset
+
+ kcpm räcker det generellt med 400 spektrallinjer medan 3200 linjer är att
+ föredra vid 
+\begin_inset Formula $F_{max}>1200$
+\end_inset
+
+ kcpm 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "beginner-vibration,maskinvibration"
+
+\end_inset
+
+.
+ Antalet spektrallinjer är direkt kopplat till priset på mätutrustningen
+ då snabbare CPU och mer RAM krävs för att inte behöva göra kompromisser
+ i val av 
+\begin_inset Formula $F_{max}$
+\end_inset
+
+ och sampling rate.
+ Överlappsdata är ett sätt att återanvända en andel av tidigare mätt vågform
+ för att beräkna ett nytt spektrum.
+ Större överlappningsandel innebär att man behöver mindre ny data för generera
+ ett nytt spektrum vilket gör att spektrumet snabbare kan visas.
+ Överlappning på 50% är ideal i de flesta fall.
+\end_layout
+
+\begin_layout Subsubsection
+Hur data behandlas
+\end_layout
+
+\begin_layout Standard
+De parametrar som avgör hur datan bearbetas är vilken form av medelvärdesbildnin
+g, antalet medelvärden och vilken fönstertyp som används.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/signalkedja.dia
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Signalkedja vid digitalisering av vibrationsmätning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Medelvärdesbildning
+\end_layout
+
+\begin_layout Standard
+måste användas för att bestämma nivån på signalen vid varje frekvens.
+ Anledningen till att man gör ett medelvärde av spektrat är för att minska
+ bidraget som mätstörningar skapar.
+ Olika metoder används vid medelvärdesbildning så som aritmetiskt medelvärde,
+ kvadratiskt medelvärde, 'Peak hold' och synkront medelvärde 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "fft-signalprocessing,beginner-vibration"
+
+\end_inset
+
+.
+ Den vanligaste metoden är aritmetiskt medelvärde som är rekomenderad i
+ de flesta fall och fungerar enligt följande ekvation.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_{i}\label{eq:aritmetiskt medelvärde}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+där 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ är spektrat och 
+\begin_inset Formula $n$
+\end_inset
+
+ antalet spektra.
+ Aritmetiskt medelvärde är en användbar metod vid trendning av fel vilket
+ används flitigt i förebyggande underhåll och reducerar även bakgrundsbruset
+ från signalen.
+ 
+\end_layout
+
+\begin_layout Standard
+Kvadratisk medelvärdesbildning tar störst hänsyn till det senaste spektrat
+ och används då vibrationsmönstret varierar långsamt över tiden.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+s_{1} & = & x_{0}\nonumber \\
+s_{t} & = & \alpha x_{t-1}+(1-\alpha)s_{t-1}\quad,t>1\label{eq:kvadratiskt medelvärde}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+där 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ är den faktor mellan 0 och 1 som bestämmer hur mycket de tidigare mätningarna
+ vägs in i medelvärdet 
+\begin_inset Formula $s_{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+'Peak hold' är inte någon riktig medelvärdesbildning då den sparar det största
+ värdet hos varje analyserad frekvens men är användbar vid identifiering
+ av transienter eller som hjälpmedel vid utmattningsanalys.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y[k]=\max\left(y[k-1],x[k]\right)\label{eq:peak hold}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+där 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x[k]$
+\end_inset
+
+ är det nya mätvärdet
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y[k]$
+\end_inset
+
+ är det nya medelvärdet
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y[k-1]$
+\end_inset
+
+ är föregående medelvärde
+\end_layout
+
+\begin_layout Standard
+Synkront medelvärde använder sig av en referenssignal från maskinen som
+ analyseras.
+ Signalen genereras vanligtvis från en fotocell, elektromagnetisk givare
+ eller annan form av tachometer.
+ Denna metod fungerar bra för filtrering av bakgrundsbrus.
+\end_layout
+
+\begin_layout Paragraph
+Antal medelvärden
+\end_layout
+
+\begin_layout Standard
+man använder vid medelvärdesbildning antar en viktig roll i den bemärkelsen
+ att ju större antal spektra som används destå mer brus filtreras men kräver
+ också att mer data behandlas.
+ Detta medför att det tar längre tid att visa upp ett medelvärdesbildat
+ spektra.
+ Fyra samples räcker i de flesta fall för medelvärdesbildning.
+\end_layout
+
+\begin_layout Paragraph
+Fönster
+\end_layout
+
+\begin_layout Standard
+är parametern som bestämmer vilken fönsterfunktion som används för ytterligare
+ filtrering vid signalbehandlingen för att lättare urskönja spikarna i FFT-spekt
+rat.
+ Den mest förekommande typen är Hann fönster
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Ofta även kallat Hanning fönster.
+\end_layout
+
+\end_inset
+
+ men även rektangulärt, Hamming, Tukey, cosinus, Lanczos, triangulärt, Gaussian,
+ Bartlett-Hann, Blackman och Kaiser fönster förekommer i viss utrustning.
+\end_layout
+
+\begin_layout Subsubsection
+Hur data presenteras
+\end_layout
+
+\begin_layout Standard
+För att välja hur ett spektrum skall presenteras i analysprogrammet eller
+ den handhållna enheten måste man först bestämma vad man vill titta efter
+ och vilken skala som skall användas.
+ Antalet samt vilka typer av parametrar man kan ställa in spelar stor roll
+ i analysarbetet då ett spektra i sig själv innehåller mycket information
+ och valmöjligheten av parametrar hjälper användaren att lätt hitta rätt
+ utslag.
+ Vid mätningar med handhållen utrustning där maskinkondition avgörs på plats
+ är det rekomenderat att alltid använda samma inställningar som tidigare
+ mätningar för att undvika missbedömningar.
+\end_layout
+
+\begin_layout Standard
+De enheter som oftast förekommer vid linjär amplitudskala är hastighet i
+ 
+\begin_inset Formula $\nicefrac{\mbox{in}}{\mbox{s}}$
+\end_inset
+
+ eller 
+\begin_inset Formula $\nicefrac{\mbox{mm}}{\mbox{s}}$
+\end_inset
+
+ och frekvens kcpm alternativt kHz.
+ Vid logaritmisk frekvensgradering används primärt vdB till amplitudskalan.
+\end_layout
+
+\begin_layout Subsection
+Vibrationsnormer
+\end_layout
+
+\begin_layout Standard
+För att avgöra om de uppmätta vibrationerna är skadliga finns två metoder
+ att tillgå; egen trendmätning och haverianalys alternativt tröskeltal utifrån
+ vibrationsnormer från industristandard och ISO.
+ Generellt används standardnormer då primärt SS-EN 10816 där en tumregel
+ är att vibrationsamplituden skall hållas under 
+\begin_inset Formula $3\,\mbox{\nicefrac{mm}{\mbox{s}}}$
+\end_inset
+
+ RMS och att hastigheter över 
+\begin_inset Formula $7\,\nicefrac{\mbox{mm}}{\mbox{s}}$
+\end_inset
+
+ RMS innebär medvetet slitage av maskinen 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vibrationer-lonsamma_vibrationer"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Mätutrustning
+\end_layout
+
+\begin_layout Standard
+Idag är mätutrustningen kompakt och finns tillgänglig som både fast monterad
+ och bärbart format.
+ Portabla system samt fast monterad utrustning som inte utför kontinuelig
+ mätning kallas 
+\emph on
+off-line
+\emph default
+ och med hjälp av mikroprocessorer konverteras analoga signaler till digitalt
+ FFT
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FFT"
+description "Fast Fourier Transform är en algoritm, en digital beräkningsrutin som används i FFT-analysatorn för att beräkna ett spektrum ur en vågform. Den omvandlar eller \"transformerar\"  en signal från tidsrepresentation till frekvensrepresentation."
+
+\end_inset
+
+ spektrum vilket ger en smidig lösning för momentan inblick i maskinens
+ hälsa.
+ Detta gör att mätutrustningen är lätt att använda och bära med sig, tyvärr
+ innebär detta vissa kompromisser gent de äldre analoga mätinstrumenten.
+ 
+\end_layout
+
+\begin_layout Standard
+Ett stort problem med digital portabel utrustning är visningen av vibrationerna,
+ då vibrationer sällan är stabila medför detta att mätvärdet måste dämpas
+ eller medelvärdesbildas till den mån att displayen blir läsbar för operatören.
+ Analoga visare ger en bättre representation av maskinvibrationerna, vibrationst
+oppar och även lagerkondition där operatören står för filtreringen, något
+ som inte är möjligt med dagens digitala visare.
+ 
+\end_layout
+
+\begin_layout Standard
+Kanske det mest övergripande problemet med 
+\emph on
+off-line
+\emph default
+ utrustning är att mätningar tenderar att ske lågfrekvent så som månadsvis
+ eller med ännu större intervall.
+ Detta leder i detta fall till att vibrationsanalys som diagnostiskt verktyg
+ vid PdM/CBM i stort sett blir betydelselöst 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mil1-condition_monitoring"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+För och nackdelar med off-line utrustning
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:OFFLINE-För-och-nackdelar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Fördelar
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nackdelar
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Portabilitet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Svårt att utföra korrekt mätning
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Obegränsade mätningar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Begränsad för kritiska maskiner
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visuell inspektion på samma gång
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Arbetssamt och kräver utbildad personal
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dataansamling är relativt enkel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätfrekvensen är begränsad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Möjlighet till rotorbalansering på plats
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Falsklarm p.g.a.
+ processfaktorer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kräver ingen installation på maskinen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Okända problem förblir osynliga
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stör ej befintligt installerad utrustning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oftast begränsad frekvens och amplitud vid mätning
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grundutbildning tar 5 dagar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analysen blir begränsad utan fasdata
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Relativt låg investeringskostand
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ofta endast använd vid haveri/larm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lägre kostnad per mätpunkt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Svårt att ersätta personal för vibrationsmäting
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Förbrukningsmateriel: kablar, batterier, sensorer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data förlorad vid mätutrustningshaveri
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Datan är sällan distribuerad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Endast sedd som en underhålls funktion
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sällan integrerad med CMMS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CMMS"
+description "Computerized maintenance management system"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sällan synliga för operatörer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ominvestering vart fjärde år
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ett system av integrerad hårdvara och mjukvara som kontinueligt utför mätningar
+ på maskinen dygnet runt kallas 
+\emph on
+on-line.
+ 
+\emph default
+Datan presenteras sedan som information om maskinens hälsa via lättåtskådliga
+ grafer och värden med hjälp av en dator.
+ Detta gör det lätt för operatören att avgöra när och om en åtgärd bör initieras.
+ Systemet kan även användas som bidrag till övervakning av produktionens
+ effektivitet.
+ All rådata sparas så underhållsingenjörer lätt kan plocka ut intressanta
+ värden för vidare analys av specifika maskinelement.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+För och nackdelar med on-line utrustning
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ONLINE-För-och-nackdelar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Fördelar
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nackdelar
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Högkvalitetsdata tillgänglig för maskinanalys
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätningarna är begränsade till antalet installerade sensorer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätningar görs automatiskt och kontinuellingt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kräver att sensorerna är kopplade till CCR
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CCR"
+description "Operatorscentralen eng. \\emph{Central Control Room}"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Konstant kvalitet på mätningarna
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ekonomisk (dyrt?) för kritiska maskiner
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Direktlarm vid maskinfel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analys av data kan vara komplex
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amplitud, frekvens, fas och last mäts
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kräver en utbildad diagnostiker eller konsult
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mycket kraftfullt analysinstrument
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hög kostnad per mätpunkt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kan länkas med annan processdata
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Relativt hög investeringskostnad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Datan distribueras via DCS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DCS"
+description "Distributed control system"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Synlig för operatörer och konsulter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fungerar med och utan säkerhetsbevakning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Idealisk för livslängdsuppskattning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tillståndsbaserat underhåll
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/underhallstyper.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Överblick av de olika underhållstyperna
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Underhållstyper"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tillståndsbaserat underhåll
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Kommer hänvisas som CBM vidare i dokumentet.
+\end_layout
+
+\end_inset
+
+ (CBM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CBM"
+description "Tillståndsbaserat underhåll eng. \\emph{Condition Based Maintenance}"
+
+\end_inset
+
+) är en underhållsprocedur som går ut på att man övervakar tillståndet hos
+ utrustningen och utifrån detta bestämmer när underhåll skall göras och
+ vad som skall testas.
+ CBM är snarlikt förutbestämt underhåll (PdM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PdM"
+description "Förutbestämt underhåll eng. \\emph{Predictive Maintenance}"
+
+\end_inset
+
+) där man byter ut/reparerar innan fel uppstår, skillnaden är att PdM tenderar
+ att vara mer utrustningsfokuserad medan CBM är systemorienterat samt att
+ underhållet justeras med hjälp av P-F intervall.
+\end_layout
+
+\begin_layout Standard
+Målet med CBM är att 
+\end_layout
+
+\begin_layout Itemize
+Reducera oplanerat underhåll och stora underhållsarbeten
+\end_layout
+
+\begin_layout Itemize
+Minska avtrycket av underhåll och logistik
+\end_layout
+
+\begin_layout Itemize
+Utföra och integrera avancerad ingenjörskonst, underhålls- och informationstekno
+logi
+\end_layout
+
+\begin_layout Itemize
+Underhåll endast vid bevisat behov
+\end_layout
+
+\begin_layout Itemize
+Förbättring av diagnostik och prognostik
+\end_layout
+
+\begin_layout Itemize
+Använda 
+\emph on
+real-time 
+\emph default
+uppskattning av materialkondition via mätningar från förankrade sensorer
+ och/eller externa tester och mätningar via portabel utrustning
+\end_layout
+
+\begin_layout Itemize
+Öka tillgängligheten
+\end_layout
+
+\begin_layout Subsection
+P-F intervall
+\end_layout
+
+\begin_layout Standard
+Tidsintervallet mellan underhållsarbetet bestäms av det s.k.
+ P-F intervall som representeras enligt Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:P-F-intervall"
+
+\end_inset
+
+ och beskriver tiden mellan det ett fel beräknas att upptäckas och haveri
+ inträffar.
+ Även om många fel inte är åldersrellaterade avger de flesta maskinelement
+ en tydlig indikation innan de fallerar.
+ Underhållsintervallet vid PdM tar inte hänsyn till haverifrekvensen eller
+ hur kritiskt ett maskinelement är vilket CBM gör genom att filosofin bygger
+ på att fel inte inträffar omedelbart och att det ofta är möjligt att mäta
+ om maskinelementet är inne i slutskedet av dess livscykel.
+ Hittas indicier på att ett maskinelement är inne i slutskedet är det möjligt
+ att utföra åtgärder som undviker haveri och/eller konsekvenserna som tillkommer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/pfintervall.dia
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Grafisk representation av ett P-F intervall
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:P-F-intervall"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Följande åtaganden bör göras för att CBM skall vara applicerbart och effektivt.
+ Det måste finnas någon mätbar parameter som tydligt visar på nedbrytning
+ i utrustningen samt personal kunnig nog att identifiera detta och sätta
+ gränser för underhållsintervall.
+ 
+\end_layout
+
+\begin_layout Standard
+P-F intervallet måste vara konsekvent nog så inte åtgärder görs för tidigt
+ eller att fel inträffar före den planerade åtgärden, intervallet bör dessutom
+ vara av praktisk tidsrymd förslagsvis dagar eller veckor för att vara en
+ god kandidat för CBM.
+ P-F intervallet skall vara definierat så en tydlig varning uppstår med
+ erfodelig tid för planering och utförande av åtgärd.
+ Mest relevant i detta sammanhang är att underhållet måste vara billigare
+ än ett potentiellt haveri över MTBF (meantime between failures).
+ 
+\end_layout
+
+\begin_layout Subsection
+Förbättring av CBM tekniker
+\end_layout
+
+\begin_layout Standard
+Då kraven på produktivitet, kvalitet, lagerkontroll och maskinlivslängd
+ ständigt ökar, förbättras CBM system i samma takt.
+ Teknologiska framsteg implementeras till CBM system så som förbättrad kunskap
+ om felmekanismer, säkrare prognoser via nya algoritmer, utveckling av nya
+ sensorer och övervakningsutrustning, förbättring av diagnostisk och prognostisk
+ mjukvara för att nämna några.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/cbm-processflode.svg
+	height 40theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Processflöde i CBM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+För att öka prestandan hos CBM system används nu mer fuzzy logic, neurala
+ nät och applikation av Dempster-Shaferteori.
+ CBM system värderas efter dess förmåga att säkert diagnostisera fel samt
+ beräkna hur lång tid som återstår innan fel inträffar.
+\end_layout
+
+\begin_layout Subsection
+Implementering av CBM system
+\end_layout
+
+\begin_layout Standard
+Nyckelordet för en lyckad implementering av CBM system är långsiktig planering.
+ Lång tid före realisering av övervakning och analys av produktionen behövs
+ gedigen insikt om vad som skall undersökas och hur detta utförs.
+ För att verkligen börja spara pengar med det nya sättet att planera underhållsa
+rbetet måste en grundlig analys av befintligt underhåll göras.
+ Allt som inte fungerar enligt orginalplanen måste rättas till före en större
+ förändring initieras.
+\end_layout
+
+\begin_layout Subsection
+För- och nackdelar med ett CBM system
+\end_layout
+
+\begin_layout Standard
+Studier har visat att ett fullt fungerande CBM system eller annat prognosbaserat
+ underhållsprogram kan bidra med besparingar på 8% -- 12% jämfört med förebyggan
+de underhåll (FU) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cbm-phd_thesis"
+
+\end_inset
+
+.
+ <--- ref saknas!!!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Sammanfattning av för och nackdelar med CMS system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Fördelar
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nackdelar
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reduktion av underhållskostnad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diagnostisk utrustning är kostsamt och ökar investeringen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minskad risk för haveri
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Höga utbildningskostnader
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reduktion av driftstopp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ledningen kan inte se den potentiella besparingen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ökning av produktion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ökad komponentlivslängd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tillåter förebyggande åtgärder
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minskar kostnader för reservdelar och arbete
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Förbättrar produkkvalitén
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Förbättrar person- och miljösäkerheten
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Förbättrar arbetsmoralen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Energieffektiviserar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Referenser
+status collapsed
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "referenser"
+options "sweunsrt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

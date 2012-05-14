@@ -1,0 +1,727 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language swedish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Gantt-schema
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Deffat för 5 dagars vecka dvs 0.2 steg per dag.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{barblue}{RGB}{153,204,254}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{groupblue}{RGB}{51,102,254}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{linkred}{RGB}{165,0,33}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+sfdefault{phv}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+mddefault{mc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+bfdefault{bc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sffamily
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{ganttchart}%
+\end_layout
+
+\begin_layout Plain Layout
+
+[canvas/.style={fill=none, draw=black!5, line width=.75pt},
+\end_layout
+
+\begin_layout Plain Layout
+
+hgrid style/.style={draw=black!5, line width=.75pt},
+\end_layout
+
+\begin_layout Plain Layout
+
+vgrid={*1{draw=black!5, line width=.75pt}},
+\end_layout
+
+\begin_layout Plain Layout
+
+today=1,
+\end_layout
+
+\begin_layout Plain Layout
+
+today rule/.style={draw=black!64,
+\end_layout
+
+\begin_layout Plain Layout
+
+dash pattern=on 3.5pt off 4.5pt, line width=1.5pt},
+\end_layout
+
+\begin_layout Plain Layout
+
+today label={
+\backslash
+small
+\backslash
+bfseries IDAG},
+\end_layout
+
+\begin_layout Plain Layout
+
+title/.style={draw=none, fill=none},
+\end_layout
+
+\begin_layout Plain Layout
+
+title label font=
+\backslash
+bfseries
+\backslash
+footnotesize,
+\end_layout
+
+\begin_layout Plain Layout
+
+title label anchor/.style={below=7pt},
+\end_layout
+
+\begin_layout Plain Layout
+
+include title in canvas=false,
+\end_layout
+
+\begin_layout Plain Layout
+
+bar label font=
+\backslash
+mdseries
+\backslash
+small
+\backslash
+color{black!70},
+\end_layout
+
+\begin_layout Plain Layout
+
+37
+\end_layout
+
+\begin_layout Plain Layout
+
+bar label anchor/.style={left=2cm},
+\end_layout
+
+\begin_layout Plain Layout
+
+bar/.style={draw=none, fill=black!63},
+\end_layout
+
+\begin_layout Plain Layout
+
+bar incomplete/.style={fill=barblue},
+\end_layout
+
+\begin_layout Plain Layout
+
+progress label font=
+\backslash
+mdseries
+\backslash
+footnotesize
+\backslash
+color{black!70},
+\end_layout
+
+\begin_layout Plain Layout
+
+group incomplete/.style={fill=groupblue},
+\end_layout
+
+\begin_layout Plain Layout
+
+group left shift=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+group right shift=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+group height=.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+group peaks={0}{}{},
+\end_layout
+
+\begin_layout Plain Layout
+
+group label anchor/.style={left=.6cm},
+\end_layout
+
+\begin_layout Plain Layout
+
+link/.style={-latex, line width=1.5pt, linkred},
+\end_layout
+
+\begin_layout Plain Layout
+
+link label font=
+\backslash
+scriptsize
+\backslash
+bfseries
+\backslash
+color{linkred}
+\backslash
+MakeUppercase,
+\end_layout
+
+\begin_layout Plain Layout
+
+link label anchor/.style={below left=-2pt and 0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+]{14}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gantttitle[title label anchor/.style={below left=7pt and -3pt}]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{Vecka:
+\backslash
+quad10}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+gantttitlelist{11,...,23}{1} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttgroup[progress=58, progress label font=
+\backslash
+bfseries
+\backslash
+small, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{WBS 1 Förstudie}{1}{2} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=100, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 1.1} Research inför möte}{1}{1} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=50, name=WBS1B, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 1.2} Sammanställning av projektspec}{1}{2} 
+\backslash
+
+\backslash
+[grid]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttgroup[progress=0, progress label font=
+\backslash
+bfseries
+\backslash
+small, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{WBS 2 Analys}{3}{6} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS2A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 2.1} Befintligt mätsystem}{3}{3} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1B, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 2.2} Generatorer och turbiner}{4}{5} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS2A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 2.3} Ekonomisk situation}{6}{6} 
+\backslash
+
+\backslash
+[grid]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttgroup[progress=0, progress label font=
+\backslash
+bfseries
+\backslash
+small, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{WBS 3 Research}{7}{9} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 3.1} Mätutrustning}{7}{8} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 3.2} Mätdatalagring}{8}{9} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 3.3} Ansvarsdistribution}{9}{9} 
+\backslash
+
+\backslash
+[grid]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttgroup[progress=0, progress label font=
+\backslash
+bfseries
+\backslash
+small, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{WBS 4 Sammanställning och redovisning}{10}{14} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 4.1} Utrustning}{10}{10} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 4.2} Kostnadskalkyl}{11}{11} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 4.3} Slutrapport}{12}{13} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+ganttbar[progress=0, name=WBS1A, progress label text=#1
+\backslash
+% Klart]%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textbf{WBS 4.4} Förberedelse inför slutredovisning}{14}{14}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+ganttlink[link type=s-s]{WBS1A}{WBS1B}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+ganttlink[link type=f-s]{WBS1B}{WBS1C}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+ganttlink[link type=f-f, link label anchor/.style={left}]{WBS1C}{WBS1D}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{ganttchart}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

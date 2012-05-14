@@ -1,0 +1,583 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+\usepackage{geometry}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language swedish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 4cm
+\topmargin 10cm
+\rightmargin 4cm
+\bottommargin 3.8cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{left=2.5cm,right=2.5cm,bottom=1.27cm,top=5.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge 
+\backslash
+bfseries Vibrationsövervakning av Fortums maskinparker}
+\backslash
+
+\backslash
+[0.7cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+LARGE 
+\backslash
+bfseries 
+\backslash
+emph{Vibration Monitoring of Fortum's Hydroelectric Power Plants} }
+\backslash
+
+\backslash
+[2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+LARGE 
+\backslash
+bfseries Henrik Storm
+\backslash
+
+\backslash
+ Simon Lundell}
+\backslash
+
+\backslash
+[2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Large 
+\backslash
+bfseries Examensarbete
+\backslash
+
+\backslash
+ 
+\backslash
+large 
+\backslash
+emph{Degree Project} 
+\backslash
+
+\backslash
+ 
+\backslash
+Large Mekatronikingenjörsprogrammet }
+\backslash
+
+\backslash
+[1cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+large 
+\backslash
+bfseries vt 2012}
+\backslash
+
+\backslash
+[3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+normalsize 
+\backslash
+bfseries Handledare: Krister Ström, Fortum 
+\backslash
+
+\backslash
+ Torbjörn Berg, Karlstads universitet}
+\backslash
+
+\backslash
+[0cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[b]{1
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushleft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+large Detta examensarbete omfattar 22.5 hp och ingår i Mekatronikingenjörsprogram
+met, 180 hp, vid Karlstads universitet.
+ This 22.5 hp Degree Project is part of the 3 year, 180 hp, Mechatronic Engineeri
+ng course at Karlstad University, Sweden
+\end_layout
+
+\begin_layout Plain Layout
+
+vt 2012
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{left=4cm,right=4cm,bottom=1.27cm,top=5.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+normalsize Denna rapport är skriven som en del av det arbete som krävs för
+ att erhålla Mekatronikingenjörsexamen/Teknologie kandidatexamen.
+ Allt material i denna rapport som inte är mitt eget, har blivit tydligt
+ identifierat och inget material är inkluderat som tidigare använts för
+ erhållande av annan examen.
+ }
+\backslash
+
+\backslash
+[2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{minipage}[b]{0.4
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+raggedright
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+HRulex
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+small Henrik Storm
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{minipage} %
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{minipage}[b]{0.4
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+raggedright
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+HRulex
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+small Simon Lundell
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule
+\backslash
+
+\backslash
+[3cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+normalsize Rapporten godkänd,}
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{minipage}[b]{0.6
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+raggedright
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+HRulex
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+small datum 
+\backslash
+qquad Handledare: Krister Ström
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+HRulex
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+small Examinator: Peter Röjder
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

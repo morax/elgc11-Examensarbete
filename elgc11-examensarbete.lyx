@@ -1,0 +1,634 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+
+\usepackage[usenames,dvipsnames]{xcolor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Watermarking: [firstpage], [nostamp]
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[firstpage]{draftwatermark}
+
+\SetWatermarkFontSize{15 cm}
+\SetWatermarkScale{3}
+\SetWatermarkLightness{0.9}
+\SetWatermarkText{UTKAST}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{url}
+%\hypersetup{colorlinks=true,citecolor=blue}
+%\hypersetup{colorlinks=true,urlcolor=blue}
+\usepackage{psfrag}
+
+\AtBeginDocument{
+        \renewcommand{\bibname}{Referenser}
+        \renewcommand{\nomname}{Nomenklatur}
+}
+
+
+
+
+
+%\usepackage{fancyhdr}
+\usepackage{caption}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage{psfrag}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+%\hypersetup{colorlinks=false,citecolor=blue,urlcolor=blue}
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Kod}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+\usepackage[toc,page,titletoc]{appendix}
+\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixpagename}{Bilagor}
+\renewcommand{\appendixtocname}{\normalsize {Bilagor}}
+
+%\usepackage{Karnaugh}
+%\usepackage{booktabs}
+
+\addto\captionsswedish{\renewcommand{\bibname}{Referenser}}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\HRulex}{\rule{\linewidth}{0.2mm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings specially for swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Decimal comma
+\mathchardef\CommaOrdinary="013B
+\mathchardef\CommaPunct   ="613B
+\mathcode`,="8000
+{\catcode`\,=\active
+\gdef ,{\obeyspaces\futurelet\next\CommaCheck}}
+\def\CommaCheck{\if\space\next\CommaPunct\else\CommaOrdinary\fi}
+
+% Get rid of the spacing used in english typesetting
+\frenchspacing
+
+% Paragraph indentation style
+%\setlength{\parindent}{1em}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Common abbreviations in Swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xspace}
+\newcommand{\bla}{bl.\hspace{0.1em}a.\xspace}
+\newcommand{\ca}{ca\xspace}
+\newcommand{\dvs}{dvs.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\kl}{kl.\xspace}
+\newcommand{\mfl}{m.\hspace{0.1em}fl.\xspace}
+\newcommand{\mm}{m.\hspace{0.1em}m.\xspace}
+\newcommand{\obs}{obs.\xspace}
+\newcommand{\osv}{osv.\xspace}
+\newcommand{\pga}{p.\hspace{0.1em}g.\hspace{0.1em}a.\xspace}
+\newcommand{\sk}{s.\hspace{0.1em}k.\xspace}
+\newcommand{\tillex}{t.\hspace{0.1em}ex.\xspace}
+
+% END
+
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+% \usepackage{appendix}
+% \renewcommand{\appendixtocname}{\Large{Bilagor}}
+
+
+%Settings
+
+\lstset{
+         basicstyle=\footnotesize\ttfamily,
+         numbers=left,               
+         numberstyle=\tiny,          
+         %stepnumber=2,               
+         numbersep=5pt,             
+         tabsize=2,                  
+         breaklines=true,                
+         frame=b,           
+         showspaces=false,           
+         showtabs=false,             
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false,     
+         texcl=true,
+         inputencoding=utf8,
+         language=Java,
+         stringstyle=\color{red}\ttfamily,
+         keywordstyle=\color{blue},
+         commentstyle=\color{ForestGreen},
+         extendedchars=\true,
+         escapeinside={\%*}{*)}
+         } 
+
+\captionsetup[figure]{textfont=it}
+\captionsetup[table]{textfont=it}
+
+
+\renewcommand{\arraystretch}{1.3} 
+
+
+\usepackage{tikz}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+
+
+\usepackage{ifthen}
+
+
+
+
+
+
+
+
+\let\originaltable\table
+\let\endoriginaltable\endtable
+\renewenvironment{table}[1][ht]{%
+  \originaltable[#1]
+  \centering}%
+  {\endoriginaltable}
+
+\let\originalfigure\figure
+\let\endoriginalfigure\endfigure
+\renewenvironment{figure}[1][ht]{%
+  \originalfigure[#1]
+  \centering}%
+  {\endoriginalfigure}
+
+
+
+\usepackage{graphicx}
+
+%% Hack by Heiko Oberdiek (on de.comp.text.tex)
+\usepackage{tabularx}
+
+%% Redefine the standard table
+\let\ORIGtabular\tabular
+\let\ORIGendtabular\endtabular
+\let\ORIGtabularx\tabularx
+\renewcommand*{\tabularx}{%
+  \def\tabular{%
+    \let\endtabular\ORIGendtabular
+    \ORIGtabular
+  }%
+  \ORIGtabularx
+}
+
+\renewcommand{\tabular}{%
+%% The width of the table. Adjust if needed
+  \tabularx{\linewidth}%
+}
+
+\renewcommand{\endtabular}{\endtabularx} 
+\renewcommand{\arraystretch}{1.3}
+
+
+\usepackage{geometry}
+
+\usepackage{minitoc}
+
+
+
+
+
+
+
+\usepackage[explicit]{titlesec}
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+   \node[yshift=-2cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=Gold] (0,0) rectangle
+          (\paperwidth,3cm);
+   \ifthenelse{\isodd{\thepage}}
+       { \node[anchor=east,xshift=.9\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=LightGrey]
+              {\color{black}\chapterlabel#1};}
+       { \node[anchor=west,xshift=.1\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=LightGrey]
+              {\color{black}\chapterlabel#1};}
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Psfrags 
+%%%%%%%%%%%%%%%%%%%%%%%
+% PSFRAG
+
+\psfrag{R1}{$R_1$}
+\psfrag{R2}{$R_2$}
+\psfrag{R3}{$R_3$}
+\psfrag{R4}{$R_4$}
+\psfrag{R5}{$R_5$}
+\psfrag{R6}{$R_6$}
+\psfrag{R7}{$R_7$}
+\psfrag{A}{$A$}
+\psfrag{B}{$B$}
+\psfrag{C}{$C$}
+\psfrag{D}{$D$}
+\psfrag{X}{$X$}
+\psfrag{Y}{$Y$}
+\psfrag{S}{$S$}
+\psfrag{V}{$V$}
+\psfrag{V1}{$V_1$}
+\psfrag{V2}{$V_2$}
+\psfrag{V3}{$V_3$}
+\psfrag{t}{$t$}
+\psfrag{Uin}{$U_{in}$}
+\psfrag{Uut}{$U_{ut}$}
+\psfrag{-E}{$-E$}
+\psfrag{+E}{$+E$}
+\psfrag{delta}{$\delta$}
+\psfrag{U_in}{$U_{in}$}
+\psfrag{U_ut}{$U_{ut}$}
+\psfrag{15Vdc}{$15V_{DC}$}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% End of psfrags
+%%%%%%%%%%%%%%%%%%%%%%%%
+\end_preamble
+\options svgnames,liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot,twoside,parskip=half
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-sec-bytype
+\end_modules
+\maintain_unincluded_children false
+\language swedish
+\language_package babel
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Vibrationsbevakning av Fortums maskinparker"
+\pdf_author "Henrik Storm, Simon Lundell"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=NavyBlue, citecolor=DarkRed, urlcolor=Blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_numerical
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch Analys
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Referenser
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Print
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch E-publikation
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Branch Print
+status collapsed
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-titelsida-print.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-titelsida-2o3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-sammanfattning.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch E-publikation
+status open
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-titelsida.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-titelsida-2o3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-sammanfattning.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "3cm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+printglossary[0.5in] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Nomenklatur}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-inledning.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-teori.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-analys.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-resultat.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-slutsats.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "referenser"
+options "sweunsrt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-kymmen.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-bilaga-berakningar.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-bilaga-potentiella_fel.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

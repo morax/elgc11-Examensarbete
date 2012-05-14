@@ -1,0 +1,2840 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+\usepackage{graphicx}
+%% Hack by Heiko Oberdiek (on de.comp.text.tex)
+\usepackage{tabularx}
+
+%% Redefine the standard table
+\let\ORIGtabular\tabular
+\let\ORIGendtabular\endtabular
+\let\ORIGtabularx\tabularx
+\renewcommand*{\tabularx}{%
+  \def\tabular{%
+    \let\endtabular\ORIGendtabular
+    \ORIGtabular
+  }%
+  \ORIGtabularx
+}
+
+\renewcommand{\tabular}{%
+%% The width of the table. Adjust if needed
+  \tabularx{\linewidth}%
+}
+
+\renewcommand{\endtabular}{\endtabularx} 
+\renewcommand{\arraystretch}{1.3}
+\end_preamble
+\use_default_options true
+\master elgc11-examensarbete.lyx
+\maintain_unincluded_children false
+\language swedish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_numerical
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Analys
+\end_layout
+
+\begin_layout Section
+Befintligt mätsystem
+\end_layout
+
+\begin_layout Standard
+Med Kymmens kraftverk som referens (se Bilaga 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Analys-av-Kymmens"
+
+\end_inset
+
+) samt vibrationsmätningsrapport från SKF på XXX's kraftverk syns en tydlig
+ trend av bristande kunskap respektive återkoppling.
+ Vibrationsmätningen på Fortum sker i regel med hjälp av portabel vibrationsutru
+stning där datan sedan skickas till konsult för analys.
+ Delar av mätdata sparas på en egen server i Alvesta medan majoriteten finns
+ hos konsulten.
+\end_layout
+
+\begin_layout Itemize
+Undersök vilka mätpunkter som berörs och varför
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+lista upp givare, mätutrustning, kablar (om de är kompenserade)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Hur presenteras datan?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lagras de bara i en portabel mätutrustning som sedan skeppas till konsulter
+ eller får man en grafisk överblick med larm?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Hur lagras data? 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Spar Fortum någon data på plats eller 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Generatorer och turbiner
+\end_layout
+
+\begin_layout Standard
+Generellt är det inga större fysiska svårigheter att implementera och installera
+ ett fast vibrationsmätningssystem i kraftverken och 
+\end_layout
+
+\begin_layout Section
+Installation av mätsystem
+\end_layout
+
+\begin_layout Itemize
+Hur lång tid tar det att installera systemet?
+\end_layout
+
+\begin_layout Itemize
+Behöver maskineriet stänga ner?
+\end_layout
+
+\begin_layout Itemize
+Finns det risker för komplikationer som direkt eller på sikt leder till
+ produktionsbortfall?
+\end_layout
+
+\begin_layout Section
+Identifikation av kritiska maskiner
+\end_layout
+
+\begin_layout Section
+Vibrationsmätning av kraftverk
+\end_layout
+
+\begin_layout Standard
+Excessive operational stresses can develop due to material buildup or erosion,
+ that changes the balance condition, or thermal expansion that changes component
+ alignment.
+ Both of these cause high dynamic loads at the bearings which lead to accelerate
+d wear out.
+ These defects are easily detected with periodic vibration measurements
+ and there are well established methods to correct them on site.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vibration_tutorial"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Typ av mätningar
+\end_layout
+
+\begin_layout Standard
+För att få en bra diagnos över vad som kan vara fel i anläggningarna krävs
+ att man mäter på rätt punkter i systemet.
+ Mäter man på fel punkter, eller inte samma punkt upprepade gånger, löper
+ man stor risk att ställa felaktiga diagnoser och det kan bli kostsamt.
+ Mätningarna hos Fortum idag verkar vara begränsade till enbart lager (styrlager
+, bärlager och turbinlager), huruvida detta är tillräckligt för att kunna
+ göra en god diagnos över hela systemet återstår att se.
+\end_layout
+
+\begin_layout Standard
+Mätpunkterna i sin tur skall tas på blottade delar i maskineriet som normalt
+ är tillgängliga och så nära vibrationskälla samt i linje med kraften som
+ möjligt.
+ Exempelvis på alla huvudsakliga lager av maskinen.
+\end_layout
+
+\begin_layout Standard
+Man bör vara försiktig så att man försäkrar sig om att mätningarna representerar
+ vibrationerna i lagerhuset och inte inkluderar någon lokal resonans eller
+ amplitud.
+ Placeringen av vibrationsgivare bör vara sådan att den tillhandahåller
+ tillräcklig känslighet till de dynamiska krafterna av maskinen under olika
+ drift- förhållanden.
+ Typiskt för detta, speciellt i långsamtgående maskinerier, är att man behöver
+ 2 ortogonala radiella mätriktningar på varje lagerhus och att dessa punkter
+ samt riktningar skall väljas med extrem omsorg 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "iso10816-5"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Om off-line system brukas, skall mätpunkterna och driftsförhållandena vara
+ samma mätning efter mätning, misslyckas man med detta löper man risk att
+ dra felaktiga beslut angående vibrationsnivåerna.
+\end_layout
+
+\begin_layout Standard
+Följande punkter bedöms som nödvändiga att mäta på i en anläggning.
+\end_layout
+
+\begin_layout Subsubsection
+Stator
+\end_layout
+
+\begin_layout Standard
+Stillastående del i en elektrisk maskin.
+ Den är ofta konstruerad som en ring av magnetiskt material med inåtriktade
+ poler försedda med magnetlindningar.
+ I andra fall har statorn en plåtkärna som på innersidan är försedd med
+ lindningar i spår.[2] 
+\end_layout
+
+\begin_layout Standard
+Potentiella fel:
+\end_layout
+
+\begin_layout Standard
+Ref bilaga Detekterbara vibrationsorsaker 
+\end_layout
+
+\begin_layout Standard
+Förslag på mätpunkter:
+\end_layout
+
+\begin_layout Itemize
+Statorkärna
+\end_layout
+
+\begin_layout Itemize
+Statorstomme
+\end_layout
+
+\begin_layout Itemize
+Fundament
+\end_layout
+
+\begin_layout Subsubsection
+Rotor
+\end_layout
+
+\begin_layout Standard
+Roterande del i en elektrisk maskin.
+\end_layout
+
+\begin_layout Standard
+Potentiella fel:
+\end_layout
+
+\begin_layout Standard
+Ref bilaga Detekterbara vibrationsorsaker
+\end_layout
+
+\begin_layout Standard
+Förslag på mätpunkter:
+\end_layout
+
+\begin_layout Itemize
+Styrlager - övre och undre
+\end_layout
+
+\begin_layout Itemize
+Turbinlager
+\end_layout
+
+\begin_layout Itemize
+Rotorpoler - Om vibrationer detekteras i någon av föregående punkter kan
+ en impedansmätning vara nödvändig för vidare undersökning av elektrisk
+ obalans i rotorn.
+ Detta görs såklart ej av vibrationsutrustning utan snarare av utrustning
+ lämplig att mäta impedans med.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Lager
+\end_layout
+
+\begin_layout Standard
+Maskindel som håller uppe roterande axlar på plats och har till syfte att
+ minska friktionen mellan axeln och bärytan.[3] I vattenkraftverk existerar
+ främst glidlager, förutom på dom mycket små kraftverken.
+ Följande analys är därför på just glidlager, och kullager behandlas i senare
+ avsnitt.
+\end_layout
+
+\begin_layout Standard
+Potentiella fel:
+\end_layout
+
+\begin_layout Standard
+Ref bilaga Detekterbara vibrationsorsaker 
+\end_layout
+
+\begin_layout Standard
+Kavitation - Ett tillstånd som ofta uppträder i vattenturbiner i samband
+ med att ett reducerat vätsketryck skapar bubblor nära rotorns yta.
+ När bubblorna spricker överförs ganska stora krafter på rotorn vilket leder
+ till att gropar bildas på ytan.
+\end_layout
+
+\begin_layout Standard
+Förslag på mätpunkter: 
+\end_layout
+
+\begin_layout Itemize
+Bärlager
+\end_layout
+
+\begin_layout Itemize
+Styrlager - övre och undre, samma mätpunkter om bär och styrlager är kombinerat
+\end_layout
+
+\begin_layout Itemize
+Turbinlager 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Viktigt att tänka på vid vertikala maskiner i hydroelektriska anläggningar
+ är att mätdata vid nedre styrlager ibland misstolkas; vibrationsnivåerna
+ som erhålls vid sådana lager och deras kringliggande utrustning som är
+ styvt inbäddade i maskineriet är ibland en produkt av hydrauliska krafter,
+ direkt överförda från den hydrauliska maskinen via fundamentet 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "iso10816-5"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Växlar
+\end_layout
+
+\begin_layout Standard
+Anordning som gör att en maskin kan arbeta under gynnsamma varvtal oberoende
+ av skiftande hastighets- och belastningsförhållanden.[5] 
+\end_layout
+
+\begin_layout Standard
+Potentiella fel: (Växellådor är komplicerade ur diagnossynpunkt p.g.a.
+ många felmöjligheter.
+ Ett problem vid felanalys är att kuggfrekventa vibrationer alltid finns,
+ även i en felfri växel.
+ Det är därför mycket viktigt att man mäter och gör ett frekvensspektra
+ när man har en ny växel, och sedan gör mätningar med jämna mellanrum och
+ får en trendutveckling.)
+\end_layout
+
+\begin_layout Standard
+Ref bilaga Detekterbara vibrationsorsaker
+\end_layout
+
+\begin_layout Standard
+Förslag på mätpunkter:
+\end_layout
+
+\begin_layout Itemize
+Lager
+\end_layout
+
+\begin_layout Itemize
+Kåpor
+\end_layout
+
+\begin_layout Subsubsection
+Ledskenor
+\end_layout
+
+\begin_layout Standard
+Hydrauliskt reglerad anordning som möjliggör reglering av vattenflödet genom
+ en turbin och optimering av verkningsgraden.[6] Potentiella fel:
+\end_layout
+
+\begin_layout Itemize
+Lutningen på ledskenorna kan skapa vibrationer i systemet.
+ 
+\end_layout
+
+\begin_layout Itemize
+Tryckstötsvågor i specialfall kan komma över acceptabla gränser.
+ 
+\end_layout
+
+\begin_layout Standard
+Förslag på mätpunkter:
+\end_layout
+
+\begin_layout Itemize
+I dagsläget har man inte någon självklar punkt att mäta vibrationerna som
+ kan uppstå p.g.a.
+ ledskenorna, men en rekommendation är att helt enkelt följa ISO 10816-5:2000(E)
+ som säger "Mätpunkterna i sin tur skall tas på blottade delar i maskineriet
+ som normalt är tillgängliga och så nära vibrationskälla samt i linje med
+ kraften som möjligt." 
+\end_layout
+
+\begin_layout Subsection
+Typ av mätutrustning
+\end_layout
+
+\begin_layout Standard
+Nuvarande mätutrustning är två portabla vibrationsmätningskit med antaget
+ piezoelektriska givare från SKF som är tänkt att skickas runt inom Fortum.
+ Med denna mätutrustning ska Fortums egna personal kunna dra egna slutsatser
+ alt.
+ ta kontakt med leverantören vid större problem.
+\end_layout
+
+\begin_layout Standard
+Genom kontinuerlig mätning kan man analysera, trenda och alarmera de olika
+ vibrationerna i en anläggning, och tack vare detta kan man enkelt förutse
+ direkt haveri eller detektera när något kan behöva underhåll.
+ Detta möjliggör underhållsarbete på rätt del, vid rätt tid och av rätt
+ anledning.
+ Genom arkivering av vibrationsdata över en längre tidsperiod och en dokumentera
+d historik över underhållsarbetet kan man enkelt skapa schema för kommande
+ underhållsarbete sådant att man får maximal drivtid på maskinerna för de
+ lägsta servicekostnaderna.
+ Bara det mest effektiva och riktade underhållsarbetet behöver utföras.
+\end_layout
+
+\begin_layout Standard
+Gällande val av mätutrustning, on-line eller off-line, bör man se till möjlighet
+erna att välja mätutrustning som följer någon av dessa tre standarder:[8]
+\end_layout
+
+\begin_layout Itemize
+IEEE1451
+\end_layout
+
+\begin_layout Itemize
+OSA-CBM
+\end_layout
+
+\begin_layout Itemize
+MIMOSA
+\end_layout
+
+\begin_layout Standard
+Fördelarna med dessa standarder är:
+\end_layout
+
+\begin_layout Itemize
+Kompatibla hårdvaru- och mjukvarukomponenter 
+\end_layout
+
+\begin_layout Itemize
+Mer tekniska val för användarna 
+\end_layout
+
+\begin_layout Itemize
+Snabbare teknikutveckling 
+\end_layout
+
+\begin_layout Itemize
+Reducerade priser 
+\end_layout
+
+\begin_layout Itemize
+Uppgradering av systemets komponenter lättare
+\end_layout
+
+\begin_layout Standard
+Vidare kan man dela in mätinstrument i två huvudgrupper som kan motsvara
+ uppdelningen av vibrationstekniskt arbete i A: vibrationer som skadar och
+ B: skador som ger vibrationer.
+\end_layout
+
+\begin_layout Itemize
+A - Vibrometrar som endast mäter vibrationers storlek och används för grundlägga
+nde vibrationskontroll.
+\end_layout
+
+\begin_layout Itemize
+B - Analys- och mätinstrument för studium av orsak till vibrationer och
+ för insats vid åtgärder.
+\end_layout
+
+\begin_layout Standard
+Inom dessa gruppar man kan dela in instrumenttyper i följande grupper:
+\end_layout
+
+\begin_layout Paragraph
+Off-line instrument (portabla/handhållna)
+\end_layout
+
+\begin_layout Enumerate
+Vibrometer - Hand- eller serviceinstrument med eller utan bandpassfilter
+ för t.ex.
+ ISO-värde eller lagerkondition
+\end_layout
+
+\begin_layout Enumerate
+Filtervibrometer - Som ovanstående samt med rörligt manuellt filter för
+ manuell frekvensmätning
+\end_layout
+
+\begin_layout Enumerate
+Vibrationsanalysator - Instrument med kombinationer av fast filter och manuellt
+ till helautomatiskt rörligt filter samt trackingfilter.
+ Vinkel- och varvtalsmätning.
+\end_layout
+
+\begin_layout Enumerate
+Stötpulsmätare - Indikeringsinstrument för lagerfel genom stötpulsmätning
+\end_layout
+
+\begin_layout Enumerate
+Spektrumanalysator - FFT-analys för frekvensspektrum
+\end_layout
+
+\begin_layout Enumerate
+Mini-FFT - FFT-analysator i fickformat för snabb analys vid akuta problem
+\end_layout
+
+\begin_layout Enumerate
+Datalogsystem - Insamlingssystem för vibrationsdata, ev, med FFT-analys,
+ begränsade utvärderingsprogram för t.ex.
+ trend- och lagerdata.
+\end_layout
+
+\begin_layout Enumerate
+Programstyrda rondsystem - Mätning av alla vibrationstekniska data och med
+ utvecklad FFT-analys i kombination med minnes-, diagnos- och expertprogram.
+\end_layout
+
+\begin_layout Enumerate
+Kombiinstrument - Allt fler av vibrationsmätteknikens möjligheter förenas
+ i vibrometrar som kombiinstrument där många ovanstående egenskaper finns
+ i samma vibrometer och med andra driftsparametrar som t.ex.
+ temperatur.
+\end_layout
+
+\begin_layout Minisec
+On-line övervakningsutrustning
+\end_layout
+
+\begin_layout Standard
+Erbjuder allt det som off-line instrumenten gör men med mer avancerad övervaknin
+g och många fler fördelar såsom
+\end_layout
+
+\begin_layout Itemize
+Nivåkontroll med ständigt inkopplade givare
+\end_layout
+
+\begin_layout Itemize
+Universalinstrument för vibrationer, monteras fast i kontrollrum med manuell
+ inkoppling av olika givare över knappsats
+\end_layout
+
+\begin_layout Itemize
+Datorutrustning för kontrollrum med ständigt uppdaterande nivåstaplar, FFT-
+ och vektordiagram samt linjeskrivare.
+ Larminställningar för alla funktioner
+\end_layout
+
+\begin_layout Itemize
+Utvecklad övervakningsutrustning med samma möjligheter som de datoriserade
+ rondsystemen med utvärderings- och expertprogram 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vibrationer-vibrationsmatning"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Fortum skulle därför utan tvekan gynnas av on-line system på deras vattenkraftve
+rk.
+ Det ger kontinuerlig information om anläggningen, möjlighet att koppla
+ driften till produktionen, mer avancerad analys av erhållna mätdatan och
+ tillåter kontinuerlig mätning på mätpunkter som annars kan vara svåra och
+ farliga att mäta på med off-line system.
+ 
+\end_layout
+
+\begin_layout Standard
+Efter man valt typ av övervakningssystem bör man först och främst klargöra
+ sitt behov med utrustningen så att man inte köper en utrustning som bara
+ står och samlar damm p.g.a.
+ otillräckliga vibrationsmätningsegenskaper eller mät- utrustning som inte
+ kan hantera dom önskade mätningarna.
+ Punkter som sedan bör läggas mest vikt på vid val av vibrationsmätningssystem
+ är tåligheten hos vibrationsmätutrustningen, användarvänligheten och mätdatalag
+ringen.
+\end_layout
+
+\begin_layout Standard
+Som nämns ovan vore ett on-line system att föredra, åtminstone på Fortums
+ mer kritiska kraftverk där ett haveri skulle orsaka stora förseningar och
+ i sin tur stora förluster.
+ Vid ett komplett sådant system skulle man mäta alla rekommenderade punkter
+ kontinuerligt, och med möjlighet att konstant övervaka systemet för en
+ väsentligt mer exakt diagnos av maskinhälsan.
+ 
+\end_layout
+
+\begin_layout Standard
+Vid ett mer komprimerat on-line system kan man mäta på bara ett fåtal av
+ de rekommenderade punkterna, de som anses mest lönsamma är statorn samt
+ lager.
+ Ett komplement till dessa on-line system skulle vara ett fåtal Off-line
+ system som kan cirkulera inom Fortum och användas på mindre kritiska anläggning
+ar.
+ Dessa Off-line system används då främst vid diagnos av nuvarande maskin-och
+ lagerhälsa, vid installation av nya maskiner, och balansering.
+ Om något suspekt detekteras bör det följas upp med vidare mätningar.
+ Detta kan dock bli problematiskt om fel detekteras vid flera av anläggningarna
+ utan on-line system, då kanske antalet vibrationsutrustningar eller personal
+ med kunskap ej räcker till.
+ 
+\end_layout
+
+\begin_layout Subsection
+Kompatiblitet med ny utrustning
+\end_layout
+
+\begin_layout Standard
+Då Fortum har avtal med SKF och SKF är leverantörer av nuvarande mätutrustning
+ så vore det passande om eventuell ny mätutrustning också är från SKF alt.
+ kompatibel med SKF:s mätutrustningar.
+\end_layout
+
+\begin_layout Subsection
+Analys av mätdata
+\end_layout
+
+\begin_layout Itemize
+Konsulter
+\end_layout
+
+\begin_layout Itemize
+Egen personal
+\end_layout
+
+\begin_layout Itemize
+CBM system
+\end_layout
+
+\begin_layout Subsection
+Lagring/presentation av data
+\end_layout
+
+\begin_layout Standard
+Lagringen och presentationen av data är en mycket viktig del av vibrationsmätnin
+gstekniken.
+ Om man har tillgång till gammal data och den är lätt att tolka, så kan
+ man använda de gamla mätningarna som riktlinjer för de nya mätningarna
+ och analys blir avsevärt mycket simplare.
+ Hos Fortum, i dagsläget, skickas majoriteten av mätresultaten till SKF,
+ som är leverantörer, i Luleå.
+ Av SKF får man sedan en årlig rapport där nuvarande status på maskinerna
+ (lager?) rapporteras och rekommendationer på åtgärder om nödvändigt.
+\end_layout
+
+\begin_layout Standard
+Vid analys av rapporten visades vissa brister beroende på vem som är den
+ tänkte mottagaren då presenterade grafer och dylikt kräver gedigen kunskap
+ för att avläsas.
+ Den kanske mest viktiga informationen saknades, det vill säga en lättåskådlig
+ trendkurva över respektive komponent.
+\end_layout
+
+\begin_layout Subsection
+Kriterier för val hård- och mjukvara
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Generella punkter som bör finnas i åtanke vid komponentval
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Hårdvara
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Mjukvara
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bevisad pålitlighet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Det måste ha standardfunktioner och vara lätt att använda
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flexibel för utbyggnad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definierar vilken typ av data som samlas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bra kostnad/prestanda ratio för investeringen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definierar hur dynamisk och processdata samlas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Enkelt interface mellan hårdvara och mjukvara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparar processinformation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frekvens och dynamisk område
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intelligent alarmfunktion som automatiskt genererar rapporter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätparametrar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Möjlighet att dela data mellan olika kraftverk
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Funktionstyp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Möjlighet att extrahera data för extern analys
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transduktortyp och anslutning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lättvindighet för skapande av rapporter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fas och hastighetsreferens
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Länkar till CMMS
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data kommunikation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Möjlighet att exportera data för andra typer av rapporter
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Antal år reservdelar finns tillhanda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Antal år med support
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uppgraderbarhet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uppgraderbarhet
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lokal support med kärnkompetens
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lokal eller webbasserad support med hög tillgänglighet
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Garantier och livslängd
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Garantier och livslängd
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Personaldistribution
+\end_layout
+
+\begin_layout Section
+Ekonomi
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ekonomi"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kostnaden för mätutrustning är en vanlig orsak till debatt och Tabell 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Ekonomisk-jämförelse-ONOFF"
+
+\end_inset
+
+ visar ett av många sätt som kalkylen kan presenteras.
+ Sättet man jämför kostnaderna kan via olika kalkyler skilja sig markant
+ och därför är det istället bättre att evaluera systemet utifrån följande
+ resonemang; att frekvensen mellan mätningar och hög datakvalitet erhåller
+ bättre avkastning på investeringen än sporadiska mätningar med diskutabel
+ kvalitet.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ekonomisk jämförelse mellan on- och off-line mätutrusting
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Ekonomisk-jämförelse-ONOFF"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<column alignment="center" valignment="top" width="0pt" special="r">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<column alignment="center" valignment="top" width="0pt" special="r">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Off-line
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+On-line
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hårdvara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 Tkr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hårdvara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500 Tkr
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mjukvara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 Tkr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mjukvara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200 kr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Personal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Personal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maskiner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 st
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maskiner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 st
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätpunkter per maskin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mätpunkter per maskin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Två mätningar per månad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24 mätningar per dag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Kostnad per mätning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4000 kr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Kostnad per mätning
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40 kr
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Investeringskalkyl
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Investeringskalkyl"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Projektbudgeten baseras på uppskattningar utifrån erfarenhetstal och en
+ begränsad marknadsanalys.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Budgetkalkyl för projektet.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="10">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0.01cm">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0.1cm">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Utgifter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Vecka 1
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Vecka 2
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Vecka 3
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timmar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kostnad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timmar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kostnad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Timmar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kostnad
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Löner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Per Hammare
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9240
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lena Spik
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11880
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1760
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5720
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Material
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Se Tabell 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+94408
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sub total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+114648
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1760
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14960
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+131368
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kalkylae
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fiesta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Kostnad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Materiel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Installation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+400
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Personal drift
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+600/h
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

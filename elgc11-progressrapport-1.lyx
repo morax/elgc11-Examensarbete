@@ -1,0 +1,1120 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage{psfrag}
+\usepackage{calc}
+\usepackage{pgfgantt}
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Kod}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+\usepackage[toc,page,titletoc]{appendix}
+\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixpagename}{Bilagor}
+\renewcommand{\appendixtocname}{\Large{Bilagor}}
+\noappendicestocpagenum
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Settings specially for swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Decimal comma
+\mathchardef\CommaOrdinary="013B
+\mathchardef\CommaPunct   ="613B
+\mathcode`,="8000
+{\catcode`\,=\active
+\gdef ,{\obeyspaces\futurelet\next\CommaCheck}}
+\def\CommaCheck{\if\space\next\CommaPunct\else\CommaOrdinary\fi}
+
+% Get rid of the spacing used in english typesetting
+\frenchspacing
+
+% Paragraph indentation style
+\setlength{\parindent}{1em}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Common abbreviations in Swedish %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xspace}
+\newcommand{\bla}{bl.\hspace{0.1em}a.\xspace}
+\newcommand{\ca}{ca\xspace}
+\newcommand{\dvs}{dvs.\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\kl}{kl.\xspace}
+\newcommand{\mfl}{m.\hspace{0.1em}fl.\xspace}
+\newcommand{\mm}{m.\hspace{0.1em}m.\xspace}
+\newcommand{\obs}{obs.\xspace}
+\newcommand{\osv}{osv.\xspace}
+\newcommand{\pga}{p.\hspace{0.1em}g.\hspace{0.1em}a.\xspace}
+\newcommand{\sk}{s.\hspace{0.1em}k.\xspace}
+\newcommand{\tillex}{t.\hspace{0.1em}ex.\xspace}
+
+% END
+
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+% \usepackage{appendix}
+% \renewcommand{\appendixtocname}{\Large{Bilagor}}
+
+
+%Settings
+
+\lstset{
+         basicstyle=\footnotesize\ttfamily,
+         numbers=left,               
+         numberstyle=\tiny,          
+         %stepnumber=2,               
+         numbersep=5pt,             
+         tabsize=2,                  
+         breaklines=true,                
+         frame=b,           
+         showspaces=false,           
+         showtabs=false,             
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false,     
+         texcl=true,
+         inputencoding=utf8,
+         language=Java,
+         stringstyle=\color{red}\ttfamily,
+         keywordstyle=\color{blue},
+         commentstyle=\color{ForestGreen},
+         extendedchars=\true,
+         escapeinside={\%*}{*)}
+         } 
+
+\captionsetup[figure]{textfont=it}
+\captionsetup[table]{textfont=it}
+\renewcommand{\arraystretch}{1.3} 
+
+\psfrag{l0}{$l_0$}
+\psfrag{l}{$l$}
+\psfrag{P}{$P$}
+\psfrag{delta}{$\delta$}
+\psfrag{y=kx+m}{$P=k\cdot\delta$}
+\psfrag{A}{$A$}
+\psfrag{B}{$B$}
+\psfrag{C}{$C$}
+\psfrag{D}{$D$}
+\psfrag{X}{$X$}
+
+\usepackage{tikz}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage[explicit]{titlesec}
+
+
+
+
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\sectionlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-2cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=Gold] (0,0) rectangle
+          (\paperwidth,3cm);
+        \node[anchor=east,xshift=.9\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=LightGrey]
+              {\color{black}\chapterlabel#1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+
+
+\usepackage{graphicx}
+
+%% Hack by Heiko Oberdiek (on de.comp.text.tex)
+\usepackage{tabularx}
+
+%% Redefine the standard table
+\let\ORIGtabular\tabular
+\let\ORIGendtabular\endtabular
+\let\ORIGtabularx\tabularx
+\renewcommand*{\tabularx}{%
+  \def\tabular{%
+    \let\endtabular\ORIGendtabular
+    \ORIGtabular
+  }%
+  \ORIGtabularx
+}
+
+\renewcommand{\tabular}{%
+%% The width of the table. Adjust if needed
+  \tabularx{\linewidth}%
+}
+
+\renewcommand{\endtabular}{\endtabularx} 
+\renewcommand{\arraystretch}{1.3}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-sec-bytype
+tabs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language swedish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Progressrapport 1"
+\pdf_author "Henrik Storm, Simon Lundell"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue, citecolor=blue, urlcolor=blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Progressrapport 1
+\begin_inset Newline newline
+\end_inset
+
+Vibrationsövervakning av Fortums maskinparker
+\end_layout
+
+\begin_layout Address
+
+\series bold
+Från:
+\series default
+ Henrik Storm, Simon Lundell
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Till:
+\series default
+ Peter Blomberg, Peter Röjder, Krister Ström, Bo Johansson, Torbjörn Berg
+\end_layout
+
+\begin_layout Address
+Karlstads Universitet, Fakulteten för teknik- och naturvetenskap
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bakgrund
+\end_layout
+
+\begin_layout Standard
+Fortum är ett ledande energiföretag i norden med elproduktion på ca 52.3TWh
+ varav 48% kommer från vattenkraft.
+ Fortum har 211 kraftverk i Sverige och på dessa är tilgänglighet av hög
+ prioritet.
+\end_layout
+
+\begin_layout Subsection
+Projektmål
+\end_layout
+
+\begin_layout Standard
+Utred om vibrationsmätning är av intresse för Fortum genom att svara på
+ följande frågor
+\end_layout
+
+\begin_layout Itemize
+Vilka potentiella skador kan mätas?
+\end_layout
+
+\begin_layout Itemize
+Kan vibrationsanalys påvisa hittills okända problem?
+\end_layout
+
+\begin_layout Itemize
+Hur stor säkerhet har vibrationsmätningarna på fysiska problem?
+\end_layout
+
+\begin_layout Itemize
+Har mätningarna betydelse för föebyggande underhållsarbete?
+\end_layout
+
+\begin_layout Standard
+Om ovanstående punkter visar sig vara av vikt utöka med följande frågeställning
+\end_layout
+
+\begin_layout Itemize
+Hur ska mätningarna göras?
+\end_layout
+
+\begin_layout Itemize
+Vilken mätutrustning är lämplig för de olika maskinparkerna?
+\end_layout
+
+\begin_layout Itemize
+Vem skall analysera mätdatan?
+\end_layout
+
+\begin_layout Itemize
+Hur skall mätdata lagras?
+\end_layout
+
+\begin_layout Itemize
+Utforma en kostnadskalkyl som påvisar om investeringen är lönsam eller ej.
+\end_layout
+
+\begin_layout Subsection
+Tidsgräns
+\end_layout
+
+\begin_layout Itemize
+Projektet skall vara klart för överlämnande före kl 10.00 torsdagen den 24:e
+ maj 2012.
+\end_layout
+
+\begin_layout Section
+Dagssituation
+\end_layout
+
+\begin_layout Standard
+Projektet fortskrider i stort sett enligt tidsplanen och följande är gjort
+ i nuläget 
+\end_layout
+
+\begin_layout Itemize
+Grunden i litteraturstudien är klar och vi har en tydlig bild av problemformuler
+ingen.
+ Allmän teori om vibrationer och CBM är implementerad i rapporten
+\end_layout
+
+\begin_layout Itemize
+Underlag för besök vid Kymmens vattenkraftverk 2012-04-13 färdigställt
+\end_layout
+
+\begin_layout Itemize
+Rapportmallen är färdigprogrammerad och inlämnad till fakultetsadministratör
+ Marika Johansson för godkännande
+\end_layout
+
+\begin_layout Itemize
+Beräkningschablon för frekvensanalys klar
+\end_layout
+
+\begin_layout Section
+Problem
+\end_layout
+
+\begin_layout Standard
+På grund av mängden människor vi håller kontakt med har detta bidragit med
+ lite oberäknad ledtid.
+ Det har varit svårt att hitta publicerat materiel inom CBM med anknytning
+ till vibrationsanalys i bokform.
+ På grund av detta har arbetet blivit en aning förskjutet tidsmässigt men
+ vi anser att det inte kommer ha så stor effekt i slutändan då många av
+ arbetspaketen ej är strikt beroende av varandra.
+\end_layout
+
+\begin_layout Section
+Planerat arbete 2012-04-13 -- 2012-05-05
+\end_layout
+
+\begin_layout Standard
+Ett besök vid Kymmens vattenkraftverk är inbokat 2012-04-13 och om vi anser
+ att det behövs planeras även in ett möte vid Dejefors kraftverk.
+ Efter besöket/besöken sammanställs en lista över utrustning som rekomenderas
+ och offerter skickas ut till potentiella leverantörer.
+ Fortsatt litteraturstudie med fokus på CBM och On/Off-line övervakning.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-gantt.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kontaktlista
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Kontaktlista
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="l">
+<column alignment="center" valignment="top" width="0pt" special="X">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt" special="l">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Namn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Roll
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Telefon
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+E-post
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Henrik Storm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projektledare
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+073-833 52 39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "thatdamnstorm@gmail.com"
+target "thatdamnstorm@gmail.com"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simon Lundell
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projektledare
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+076-195 10 21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "simonlundell@hotmail.com"
+target "simonlundell@hotmail.com"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Peter Blomberg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PB, Area Manager
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070-329 50 60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "peter.a.blomberg@fortum.com"
+target "peter.a.blomberg@fortum.com"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Krister Ström
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Handledare
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070-376 81 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "krister.strom@fortum.com"
+target "krister.strom@fortum.com"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bo Johansson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Handledare
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070-661 08 13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "bo.j.johansson@fortum.com"
+target "bo.j.johansson@fortum.com"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Torbjörn Berg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Handledare (KAU)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+054-700 12 29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "torbjorn.berg@kau.se"
+target "torbjorn.berg@kau.se"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Peter Röjder
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Examinator (KAU)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+054-700 17 91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "peter.rojder@kau.se"
+target "peter.rojder@kau.se"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Roine Söderström
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Underhållstekniker
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070-611 10 60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lennart Håkansson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fd.
+ Mättekniker
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070-598 35 58
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bengt Carlsson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D &Uh Kymmen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070-329 70 69
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "bengt.karl-erik.carlsson@fortum.com"
+target "bengt.karl-erik.carlsson@fortum.com"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Per Hult
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kontaktperson Kymmen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070-329 72 29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

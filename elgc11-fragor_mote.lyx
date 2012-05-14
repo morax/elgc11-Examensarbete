@@ -1,0 +1,537 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+\usepackage{pgfgantt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language swedish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Under mötet
+\end_layout
+
+\begin_layout Itemize
+Varför ska vi hålla på med vibrationsmätning? Konkret varför skall det satsas
+ pengar
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+undviks haverier?
+\end_layout
+
+\begin_layout Itemize
+ändra intervaller på underhåll?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tillgänglighet har hög prioritet
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+får ej störa produktionen
+\end_layout
+
+\begin_layout Itemize
+kan vibrationsmätning underlätta
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Hur stor säkerhet har vibrationsmätningarna på fysiskt problem?
+\end_layout
+
+\begin_layout Itemize
+Kan vibrationsmätningar pinpointa vart problemet ligger?
+\end_layout
+
+\begin_layout Subsection
+Om ovan stämmer
+\end_layout
+
+\begin_layout Standard
+Går det att skala mätningarna mellan de små och stora kraftverken
+\end_layout
+
+\begin_layout Enumerate
+Fasta givare installerade 
+\end_layout
+
+\begin_layout Enumerate
+Portabel utrustning där manuell mätning görs
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Vem gör det?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ska det vara portabelt på de små och fast på de stora?
+\end_layout
+
+\begin_layout Enumerate
+Presentera en kostnandskalkyl över vilken utrustning som behövs
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+>90GWh kategori 1
+\end_layout
+
+\begin_layout Enumerate
+10 -- 90 GWh kategori 2
+\end_layout
+
+\begin_layout Enumerate
+<10 kategori 3 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Produktionsvärde (~500kr/MWh)
+\end_layout
+
+\begin_layout Enumerate
+När systemet är installerat, vem gör mätningarna och eventuellt analys
+\end_layout
+
+\begin_layout Enumerate
+Vart lagras mätvärdena, egen laptop, server, hos konsulter?
+\end_layout
+
+\begin_layout Standard
+Generell utgångspunkt: om du är ägare av kraftverket, hur skulle du göra?
+\end_layout
+
+\begin_layout Standard
+Finns det intresse av att analysera kringutrustning (pumpar etc)?
+\end_layout
+
+\begin_layout Section
+Allmänt
+\end_layout
+
+\begin_layout Enumerate
+Vem/vilka anses vara huvudintressenter till projektet?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+- alla som är intresserade av vattenkraftverk
+\end_layout
+
+\begin_layout Enumerate
+finns några primära och sekundära krav?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+varför
+\end_layout
+
+\begin_layout Enumerate
+hur
+\end_layout
+
+\begin_layout Enumerate
+vad vinner jag när jag installerar systemet?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+önskemål? 
+\end_layout
+
+\begin_layout Enumerate
+övrigt?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Önskas någon specifik titel på projektet?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+- Vibrationsmätning i vattenkraftverk
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Hur ser dagens övervakning ut? 
+\end_layout
+
+\begin_layout Enumerate
+Hur stort är beståndet av maskinparker
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+hur många generatorer/turbiner övervakas i dagsläget per mätsystem?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I dagsläget mäts ca 85 stationer
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Vilket/vilka fabrikat av mätutrustning används?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+- blandning av många fabrikat och leverantörer, SKF i klarälvdalen, skickar
+ data på analys
+\end_layout
+
+\begin_layout Enumerate
+vad mäts (lager/axlar/maskinhus etc)?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+-- lager, stator, växellåda, matare, övre och nedre styrlager, bärlager
+ turbinstyrlager, vägellåda låg och högvarv och ledskenor
+\end_layout
+
+\begin_layout Enumerate
+generatorer:
+\end_layout
+
+\begin_layout Enumerate
+turbiner:
+\end_layout
+
+\begin_layout Enumerate
+övrigt:
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Vem sköter
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+mätning (handhållen): fasthållen och lösa givare
+\end_layout
+
+\begin_layout Enumerate
+övervakning: en gång per år med kommentar, Höljes är Online.
+ Håller på att testa online, utred om det är bra att fortsätta utvecklingen
+ i det spåret.
+\end_layout
+
+\begin_layout Enumerate
+underhåll av mätutrustningen:
+\end_layout
+
+\begin_layout Enumerate
+analys av mätdata: primärt skickas data till SKF (mfl)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Finns det några problem i dagsläget?
+\end_layout
+
+\begin_layout Standard
+Inget direkt problem i dagsläget, förutsättningslöst.
+\end_layout
+
+\begin_layout Enumerate
+Om så finns det misstankar om något visst område?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+behöver någon specifik del bytas ofta?
+\end_layout
+
+\begin_layout Enumerate
+samma problem i alla maskinparker?
+\end_layout
+
+\begin_layout Enumerate
+vilka/vilket problem skall vi lägga störst fokus på?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Begränsningar i dagens mätsystem som Fortum vill åtgärda?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+felaktiga larm?: inget i dagsläget, men vibrationsvakter kanske ska implementera
+s?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Planeras redan i dagsläget en utökning av det befintliga systemet?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+påträffas begränsningar?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+när startade mätningar? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+I alla fall sedan 80-talet
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Research och analys
+\end_layout
+
+\begin_layout Itemize
+Analysera minst en kaplan och en fransis
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+finns både horisontell och vertikal funktion
+\end_layout
+
+\begin_layout Itemize
+(fransis) Kymmen 55Mw
+\end_layout
+
+\begin_layout Itemize
+(kaplan) Dejefors 92-93, ~120m^3
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Vem/vilka på Fortum kan vi ha kontakt med gällande information om befintligt
+ system?
+\end_layout
+
+\begin_layout Enumerate
+Kommer något av det material vi tar del av vara sekretessbelagt? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+om så till vilken grad kan vi publicera materialet? (räcker det med luddig
+ beskrivning?)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Analys av turbiner/generatorer ska de göras på plats eller räcker det med
+ godtyckliga mätvärden utifrån ritningar?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+finns ritningar? 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Prio på hela analysen: varför ska vi ha det här analyserat? Historian är
+ inte så viktig då den kan vara svajig.
+ Frågelställnig: varför ska ett vibrationsmätningssystem implementeras i
+ ett nytt kraftverk (nybygge)
+\end_layout
+
+\begin_layout Section
+Ekonomi
+\end_layout
+
+\begin_layout Enumerate
+Behöver vi tänka på den ekonomiska biten?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+skall vi skicka ut offerter?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Kostnadsram av nytt system alternativt påbyggnad av befintligt mätsystem
+\end_layout
+
+\begin_layout Enumerate
+Mål med underhållsystemet ekomomiskt sett
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+minska unherhållskostnad? 
+\end_layout
+
+\begin_layout Enumerate
+öka tillgängligheten?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Kostnader i dagsläget
+\end_layout
+
+\begin_layout Enumerate
+Personal
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+egen
+\end_layout
+
+\begin_layout Enumerate
+konsulter: analyskostnad 2000kr/faktura och 135kr/enhet (mätpunkt)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Utrustning
+\end_layout
+
+\begin_layout Enumerate
+Produktionsbortfall (kostnad) pga oplanerat driftstopp
+\end_layout
+
+\begin_layout Standard
+En investeringskalkyl utan tidigare data presenteras.
+\end_layout
+
+\begin_layout Section
+Avgränsningar
+\end_layout
+
+\begin_layout Enumerate
+Räcker det med en schablon med riktlinjer utifrån ett kraftverk?
+\end_layout
+
+\begin_layout Section
+Rapporter
+\end_layout
+
+\begin_layout Standard
+Skapa en tidsplanering åt grabbarna där vi behöver saker från Fortum.
+\end_layout
+
+\begin_layout Standard
+Kontaktpersoner: Krister Ström, deje Tord, kymmen Bo.
+\end_layout
+
+\begin_layout Enumerate
+Finns det någon specifik punkt Ni vill ha med?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+svaret på frågorna är mest intressant.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Önskas delrapporter och om så hur frekvent?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ja, vid varje delmål (månadsskiften)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-gantt.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
