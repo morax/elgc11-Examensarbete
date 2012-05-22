@@ -103,14 +103,10 @@ Inledning
 \end_layout
 
 \begin_layout Standard
-Vibrationsmätning är inget nytt fenomén men många företag anser sig ändå
- skeptiska till den abstrakta metoden.
- Samma skeptisism finns inte vid ett läkarbesök där doktorn lyssnar efter
- oljud med sitt stetoskop, ändå är likheterna slående.
- Med dagens teknik är det möjligt att diagnostisera en maskins olika beståndsdel
-ar efter skador genom att analysera det unika vibrationsmönster de bidrar
- med.
- 
+
+\emph on
+Detta kapitel presenterar syftet och metoden till varför detta arbete utförts
+ och inleds med en bakgrund av Fortums företagssituation och underhållsstrategi.
 \end_layout
 
 \begin_layout Section
@@ -170,10 +166,10 @@ tning är en av dom.
 \end_layout
 
 \begin_layout Standard
-Dessa vibrationsmätningar har man sedan gjort på Fortums vattenkraftverk
- sedan mitten av 80-talet och då med hjälp av konsulter.
+Dessa vibrationsmätningar har man gjort på Fortums vattenkraftverk sedan
+ mitten av 80-talet och då med hjälp av konsulter.
  Dessa konsulter har gjort schemalagda vibrationsmätningar på de olika vattenkra
-ftverken med portabel vibrations- mätutrusning.
+ftverken med portabel vibrationsmätutrusning.
  Konsulterna har sedan lagrat och gjort analys av erhållen mätdata och rapporter
 at status på de aktuella maskinerna samt potentiella fel som kan existera.
 \end_layout

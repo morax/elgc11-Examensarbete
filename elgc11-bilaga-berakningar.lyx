@@ -75,6 +75,11 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
+\branch Ej implementerat
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -114,17 +119,21 @@ Tillgänglighet
 \end_layout
 
 \begin_layout Standard
-totala tillgängligheten av kraftverket beräknat genom formeln (se vidare
- Bergman och Klefsjö, 1996): Bergman, B.
- och Klefsjö, B., (1996), Tillförlitlighet, Studentlitteratur, Luleå Tekniska
- Universitet.
- 
+Totala tillgängligheten är ett driftsäkerhetsmått av kraftverket beräknat
+ genom följande formel 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "driftsakerhet_och_underhall"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-A_{0}=\frac{MTBF}{MTBM+MLDT+MTW(A)+\bar{M}}
+A_{0}=\frac{MTBM}{MTBM+MLDT+MTW(A)+\overline{M}}
 \]
 
 \end_inset
@@ -161,19 +170,12 @@ där:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\bar{M}$
+\begin_inset Formula $\overline{M}$
 \end_inset
 
- = Mean Maintenance Time, vilket innefattar väntvärdet av den aktiva tiden
- för underhåll inräknat både avhjälpande och förebyggande underhåll 
-\end_layout
-
-\begin_layout Section
-Underhållsterminologi
-\end_layout
-
-\begin_layout Standard
-Swedish Standards Institute, “Underhåll - Terminologi”, SS-EN 13305, 2001.
+ = Mean Maintenance Time, vilket innefattar medeltiden av den aktivt underhåll
+ inräknat både avhjälpande och förebyggande som innebär funktionsavbrytande
+ ingrepp.
  
 \end_layout
 
@@ -182,8 +184,203 @@ Ekonomiberäkning
 \end_layout
 
 \begin_layout Standard
-Följande beräkningar utgår från 50% vinstmarginal samt ett snittpris på
- 45 öre/kWh.
+Följande beräkningar är schablonberäkningar över hur mycket Fortum skulle
+ kunna tjäna på att förhindra oberäknade driftstopp i sina anläggningar.
+ Det är antaget att snittpriset på producerad el är 45 öre och en vinstmarginal
+ på 50%, detta ger en ren vinst på 0,225kr/kWh.
+ Det är också antaget att snittdrivtiden på ett vattenkraftverk är 4000h/år
+ samt en storlek på 40MW.[1] Det antas även att underhållskostnaden är den
+ blygsamma siffran 400kr/h inkl.
+ arbete och material.
+\end_layout
+
+\begin_layout Standard
+Med dessa siffror kan man enkelt räkna ut att man tjänar 4110kr/h vilket
+ även innebär att man förlorar lika mycket vid utebliven produktion.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+MTBF & = & \cfrac{4000-140}{1}=3860h\\
+MTW=MLDT+MTW(A) & = & \frac{92+8}{1}=100h\\
+\overline{M} & = & \frac{40}{1}=40h
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\cfrac{MTBF}{MTBF+MTW+\overline{M}}=\cfrac{3860}{3860+40+100}=0,965
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Om man nu inför CBM kan man såklart minska antal fel per år, men låt oss
+ för enkelhetens skull anta att 1 fel per år kvarstår, men att man minskar
+ 
+\begin_inset Formula $MTW$
+\end_inset
+
+ och 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\overline{M}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ avsevärt.
+ Låt oss därför anta att man med hjälp av CBM kunde förutspå haveri vilket
+ medför att allt finns på plats och därför minskar MWT = 2 samt MTTR = 10.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\cfrac{3860}{3860+10+2}=0,997
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Reparationskostnader före och efter FU 
+\end_layout
+
+\begin_layout Standard
+Före FU: 1 fel Kostnad: 
+\begin_inset Formula 
+\[
+\overline{M}\cdot400=40\cdot400=16000kr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Efter FU: 1 fel Kostnad: 
+\begin_inset Formula 
+\[
+\overline{M}\cdot400=10\cdot400=4000kr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Stillestående kostnad före och efter FU
+\end_layout
+
+\begin_layout Standard
+Före FU: 1 fel Kostnad: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(\overline{M}+MTW)\cdot4110=(40+100)\cdot4110=575400kr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Efter FU: 1 fel Kostnad: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(\overline{M}+MTW)\cdot4110=(10+2)\cdot4110=49320kr
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum$
+\end_inset
+
+ kostnad före FU 
+\begin_inset Formula $=16000+575400=591400kr$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum$
+\end_inset
+
+ kostnad efter FU 
+\begin_inset Formula $=8000+49320=57320kr$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Detta resulterar i en differens på 534 080kr.
+ Denna summa kan man använda som en god riktlinje för vad man är villig
+ att investera i sin CBM.
+ Det ger såklart även en möjlighet att uppskatta hur lång tid det dröjer
+ innan man har fått tillbaks sin investering och ren vinst genereras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Ej implementerat
+status open
+
+\begin_layout Section
+Underhållsterminologi
+\end_layout
+
+\begin_layout Standard
+[ej klar] Swedish Standards Institute, “Underhåll - Terminologi”, SS-EN
+ 13305, 2001.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

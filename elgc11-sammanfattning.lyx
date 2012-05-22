@@ -134,6 +134,24 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
+Vibrationsmätning är inget nytt fenomén men många företag anser sig ändå
+ skeptiska till den abstrakta metoden.
+ Samma skeptisism finns inte vid ett läkarbesök där doktorn lyssnar efter
+ oljud med sitt stetoskop, ändå är likheterna slående.
+ Med dagens teknik är det möjligt att diagnostisera en maskins olika beståndsdel
+ar efter skador genom att analysera det unika vibrationsmönster de bidrar
+ med.
+ 
+\end_layout
+
+\begin_layout Standard
+Detta arbete syftar att minska denna barriär med hjälp av en introduktion
+ till de olika begrepp och val som finns inom vibrationsteknisk analys som
+ hjälpmedel för underhåll och slutligen presentera en implementeringsmall
+ där ekonomi och tillgänglighet anses vara mest vital inför framtida beslut.
+\end_layout
+
+\begin_layout Standard
 Sammanfattningen bör ej överskrida 300 ord.
 \end_layout
 

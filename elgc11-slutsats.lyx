@@ -112,18 +112,79 @@ name "chap:Slutsats"
 \begin_layout Standard
 
 \emph on
-Vibrationsmätning är inget nytt fenomén men många företag anser sig ändå
- skeptiska till den abstrakta metoden.
- Samma skeptisism finns inte vid ett läkarbesök där doktorn lyssnar efter
- oljud med sitt stetoskop, ändå är likheterna slående.
- Med dagens teknik är det möjligt att diagnostisera en maskins olika beståndsdel
-ar efter skador genom att analysera det unika vibrationsmönster de bidrar
- med.
- 
+Detta kapitel presenterar slutsatserna av detta arbete och inleds med en
+ diskussion gällande de problem som observerats under arbetets gång och
+ avslutas med riktlinjer för vidare studier och implementation av övervakningssy
+stem.
+\end_layout
+
+\begin_layout Section
+Problematiken med källor
 \end_layout
 
 \begin_layout Standard
-Det vi kommit fram till i denna rapport är ...
+Under arbetets uppbyggnad har kritiken till de källor som studerats ökat
+ i takt med mängden referenser.
+ En genomgående trend är att den litteratur som går att hitta inom vibrationstek
+nik och CBM som inte är skriven av företag som säljer tjänster inom dessa
+ områden.
+ Även ytterst liten andel forskning verkar bedrivas opartiskt, då främst
+ inom vibrationstekniska området.
+ 
+\end_layout
+
+\begin_layout Section
+Ekonomisk trovärdighet
+\end_layout
+
+\begin_layout Standard
+De ekonomiska kalkylerna är mycket svåra att göra bra då väldigt lite nödvändig
+ information finns att tillgå, och därför används några värden som saknar
+ referens.
+ Kalkylerna är dock fortfarande bra för att skapa en god bild över hur relativt
+ små förändringar i t.ex väntetider och reparationstider skapar stora förändringa
+r i kostnader.
+ Detta anser vi är viktigt att poängtera då det är en stor (kanske den största)
+ punkt i vårt argument till varför man bör överväga att implementera CBM.
+\end_layout
+
+\begin_layout Standard
+Trovärdigheten på kalkylerna om man antar att värdena stämmer överens med
+ verkligheten anses hög, det inte är några avancerade kalkyler med många
+ oförklarliga termer.
+ Det ses enkelt i kalkylen och man inser även med sunt förnuft att lyckas
+ man förutse ett haveri och kan ha allt redo för när man skall byta/underhålla
+ skadad del kommer man att tjäna pengar.
+ 
+\end_layout
+
+\begin_layout Section
+Avancerad teknik kräver stort fokus
+\end_layout
+
+\begin_layout Standard
+För att implementera utrustning mot CBM behöver hela företaget ha insyn
+ i tekniken eftersom investeringen är såpass hög och tidskrävande måste
+ alla berörda parter hålla fokus på målet och 
+\emph on
+varför
+\emph default
+ genomförandet har betydelse.
+ CBM är en relativt ny teknik och även om grunden är beprövad måste man
+ förstå att det är en prognostisk metod som bör användas som hjälpmedel
+ men inte ersätta underhållet helt.
+\end_layout
+
+\begin_layout Section
+Bör Fortum satsa på vibrationsmätningar?
+\end_layout
+
+\begin_layout Standard
+Vibrationsmätningar kan användas i olika faser av underhållet, från bestämning
+ av egenfrevenser till haverianalys och bestämning av underhållsintervall
+ därför anser vi att åt minståne portabel utrustning är ett viktigt verktyg
+ oavsett storlek på kraftverken.
+ 
 \end_layout
 
 \end_body

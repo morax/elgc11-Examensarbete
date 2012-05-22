@@ -212,33 +212,6 @@
 
 
 
-\usepackage[explicit]{titlesec}
-\newcommand*\chapterlabel{}
-\titleformat{\chapter}
-  {\gdef\chapterlabel{}
-   \normalfont\sffamily\Huge\bfseries\scshape}
-  {\gdef\chapterlabel{\thechapter\ }}{0pt}
-  {\begin{tikzpicture}[remember picture,overlay]
-   \node[yshift=-2cm] at (current page.north west)
-      {\begin{tikzpicture}[remember picture, overlay]
-        \draw[fill=Gold] (0,0) rectangle
-          (\paperwidth,3cm);
-   \ifthenelse{\isodd{\thepage}}
-       { \node[anchor=east,xshift=.9\paperwidth,rectangle,
-              rounded corners=20pt,inner sep=11pt,
-              fill=LightGrey]
-              {\color{black}\chapterlabel#1};}
-       { \node[anchor=west,xshift=.1\paperwidth,rectangle,
-              rounded corners=20pt,inner sep=11pt,
-              fill=LightGrey]
-              {\color{black}\chapterlabel#1};}
-       \end{tikzpicture}
-      };
-   \end{tikzpicture}
-  }
-\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Psfrags 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -275,6 +248,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 %% End of psfrags
 %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[explicit]{titlesec}
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+   \node[yshift=-2cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=Gold] (0,0) rectangle
+          (\paperwidth,3cm);
+   \ifthenelse{\isodd{\thepage}}
+       { \node[anchor=east,xshift=.9\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=LightGrey]
+              {\color{black}\chapterlabel#1};}
+       { \node[anchor=west,xshift=.1\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=LightGrey]
+              {\color{black}\chapterlabel#1};}
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
 \end_preamble
 \options svgnames,liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot,twoside,parskip=half
 \use_default_options true
@@ -319,7 +319,7 @@ theorems-sec-bytype
 \pdf_pdfusetitle true
 \pdf_quoted_options "linkcolor=NavyBlue, citecolor=DarkRed, urlcolor=Blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
 \papersize a4paper
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -347,6 +347,11 @@ theorems-sec-bytype
 \end_branch
 \branch E-publikation
 \selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Ej implementerat
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -480,6 +485,10 @@ filename "elgc11-sammanfattning.lyx"
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -561,16 +570,6 @@ filename "elgc11-teori.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "elgc11-analys.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "elgc11-resultat.lyx"
 
 \end_inset
 

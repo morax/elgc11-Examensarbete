@@ -270,6 +270,14 @@ name "chap:Teori"
 
 \end_layout
 
+\begin_layout Standard
+
+\emph on
+Detta kapitel beskriver teorin bakom vibrationsanalys och en introduktion
+ till tillståndsbaserat underhåll som ligger till grund för detta examensarbete.
+ 
+\end_layout
+
 \begin_layout Section
 Vibrationsanalys
 \begin_inset CommandInset label
@@ -405,7 +413,7 @@ key "Vibrationer-Resonanser_och_krit.varv"
 \end_layout
 
 \begin_layout Standard
-För utom kritiska varvtal är självexciterande resonanser så som Oil whip
+Förutom kritiska varvtal är självexciterande resonanser så som Oil whip
  i glidlager de särklass viktigaste vibrationerna att övervaka då en resonanssvä
 ngning bygger upp sig själv från nästan ingenting tills dess att systemets
  mekaniska begränsningar sätter stopp för ökningen.
@@ -414,7 +422,10 @@ ngning bygger upp sig själv från nästan ingenting tills dess att systemets
 \end_layout
 
 \begin_layout Standard
-
+Kavitation är ett tillstånd som ofta uppträder i vattenturbiner i samband
+ med att ett reducerat vätsketryck skapar bubblor nära rotorns yta.
+ När bubblorna spricker överförs ganska stora krafter på rotorn vilket leder
+ till att gropar bildas på ytan.
 \end_layout
 
 \begin_layout Subsection
@@ -901,7 +912,7 @@ För att avgöra om de uppmätta vibrationerna är skadliga finns två metoder
  vibrationsnormer från industristandard och ISO.
  Generellt används standardnormer då primärt SS-EN 10816 där en tumregel
  är att vibrationsamplituden skall hållas under 
-\begin_inset Formula $3\,\mbox{\nicefrac{mm}{\mbox{s}}}$
+\begin_inset Formula $3\,\mbox{\nicefrac{\mbox{mm}}{\mbox{s}}}$
 \end_inset
 
  RMS och att hastigheter över 
@@ -1937,7 +1948,7 @@ Konstant kvalitet på mätningarna
 \begin_inset Text
 
 \begin_layout Plain Layout
-Ekonomisk (dyrt?) för kritiska maskiner
+Analys av data kan vara komplex
 \end_layout
 
 \end_inset
@@ -1975,7 +1986,7 @@ Direktlarm vid maskinfel
 \begin_inset Text
 
 \begin_layout Plain Layout
-Analys av data kan vara komplex
+Kräver en utbildad diagnostiker eller konsult
 \end_layout
 
 \end_inset
@@ -2013,7 +2024,7 @@ Amplitud, frekvens, fas och last mäts
 \begin_inset Text
 
 \begin_layout Plain Layout
-Kräver en utbildad diagnostiker eller konsult
+Hög kostnad per mätpunkt
 \end_layout
 
 \end_inset
@@ -2051,7 +2062,7 @@ Mycket kraftfullt analysinstrument
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hög kostnad per mätpunkt
+Relativt hög investeringskostnad
 \end_layout
 
 \end_inset
@@ -2080,7 +2091,7 @@ Kan länkas med annan processdata
 \begin_inset Text
 
 \begin_layout Plain Layout
-7
+
 \end_layout
 
 \end_inset
@@ -2089,7 +2100,7 @@ Kan länkas med annan processdata
 \begin_inset Text
 
 \begin_layout Plain Layout
-Relativt hög investeringskostnad
+
 \end_layout
 
 \end_inset
@@ -2291,7 +2302,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Överblick av de olika underhållstyperna
+Överblick av de olika underhållstyperna utifrån SS-EN 13306:2010 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Underhållstyper"
@@ -2331,8 +2342,15 @@ description "Tillståndsbaserat underhåll eng. \\emph{Condition Based Maintenan
 \end_inset
 
 ) är en underhållsprocedur som går ut på att man övervakar tillståndet hos
- utrustningen och utifrån detta bestämmer när underhåll skall göras och
- vad som skall testas.
+ utrustningen och utifrån detta bestämmer 
+\emph on
+när
+\emph default
+ underhåll skall göras och 
+\emph on
+vad
+\emph default
+ som skall testas.
  CBM är snarlikt förutbestämt underhåll (PdM
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -2469,7 +2487,7 @@ P-F intervallet måste vara konsekvent nog så inte åtgärder görs för tidigt
  P-F intervallet skall vara definierat så en tydlig varning uppstår med
  erfodelig tid för planering och utförande av åtgärd.
  Mest relevant i detta sammanhang är att underhållet måste vara billigare
- än ett potentiellt haveri över MTBF (meantime between failures).
+ än ett potentiellt haveri över MTBF (Mean Time Between Failures).
  
 \end_layout
 
@@ -2538,6 +2556,26 @@ Nyckelordet för en lyckad implementering av CBM system är långsiktig planerin
 rbetet måste en grundlig analys av befintligt underhåll göras.
  Allt som inte fungerar enligt orginalplanen måste rättas till före en större
  förändring initieras.
+\end_layout
+
+\begin_layout Standard
+Eftersom grundtanken med ett CBM system är mjukvarustyrda prognoser krävs
+ högkvaltiativ mätdata så val av givare och dess installation bör göras
+ med största omsorg.
+ Man kan med fördel använda sig av utrustning som följer någon av följande
+ tre standarder
+\end_layout
+
+\begin_layout Itemize
+IEEE 1451
+\end_layout
+
+\begin_layout Itemize
+OSA-CBM
+\end_layout
+
+\begin_layout Itemize
+MIMOSA
 \end_layout
 
 \begin_layout Subsection
