@@ -310,9 +310,9 @@ Om man regelbundet övervakar maskinens kondition kan man upptäcka problem
 \begin_layout Standard
 Motsatsen är att inte övervaka vibrationerna vilket ofta leder till att
  maskinen körs tills den havererar.
- Onödigt underhåll och byte av friska delar är även de en effekt som kan
- elimineras med hjälp av vibrationsbevakning där underhållet schemaläggs
- allt efter maskinens kondidion.
+ Onödigt underhåll och byte av friska delar är även något som kan elimineras
+ med hjälp av vibrationsbevakning där underhållet schemaläggs allt efter
+ maskinens kondition.
 \end_layout
 
 \begin_layout Subsection
@@ -356,30 +356,16 @@ name "sub:Potentiella-fel"
 \end_layout
 
 \begin_layout Standard
-Många typer fel kan detekteras med hjälp av vibrationsövervakning och Tabell
+Många typer fel kan detekteras med hjälp av vibrationsövervakning och Bilaga
  
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Obalans"
-
-\end_inset
-
- -- 
-\begin_inset CommandInset ref
 LatexCommand vref
-reference "tab:Mekaniskt-glapp"
+reference "chap:Detekterbara-vibrationsorsaker"
 
 \end_inset
 
  visar en sammanfattning om vilka relevanta vibrationer som kan undersökas
- på ett kraftverk 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "maskinvibration,Vibrationer-vibrationsorsaker"
-
-\end_inset
-
-.
+ på ett kraftverk.
  
 \end_layout
 
@@ -458,7 +444,7 @@ Maskiner som bidrar med dyra, tidskrävande eller svåra reparationer vid
 \end_layout
 
 \begin_layout Enumerate
-Maskiner är kritiska för produktionen eller drift av kraftverket
+Maskiner kritiska för produktionen eller drift av kraftverket
 \end_layout
 
 \begin_layout Enumerate
@@ -473,12 +459,12 @@ Maskiner som kan påverka mänsklig eller miljömässig säkerhet
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figurer/processfloede.svg
-	width 80text%
+	filename figurer/processfloede.eps
+	width 50text%
 
 \end_inset
 
@@ -2600,13 +2586,13 @@ key "cbm-phd_thesis"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Sammanfattning av för och nackdelar med CMS system
+Sammanfattning av för och nackdelar med CBM system
 \end_layout
 
 \end_inset

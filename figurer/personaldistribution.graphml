@@ -15,13 +15,12 @@
   <graph edgedefault="directed" id="G">
     <data key="d7"/>
     <node id="n0" yfiles.foldertype="group">
-      <data key="d5"/>
       <data key="d6">
         <y:TableNode configuration="YED_TABLE_NODE">
-          <y:Geometry height="459.0177419354835" width="768.8544543850808" x="-3.456735131048376" y="-141.11612903225802"/>
-          <y:Fill color="#ECF5FF" color2="#0042F440" transparent="false"/>
+          <y:Geometry height="382.0177419354834" width="768.8544543850808" x="9.543264868951624" y="-91.11612903225802"/>
+          <y:Fill color="#ECECF1" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.45361328125" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="150.30126953125" x="309.2765924269154" y="4.0">Personaldistribution</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.45361328125" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="145.86279296875" x="311.4958307081654" y="4.0">Ansvarsdistribution</y:NodeLabel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="177.54296875" x="26.071399319556434" y="33.0">Vibrationsanalytiker / konsult<y:LabelModel>
               <y:ColumnNodeLabelModel offset="3.0"/>
             </y:LabelModel>
@@ -44,8 +43,8 @@
             </y:ModelParameter>
           </y:NodeLabel>
           <y:StyleProperties>
-            <y:Property class="java.awt.Color" name="yed.table.header.color.main" value="#c4d7ed"/>
-            <y:Property class="java.awt.Color" name="yed.table.section.color" value="#7192b2"/>
+            <y:Property name="yed.table.header.color.main"/>
+            <y:Property class="java.awt.Color" name="yed.table.section.color" value="#c0c0c0"/>
             <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_COLUMN_SELECTION_STYLE">
               <y:SimpleStyle fillColor="#474A4380" lineColor="#000000" lineType="line" lineWidth="3.0"/>
             </y:Property>
@@ -56,17 +55,17 @@
             <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_ROW_SELECTION_STYLE">
               <y:SimpleStyle fillColor="#474A4380" lineColor="#000000" lineType="line" lineWidth="3.0"/>
             </y:Property>
-            <y:Property class="java.awt.Color" name="yed.table.lane.color.alternating" value="#abc8e2"/>
-            <y:Property class="java.awt.Color" name="yed.table.header.color.alternating" value="#abc8e2"/>
+            <y:Property class="java.awt.Color" name="yed.table.lane.color.alternating" value="#d9d5d5"/>
+            <y:Property class="java.awt.Color" name="yed.table.header.color.alternating" value="#d9d5d5"/>
             <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_COLUMN_STYLE">
               <y:SimpleStyle fillColor="#474A4340" lineColor="#000000" lineType="line" lineWidth="1.0"/>
             </y:Property>
-            <y:Property class="java.awt.Color" name="yed.table.lane.color.main" value="#c4d7ed"/>
+            <y:Property class="java.awt.Color" name="yed.table.lane.color.main" value="#ffffff"/>
             <y:Property class="java.lang.Double" name="yed.table.header.height" value="24.0"/>
           </y:StyleProperties>
           <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
           <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-          <y:BorderInsets bottom="57" bottomF="57.22338709677388" left="11" leftF="11.234078881048376" right="50" rightF="49.84303175403238" top="22" topF="22.3983870967742"/>
+          <y:BorderInsets bottom="41" bottomF="41.223387096773735" left="11" leftF="11.234078881048376" right="50" rightF="49.84303175403238" top="14" topF="14.3983870967742"/>
           <y:Table autoResizeTable="true" defaultColumnWidth="120.0" defaultMinimumColumnWidth="80.0" defaultMinimumRowHeight="50.0" defaultRowHeight="80.0">
             <y:DefaultColumnInsets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
             <y:DefaultRowInsets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
@@ -83,7 +82,7 @@
               </y:Column>
             </y:Columns>
             <y:Rows>
-              <y:Row height="405.0177419354835" id="row_0" minimumHeight="50.0">
+              <y:Row height="328.0177419354834" id="row_0" minimumHeight="50.0">
                 <y:Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
               </y:Row>
             </y:Rows>
@@ -92,10 +91,9 @@
       </data>
       <graph edgedefault="directed" id="n0:">
         <node id="n0::n0">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="92.5" x="7.77734375" y="93.34758064516132"/>
+              <y:Geometry height="40.0" width="92.5" x="20.77734375" y="82.34758064516132"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="82.474609375" x="5.0126953125" y="4.037109375">Skapa 
@@ -104,10 +102,9 @@ felmedelande</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n1">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="135.5546875" y="93.34758064516132"/>
+              <y:Geometry height="40.0" width="80.0" x="148.5546875" y="82.34758064516132"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="73.462890625" x="3.2685546875" y="11.0185546875">Arbetsorder</y:NodeLabel>
@@ -115,10 +112,9 @@ felmedelande</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n2">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="235.5546875" y="93.34758064516132"/>
+              <y:Geometry height="40.0" width="80.0" x="248.5546875" y="82.34758064516132"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="50.1953125" x="14.90234375" y="4.037109375">Planera 
@@ -127,10 +123,9 @@ arbete</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n3">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="335.5546875" y="93.34758064516132"/>
+              <y:Geometry height="40.0" width="80.0" x="348.5546875" y="82.34758064516132"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="73.6328125" x="3.18359375" y="4.037109375">Schemalägg
@@ -139,10 +134,9 @@ arbete</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n4">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="435.5546875" y="93.34758064516132"/>
+              <y:Geometry height="40.0" width="80.0" x="448.5546875" y="82.34758064516132"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="71.810546875" x="4.0947265625" y="4.037109375">Sänd 
@@ -151,10 +145,9 @@ arbetsorder</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n5">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="535.5546875" y="93.34758064516132"/>
+              <y:Geometry height="40.0" width="80.0" x="548.5546875" y="82.34758064516132"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="74.2421875" x="2.87890625" y="11.0185546875">Utför arbete</y:NodeLabel>
@@ -162,10 +155,9 @@ arbetsorder</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n6">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="635.5546875" y="93.34758064516132"/>
+              <y:Geometry height="40.0" width="80.0" x="648.5546875" y="82.34758064516132"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="79.720703125" x="0.1396484375" y="11.0185546875">Återkoppling</y:NodeLabel>
@@ -173,10 +165,9 @@ arbetsorder</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n7">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="293.76652595766126" y="209.9217741935484"/>
+              <y:Geometry height="40.0" width="80.0" x="306.76652595766126" y="198.9217741935484"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="57.619140625" x="11.1904296875" y="4.037109375">Tekniskt 
@@ -185,10 +176,9 @@ avslut</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n8">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="51.25" width="92.5" x="394.75578377016126" y="204.2967741935484"/>
+              <y:Geometry height="51.25" width="92.5" x="407.75578377016126" y="193.2967741935484"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.888671875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="90.02734375" x="1.236328125" y="2.6806640625">Rapport till
@@ -198,10 +188,9 @@ felmeddelande</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n9">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.process">
-              <y:Geometry height="40.0" width="80.0" x="235.5546875" y="-53.961290322580595"/>
+              <y:Geometry height="40.0" width="80.0" x="248.5546875" y="-11.961290322580595"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="56.8984375" x="11.55078125" y="4.037109375">Samla in 
@@ -210,10 +199,9 @@ data</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n10">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.decision">
-              <y:Geometry height="61.51290322580644" width="97.39905178931463" x="69.84468718497989" y="-64.71774193548382"/>
+              <y:Geometry height="61.51290322580644" width="97.39905178931463" x="82.84468718497989" y="-22.717741935483815"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="57.806640625" x="19.796205582157313" y="14.79356098790322">Finns ett
@@ -222,10 +210,9 @@ problem?</y:NodeLabel>
           </data>
         </node>
         <node id="n0::n11">
-          <data key="d5"/>
           <data key="d6">
             <y:GenericNode configuration="com.yworks.flowchart.dataBase">
-              <y:Geometry height="61.51290322580644" width="97.39905178931463" x="69.84468718497989" y="199.16532258064518"/>
+              <y:Geometry height="61.51290322580644" width="97.39905178931463" x="82.84468718497989" y="188.16532258064518"/>
               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="93.54296875" x="1.928041519657313" y="21.77500630040322">Lagring av data</y:NodeLabel>
@@ -308,11 +295,11 @@ problem?</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="54.02734375" y="-33.961290322580595"/>
+            <y:Point x="67.02734375" y="8.038709677419405"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="shead" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="14.359375" x="-19.679211278115524" y="-19.962892495432158">Ja</y:EdgeLabel>
+          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="shead" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="14.359375" x="-19.67921127811553" y="-19.962890588083525">Ja</y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -331,10 +318,10 @@ problem?</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="752.7548387096774" y="113.34758064516132"/>
-            <y:Point x="752.7548387096774" y="183.35645161290324"/>
-            <y:Point x="264.98387096774195" y="183.35645161290324"/>
-            <y:Point x="264.98387096774195" y="229.9217741935484"/>
+            <y:Point x="765.7548387096774" y="102.34758064516132"/>
+            <y:Point x="765.7548387096774" y="172.35645161290324"/>
+            <y:Point x="277.98387096774195" y="172.35645161290324"/>
+            <y:Point x="277.98387096774195" y="218.9217741935484"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -346,9 +333,9 @@ problem?</y:NodeLabel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="510.4032258064516" y="229.9217741935484"/>
-            <y:Point x="510.4032258064516" y="283.56935483870967"/>
-            <y:Point x="118.5442130796372" y="283.56935483870967"/>
+            <y:Point x="523.4032258064516" y="218.9217741935484"/>
+            <y:Point x="523.4032258064516" y="272.56935483870967"/>
+            <y:Point x="131.5442130796372" y="272.56935483870967"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -362,7 +349,19 @@ problem?</y:NodeLabel>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="shead" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="23.201171875" x="-25.20117113667139" y="10.118716521416985">Nej</y:EdgeLabel>
+          <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="shead" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="23.201171875" x="-25.201178766065937" y="10.119090123330437">Nej</y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="n0::e12" source="n0::n0" target="n0::n11">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="67.02734375" y="218.9217741935484"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>

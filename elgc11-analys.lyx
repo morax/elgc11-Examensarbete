@@ -50,7 +50,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -137,30 +137,6 @@ Generatorer och turbiner
 Generellt är det inga större fysiska svårigheter att implementera och installera
  ett fast vibrationsmätningssystem i kraftverken och kommunikationsvägar
  finns redan installerade i kraftverken då de redan styrs via annan ort.
-\end_layout
-
-\begin_layout Section
-Installation av mätsystem
-\end_layout
-
-\begin_layout Standard
-Fokus på installation av mätsystem ligger såklart på on-line system då ett
- portabelt system inte behöver någon fysisk installation, mer än kanske
- några givare på givna punkter.
- Ett on-line system däremot monteras in i anläggningen och förblir där.
- När systemet sedan är på plats har man tillgång till alla mätpunkter, och
- då även kanske sådana som skulle varit mycket svåra och farliga att mäta
- om man inte använder sig av ett on-line system.
- 
-\end_layout
-
-\begin_layout Standard
-Installationen sker typiskt av leverantören och beroende på hur rigorösa
- mätningar man har bestämt sig för att ha påverkas tiden samt driftsförhållanden
-a vid installation.
- Men installationen sker allt som oftast under de mest gynsamma förhållandena
- för kunden och efter installation påverkas inte produktionen negativt av
- utrustningen på något sätt.
 \end_layout
 
 \begin_layout Section
@@ -1938,7 +1914,7 @@ rk.
 Efter man valt typ av övervakningssystem bör man först och främst klargöra
  sitt behov med utrustningen så att man inte köper en utrustning som bara
  står och samlar damm p.g.a.
- otillräckliga vibrationsmätningsegenskaper eller mät- utrustning som inte
+ otillräckliga vibrationsmätningsegenskaper eller mätutrustning som inte
  kan hantera dom önskade mätningarna.
  Punkter som sedan bör läggas mest vikt på vid val av vibrationsmätningssystem
  sammanfattas i Tabell 
@@ -1949,32 +1925,6 @@ reference "tab:Kriterier for komponentval"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Som nämns ovan vore ett on-line system att föredra, åtminstone på Fortums
- mer kritiska kraftverk där ett haveri skulle orsaka stora förseningar och
- i sin tur stora förluster.
- Vid ett komplett sådant system skulle man mäta alla rekommenderade punkter
- kontinuerligt, och med möjlighet att konstant övervaka systemet för en
- väsentligt mer exakt diagnos av maskinhälsan.
- 
-\end_layout
-
-\begin_layout Standard
-Vid ett mer komprimerat on-line system kan man mäta på bara ett fåtal av
- de rekommenderade punkterna, de som anses mest lönsamma är statorn samt
- lager.
- Ett komplement till dessa on-line system skulle vara ett fåtal Off-line
- system som kan cirkulera inom Fortum och användas på mindre kritiska anläggning
-ar.
- Dessa Off-line system används då främst vid diagnos av nuvarande maskin-och
- lagerhälsa, vid installation av nya maskiner, och balansering.
- Om något suspekt detekteras bör det följas upp med vidare mätningar.
- Detta kan dock bli problematiskt om fel detekteras vid flera av anläggningarna
- utan on-line system, då kanske antalet vibrationsutrustningar eller personal
- med kunskap ej räcker till.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2603,6 +2553,36 @@ Garantier och livslängd
 
 \end_layout
 
+\begin_layout Standard
+Som nämns ovan vore ett on-line system att föredra, åtminstone på Fortums
+ mer kritiska kraftverk där ett haveri skulle orsaka stora förseningar och
+ i sin tur stora förluster.
+ Vid ett komplett sådant system skulle man mäta alla rekommenderade punkter
+ kontinuerligt, och med möjlighet att konstant övervaka systemet för en
+ väsentligt mer exakt diagnos av maskinhälsan.
+ 
+\end_layout
+
+\begin_layout Standard
+Vid ett mer komprimerat on-line system kan man mäta på bara ett fåtal av
+ de rekommenderade punkterna, de som anses mest lönsamma är statorn samt
+ lager.
+ Ett komplement till dessa on-line system skulle vara ett fåtal Off-line
+ system som kan cirkulera inom Fortum och användas på mindre kritiska anläggning
+ar.
+ Dessa Off-line system används då främst vid diagnos av nuvarande maskin-och
+ lagerhälsa, vid installation av nya maskiner, och balansering.
+ Om något suspekt detekteras bör det följas upp med vidare mätningar.
+ Detta kan dock bli problematiskt om fel detekteras vid flera av anläggningarna
+ utan on-line system, då kanske antalet vibrationsutrustningar eller personal
+ med kunskap ej räcker till.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Ej implementerat
+status open
+
 \begin_layout Subsection
 Kompatiblitet med ny utrustning
 \end_layout
@@ -2611,6 +2591,11 @@ Kompatiblitet med ny utrustning
 Då Fortum har avtal med SKF och SKF är leverantörer av nuvarande mätutrustning
  så vore det passande om eventuell ny mätutrustning också är från SKF alt.
  kompatibel med SKF:s mätutrustningar.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2692,8 +2677,8 @@ gstekniken.
  och analys blir avsevärt mycket simplare.
  Hos Fortum, i dagsläget, skickas majoriteten av mätresultaten till SKF,
  som är leverantörer, i Luleå.
- Av SKF får man sedan en årlig rapport där nuvarande status på maskinerna
- (lager?) rapporteras och rekommendationer på åtgärder om nödvändigt.
+ Av SKF får man sedan en tillståndsrapport där nuvarande lagerstatus rapporteras
+ och rekommendationer på åtgärder om nödvändigt.
 \end_layout
 
 \begin_layout Standard
@@ -2701,54 +2686,9 @@ Vid analys av rapporten visades vissa brister beroende på vem som är den
  tänkte mottagaren då presenterade grafer och dylikt kräver gedigen kunskap
  för att avläsas.
  Den kanske mest viktiga informationen saknades, det vill säga en lättåskådlig
- trendkurva över respektive komponent.
-\end_layout
-
-\begin_layout Subsection
-Personaldistribution
-\end_layout
-
-\begin_layout Standard
-Då flera enheter är länkade till underhållet och sedmera även vibrationsbevaknin
-gen delas det för enkelheten upp i två block; mätningar och åtgärder.
- Mätblocket har hand om 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figurer/personaldistribution.svg
-	width 80text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Personaldistribution vid underhållsbeslut
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ trendkurva över respektive komponent då man vid effektivt underhållsarbete
+ är mer intresserad av förändringen av konditionen.
+ Som det ser ut idag aggerar rapporten mer som en larmindikator.
 \end_layout
 
 \begin_layout Standard
@@ -2760,7 +2700,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figurer/dataflode.eps
-	width 80text%
+	width 100text%
 
 \end_inset
 
@@ -2771,8 +2711,11 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Förslag till mätdataflöde där fokus ligger på lagringen av data
-\end_layout
+Förslag till mätdataflöde där fokus ligger på central lagring av data som
+ lätt kan nås av egen personal samt konsulter
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Förslag-till-mätdataflöde"
 
 \end_inset
 
@@ -2782,6 +2725,125 @@ Förslag till mätdataflöde där fokus ligger på lagringen av data
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ett förslag är att istället använda sig av en server för lagring av all
+ mätdata, då inte enkom vibrationsmätningar enligt Figur 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Förslag-till-mätdataflöde"
+
+\end_inset
+
+ vilket sedan gör det möjligt att när som helst hämta önskad data för analys
+ samt minskar den annars stora omställningen mot CBM.
+ En central lagringsenhet för vibrationsdata ger framförallt en bättre översikt
+ över hur lagerkondition och dylikt ändras över tid vilket i särklass är
+ den bästa metoden att undvika haverier.
+\end_layout
+
+\begin_layout Subsection
+Ansvarsdistribution
+\end_layout
+
+\begin_layout Standard
+Då flera enheter är länkade till underhållet och sedmera även vibrationsbevaknin
+gen delas det för enkelheten upp i två ansvarsområden: analys och åtgärd.
+ Analys innefattar all personal inom underhåll och övriga enheter som bidrar
+ med beslutsunderlag innan åtgärd.
+ Skillnaden från dagens struktur är att en analytiker tillkommer som (om
+ det behövs) har kontakt med en konsult för identifikation av skador.
+ Som Figur 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Ansvarsdistribution-vid-underhå"
+
+\end_inset
+
+ visar är det sedan analytikern som ger första utlåtandet om åtgärd skall
+ vidtas eller ej.
+\end_layout
+
+\begin_layout Standard
+Åtgärd innefattar sedan de som skall utföra arbetet samt evaluera resultatet
+ efter avslutat ingrepp vilket bidrar till förbättring av underhållet.
+ Fokus ligger på att all information gällande underhållet stannar kvar och
+ lagras inom företaget samt återkopplas så att man kan observera betydelsen
+ av vibrationsmätningarna.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/personaldistribution.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ansvardistribution vid vibrationsanalys och underhållsbeslut
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ansvarsdistribution-vid-underhå"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Installation av mätsystem
+\end_layout
+
+\begin_layout Standard
+Fokus på installation av mätsystem ligger såklart på on-line system då ett
+ portabelt system inte behöver någon fysisk installation, mer än kanske
+ några givare på givna punkter.
+ Ett on-line system däremot monteras in i anläggningen och förblir där.
+ När systemet sedan är på plats har man tillgång till alla mätpunkter, och
+ då även kanske sådana som skulle varit mycket svåra och farliga att mäta
+ om man inte använder sig av ett on-line system.
+ 
+\end_layout
+
+\begin_layout Standard
+Installationen sker typiskt av leverantören och beroende på hur rigorösa
+ mätningar man har bestämt sig för att ha påverkas tiden samt driftsförhållanden
+a vid installation.
+ Men installationen sker allt som oftast under de mest gynsamma förhållandena
+ för kunden och efter installation påverkas inte produktionen negativt av
+ utrustningen på något sätt.
 \end_layout
 
 \begin_layout Section

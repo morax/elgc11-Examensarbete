@@ -132,9 +132,9 @@ key "driftsakerhet_och_underhall"
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-A_{0}=\frac{MTBM}{MTBM+MLDT+MTW(A)+\overline{M}}
-\]
+\begin{equation}
+A_{0}=\frac{MTBM}{MTBM+MLDT+MTW(A)+\overline{M}}\label{eq:operativ_tillganglighet}
+\end{equation}
 
 \end_inset
 
@@ -179,6 +179,40 @@ där:
  
 \end_layout
 
+\begin_layout Standard
+Ofta används 
+\begin_inset Formula $MDT$
+\end_inset
+
+ som är summan av de olika väntetiderna (Mean Down Time)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+MDT=\overline{M}+MLDT+MTW(A)\label{eq:MDT}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+vilket ger
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{0}=\cfrac{MTBM}{MTBM+MDT}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Ekonomiberäkning
 \end_layout
@@ -190,19 +224,119 @@ Följande beräkningar är schablonberäkningar över hur mycket Fortum skulle
  på 50%, detta ger en ren vinst på 0,225kr/kWh.
  Det är också antaget att snittdrivtiden på ett vattenkraftverk är 4000h/år
  samt en storlek på 40MW.[1] Det antas även att underhållskostnaden är den
- blygsamma siffran 400kr/h inkl.
+ blygsamma siffran 2000kr/h inkl.
  arbete och material.
 \end_layout
 
 \begin_layout Standard
-Med dessa siffror kan man enkelt räkna ut att man tjänar 4110kr/h vilket
- även innebär att man förlorar lika mycket vid utebliven produktion.
+Med dessa siffror kan man enkelt räkna ut vinst per timme enligt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cfrac{\mbox{snittpris}\cdot\mbox{snitteffekt}\cdot\mbox{snittdrift i timmar}}{\mbox{antal timmar per år}}=\cfrac{0.225\cdot40000\cdot4000}{365\cdot24}=4110\,\nicefrac{\mbox{kr}}{\mbox{h}}
+\]
+
+\end_inset
+
+vilket även innebär att man förlorar lika mycket vid utebliven produktion.
+\end_layout
+
+\begin_layout Standard
+Låt oss för enkelhetens skull anta att man får 1 fel som tvingar avbrott
+ i produktionen på några olika tidsintervall samt att före och efter FU
+ tillkommer en reparationskostnad 
+\begin_inset Formula $\overline{M}\cdot\mbox{underhållskostnad=40\cdot2000=80\,000\, kr}$
+\end_inset
+
+ då det ej är antaget att reparationstiden minskar i detta exempel.
+ Sedan beräknas stillaståendekostnaden som är den stora kostnaden enligt
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mbox{Stillaståendekostnad}=(1-A)\cdot\mbox{potentiellvinst}/\mbox{år}\label{eq:Stillaståendekostnad}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+där 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\cfrac{MTBM}{MTBM+MDT}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $MTBM=Drifttid-MDT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $MDT=\overline{M}+MLDT+MTW(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Med 
+\begin_inset Formula $\overline{M}=40$
+\end_inset
+
+ , 
+\begin_inset Formula $MLTD=92$
+\end_inset
+
+ och 
+\begin_inset Formula $MTW(A)=8$
+\end_inset
+
+ blir 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+MDT=40+92+8=140\,\mbox{h}
+\]
+
+\end_inset
+
+och via antagandet 1 fel/år får man i detta exempel 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $MTBM=4000h-140=3860$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=0,96$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
 MTBF & = & \cfrac{4000-140}{1}=3860h\\
-MTW=MLDT+MTW(A) & = & \frac{92+8}{1}=100h\\
-\overline{M} & = & \frac{40}{1}=40h
+MDT=\overline{M}+MLDT+MTW(A) & = & 40+92+8=140h
 \end{eqnarray*}
 
 \end_inset
@@ -213,7 +347,7 @@ MTW=MLDT+MTW(A) & = & \frac{92+8}{1}=100h\\
 \begin_layout Standard
 \begin_inset Formula 
 \[
-A=\cfrac{MTBF}{MTBF+MTW+\overline{M}}=\cfrac{3860}{3860+40+100}=0,965
+A=\cfrac{MTBF}{MTBF+MDT}=\cfrac{3860}{3860+140}=0,965
 \]
 
 \end_inset
@@ -266,6 +400,43 @@ Om man nu inför CBM kan man såklart minska antal fel per år, men låt oss
 \[
 A=\cfrac{3860}{3860+10+2}=0,997
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/kostnader.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrammet visar sambandet mellan produktionsbortfall och operativ tillgänglighe
+t
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
