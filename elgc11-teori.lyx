@@ -975,7 +975,7 @@ key "mil1-condition_monitoring"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -1580,7 +1580,7 @@ Datan är sällan distribuerad
 \begin_inset Text
 
 \begin_layout Plain Layout
-Endast sedd som en underhålls funktion
+Endast sedd som en underhållsfunktion
 \end_layout
 
 \end_inset
@@ -1870,7 +1870,7 @@ Mätningarna är begränsade till antalet installerade sensorer
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mätningar görs automatiskt och kontinuellingt
+Mätningar görs automatiskt och kontinuerligt
 \end_layout
 
 \end_inset
@@ -2494,9 +2494,51 @@ Då kraven på produktivitet, kvalitet, lagerkontroll och maskinlivslängd
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figurer/implementering_cbm.svg
+	height 40theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Processflöde vid implementering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename figurer/cbm-processflode.svg
 	height 40theight%
@@ -2510,11 +2552,33 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Processflöde i CBM
+Processflöde av mätdata
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Grafisk representation över återkopplingen som försegår vid implementering
+ av samt underhåll med CBM
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2569,6 +2633,10 @@ För- och nackdelar med ett CBM system
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch Ej implementerat
+status open
+
+\begin_layout Standard
 Studier har visat att ett fullt fungerande CBM system eller annat prognosbaserat
  underhållsprogram kan bidra med besparingar på 8% -- 12% jämfört med förebyggan
 de underhåll (FU) 
@@ -2580,6 +2648,11 @@ key "cbm-phd_thesis"
 
 .
  <--- ref saknas!!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

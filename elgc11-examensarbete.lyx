@@ -264,11 +264,11 @@
    \ifthenelse{\isodd{\thepage}}
        { \node[anchor=east,xshift=.9\paperwidth,rectangle,
               rounded corners=20pt,inner sep=11pt,
-              fill=LightGrey]
+              fill=Gainsboro]
               {\color{black}\chapterlabel#1};}
        { \node[anchor=west,xshift=.1\paperwidth,rectangle,
               rounded corners=20pt,inner sep=11pt,
-              fill=LightGrey]
+              fill=Gainsboro]
               {\color{black}\chapterlabel#1};}
        \end{tikzpicture}
       };
@@ -380,13 +380,20 @@ theorems-sec-bytype
 
 \begin_layout Standard
 \begin_inset Branch Print
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "elgc11-titelsida-print.lyx"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -440,6 +447,13 @@ status open
 LatexCommand include
 filename "elgc11-titelsida.lyx"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 
@@ -623,6 +637,16 @@ filename "elgc11-bilaga-berakningar.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "elgc11-bilaga-potentiella_fel.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "elgc11-bilaga-terminologi.lyx"
 
 \end_inset
 

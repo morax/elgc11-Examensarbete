@@ -119,7 +119,7 @@ Tillgänglighet
 \end_layout
 
 \begin_layout Standard
-Totala tillgängligheten är ett driftsäkerhetsmått av kraftverket beräknat
+Operativa tillgängligheten är ett driftsäkerhetsmått av kraftverket beräknat
  genom följande formel 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -204,9 +204,9 @@ vilket ger
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-A_{0}=\cfrac{MTBM}{MTBM+MDT}
-\]
+\begin{equation}
+A_{0}=\cfrac{MTBM}{MTBM+MDT}\label{eq:A_0}
+\end{equation}
 
 \end_inset
 
@@ -215,6 +215,13 @@ A_{0}=\cfrac{MTBM}{MTBM+MDT}
 
 \begin_layout Section
 Ekonomiberäkning
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ekonomiberäkning"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -223,8 +230,16 @@ Följande beräkningar är schablonberäkningar över hur mycket Fortum skulle
  Det är antaget att snittpriset på producerad el är 45 öre och en vinstmarginal
  på 50%, detta ger en ren vinst på 0,225kr/kWh.
  Det är också antaget att snittdrivtiden på ett vattenkraftverk är 4000h/år
- samt en storlek på 40MW.[1] Det antas även att underhållskostnaden är den
- blygsamma siffran 2000kr/h inkl.
+ samt en storlek på 40MW 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "skgs_rapport"
+
+\end_inset
+
+.
+ Det antas även att underhållskostnaden är den blygsamma siffran 2000kr/h
+ inkl.
  arbete och material.
 \end_layout
 
@@ -234,9 +249,9 @@ Med dessa siffror kan man enkelt räkna ut vinst per timme enligt
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\cfrac{\mbox{snittpris}\cdot\mbox{snitteffekt}\cdot\mbox{snittdrift i timmar}}{\mbox{antal timmar per år}}=\cfrac{0.225\cdot40000\cdot4000}{365\cdot24}=4110\,\nicefrac{\mbox{kr}}{\mbox{h}}
-\]
+\begin{equation}
+\cfrac{\mbox{snittpris}\cdot\mbox{snitteffekt}\cdot\mbox{snittdrift i timmar}}{\mbox{antal timmar per år}}=\cfrac{0.225\cdot40000\cdot4000}{365\cdot24}=4110\,\mbox{kr/h}\label{eq:}
+\end{equation}
 
 \end_inset
 
@@ -247,10 +262,14 @@ vilket även innebär att man förlorar lika mycket vid utebliven produktion.
 Låt oss för enkelhetens skull anta att man får 1 fel som tvingar avbrott
  i produktionen på några olika tidsintervall samt att före och efter FU
  tillkommer en reparationskostnad 
-\begin_inset Formula $\overline{M}\cdot\mbox{underhållskostnad=40\cdot2000=80\,000\, kr}$
+\begin_inset Formula $\overline{M}\cdot\mbox{underhållskostnad}$
 \end_inset
 
- då det ej är antaget att reparationstiden minskar i detta exempel.
+ = 
+\begin_inset Formula $40\cdot2000=$
+\end_inset
+
+80 000 kr då det ej är antaget att reparationstiden minskar i detta exempel.
  Sedan beräknas stillaståendekostnaden som är den stora kostnaden enligt
  
 \end_layout
@@ -271,21 +290,33 @@ där
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $A=\cfrac{MTBM}{MTBM+MDT}$
+\begin_inset Formula 
+\begin{equation}
+A=\cfrac{MTBM}{MTBM+MDT}\label{eq:-1}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $MTBM=Drifttid-MDT$
+\begin_inset Formula 
+\begin{equation}
+MTBM=Drifttid-MDT\label{eq:2}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $MDT=\overline{M}+MLDT+MTW(A)$
+\begin_inset Formula 
+\begin{equation}
+MDT=\overline{M}+MLDT+MTW(A)\label{eq:3}
+\end{equation}
+
 \end_inset
 
 
@@ -309,9 +340,9 @@ Med
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-MDT=40+92+8=140\,\mbox{h}
-\]
+\begin{equation}
+MDT=40+92+8=140\,\mbox{h}\label{eq:4}
+\end{equation}
 
 \end_inset
 
@@ -319,25 +350,10 @@ och via antagandet 1 fel/år får man i detta exempel
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $MTBM=4000h-140=3860$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $A=0,96$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-MTBF & = & \cfrac{4000-140}{1}=3860h\\
-MDT=\overline{M}+MLDT+MTW(A) & = & 40+92+8=140h
-\end{eqnarray*}
+\begin{equation}
+MTBM=4000h-140=3860\label{eq:5}
+\end{equation}
 
 \end_inset
 
@@ -346,9 +362,9 @@ MDT=\overline{M}+MLDT+MTW(A) & = & 40+92+8=140h
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-A=\cfrac{MTBF}{MTBF+MDT}=\cfrac{3860}{3860+140}=0,965
-\]
+\begin{equation}
+A=0,96\label{eq:6}
+\end{equation}
 
 \end_inset
 
@@ -356,7 +372,7 @@ A=\cfrac{MTBF}{MTBF+MDT}=\cfrac{3860}{3860+140}=0,965
 \end_layout
 
 \begin_layout Standard
-Om man nu inför CBM kan man såklart minska antal fel per år, men låt oss
+Om man nu inför FU kan man såklart minska antal fel per år, men låt oss
  för enkelhetens skull anta att 1 fel per år kvarstår, men att man minskar
  
 \begin_inset Formula $MTW$
@@ -391,15 +407,23 @@ Om man nu inför CBM kan man såklart minska antal fel per år, men låt oss
 \noun default
 \color inherit
  avsevärt.
- Låt oss därför anta att man med hjälp av CBM kunde förutspå haveri vilket
- medför att allt finns på plats och därför minskar MWT = 2 samt MTTR = 10.
+ Låt oss därför anta att man med hjälp av FU kunde förutspå haveri vilket
+ medför att allt finns på plats och därför minskar 
+\begin_inset Formula $MWT=2$
+\end_inset
+
+ samt 
+\begin_inset Formula $MTTR=10$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-A=\cfrac{3860}{3860+10+2}=0,997
-\]
+\begin{equation}
+A=\cfrac{3860}{3860+10+2}=0,997\label{eq:123}
+\end{equation}
 
 \end_inset
 
@@ -427,6 +451,13 @@ status open
 \begin_layout Plain Layout
 Diagrammet visar sambandet mellan produktionsbortfall och operativ tillgänglighe
 t
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrammet-visar-sambandet"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -448,89 +479,56 @@ Reparationskostnader före och efter FU
 \end_layout
 
 \begin_layout Standard
-Före FU: 1 fel Kostnad: 
-\begin_inset Formula 
-\[
-\overline{M}\cdot400=40\cdot400=16000kr
-\]
+Detta resulterar i en differens på 534 080kr.
+ Denna summa kan man använda som en god riktlinje för vad man är villig
+ att investera i sin CBM.
+ Det ger såklart även en möjlighet att uppskatta hur lång tid det dröjer
+ innan man har fått tillbaks sin investering och ren vinst genereras.
+\end_layout
 
+\begin_layout Standard
+Man minskar 
+\begin_inset Formula $MLDT$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Efter FU: 1 fel Kostnad: 
-\begin_inset Formula 
-\[
-\overline{M}\cdot400=10\cdot400=4000kr
-\]
-
+ och 
+\begin_inset Formula $MTW(A)$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Stillestående kostnad före och efter FU
-\end_layout
-
-\begin_layout Standard
-Före FU: 1 fel Kostnad: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-(\overline{M}+MTW)\cdot4110=(40+100)\cdot4110=575400kr
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Efter FU: 1 fel Kostnad: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-(\overline{M}+MTW)\cdot4110=(10+2)\cdot4110=49320kr
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sum$
-\end_inset
-
- kostnad före FU 
-\begin_inset Formula $=16000+575400=591400kr$
-\end_inset
-
+ avsevärt tack vare FU.
+ Man har förutspått haveri på en del och har den förbeställd och liggande
+ på lager, samt att arbetsordern är gjord så inga onödiga väntetider tillkommer,
+ tiden att utföra arbetet antas kvarstå.
+ Detta innebär i sin tur att man kan öka den operativa tillgängligheten
+ och stillaståendekostnaden sjunker.
+ Ponera att operativa tillgängligheten A efter FU ökar till 0,99 vid 1 fel/år.
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\sum$
+Då kan det utläsas ur Figur 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Diagrammet-visar-sambandet"
+
 \end_inset
 
- kostnad efter FU 
-\begin_inset Formula $=8000+49320=57320kr$
+ eller beräknas enligt Ekvation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Stillaståendekostnad"
+
 \end_inset
 
-
+ att före FU är stillaståendekostnaderna 657 600kr/år och efter FU 164 400kr/år.
+ Total kostnad före FU blir således 80 000 + 657 600 = 737 600kr och efter
+ FU 80 000 + 164 400 = 244 400kr
 \end_layout
 
 \begin_layout Standard
-Detta resulterar i en differens på 534 080kr.
+Detta resulterar i en differens på 493 200kr vid 1 fel/år.
  Denna summa kan man använda som en god riktlinje för vad man är villig
- att investera i sin CBM.
+ att investera i FU som sedan blir ännu bättre med CBM.
  Det ger såklart även en möjlighet att uppskatta hur lång tid det dröjer
  innan man har fått tillbaks sin investering och ren vinst genereras.
 \end_layout
@@ -543,9 +541,191 @@ status open
 Underhållsterminologi
 \end_layout
 
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Undehåll Kombination av alla tekniska, administrativa och ledningens åtgärder
+ under en enhets livstid avsedda att vidmakthålla den i, eller återställa
+ den till, ett sådant tillstånd att den kan utföra krävd funktion.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Underhållsstrategi Av ledningen angiven inriktning för att nå underhållsverksamh
+etens mål.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Underhållsplan Strukturerad gruppering av uppgifter som inkluderar aktiviteter,
+ förfaringssätt, resurser och tidsomfattning som erfodras för att utföra
+ underhållet.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Tillförlitlighet En sammanfattande benämning för att beskriva egenskapen
+ driftsäkerhet och de egenskaper som påverkar denna: funktionsmässighet,
+ underhållsmässighet och underhållssäkerhet.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Underhållssäkerhet Förmågan hos underhållsorganisationen att tilhandahålla
+ de rätta underhållsresurserna på erfoderlig plats, för att utföra krävda
+ underhållsåtgärder på en enhet, vid en anvigen tidpunkt eller under ett
+ angivet tidsintervall.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Driftsäkerhet Förmågan hos en enhet att kunna utföra krävd funktion under
+ angivna betingelser vid ett givet tillfälle eller under ett givet tidsintervall
+, förutsatt att erfoderliga stödfunktioner finns tillgängliga.
+\begin_inset Newline newline
+\end_inset
+
+not1: Driftsäkerheten är beroende av de kombinerade egenskaperna funktionsmässig
+het, underhållsmässighet och underhållssäkerhet.
+\begin_inset Newline newline
+\end_inset
+
+not2: Erfoderliga stödfunktioner, andra än underhållsresurser, påverkar
+ inte enhetens tillgänglighet.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Funktionssäkerhet Förmåga hos en enhet att utföra krävd funktion givna förhållan
+den under ett angivet tidsintervall.
+\begin_inset Newline newline
+\end_inset
+
+not 1: Termen 
+\begin_inset Quotes eld
+\end_inset
+
+funktionssäkerhet
+\begin_inset Quotes erd
+\end_inset
+
+ kan också användas som ett mått på förmågan att fungera och definieras
+ då som funktionssannolikhet.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Underhållsmässighet Förmågan hos en enhet, som används enligt angivna betingelse
+r, att vidmakthållas i, eller återställas till ett sådant tillstånd att
+ den kan utföra krävd funktion, när underhållet utförs under anfivna betingelser
+ och underanvändning av föstställda förfaringssätt och resurser.
+\begin_inset Newline newline
+\end_inset
+
+not: Underhållsmässigheten kan också användas som ett mått.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Redundans Förekomst av mer än en möjlighet att vid ett angevet tillfälle
+ kunna utföra krävd funktion hos en enhet.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Fel Upphörandet av en enhets förmåga att utföra krävd funktion.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Felorsak Omständighet som lett till fel.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Degradering Av tid, användning eller externa orsaker oåterkalleligt gradvis
+ försämring av en eller flera av en enhets egenskaper.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Förslitningsfel Fel vars sannolikhet av förekomst ökar med drifttiden eller
+ antalet genomförda arbetscykler eller den belastning en enhet utsatts för.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Funktionsfel Tillstånd hos en enhet karaktäriserad av oförmåga att utföra
+ en krävd funktion, exkluderat en oförmåga som kan uppstå vid förebyggande
+ underhåll eller annan planerad verksamhet eller brist på stödfunktioner.
+\end_layout
+
+\begin_layout Subsection
+Typer av underhåll och strategier för underhåll
+\end_layout
+
+\begin_layout Subsubsection
+Förebyggande underhåll
+\end_layout
+
+\begin_layout Standard
+Underhåll som genomförs vid förutbestämda intervall eller enlligt förutbestämda
+ kriterier och i avsikt att minska sannolikheten för fel eller degradering
+ av enhetens funktion.
+\end_layout
+
+\begin_layout Subsubsection
+Schemalagt underhåll
+\end_layout
+
+\begin_layout Standard
+Förebyggande underhåll som genom i enhetlighet med upprättad tidsplan efter
+ en bestämd användning.
+\end_layout
+
+\begin_layout Subsubsection
+Förutbestämt underhåll
+\end_layout
+
+\begin_layout Standard
+Förebyggande underhåll som genomförs i enhetlighet med bestämda intervaller
+ eller efter en bestämd användning, men utan att föregås av tillståndskontroll.
+\end_layout
+
+\begin_layout Subsubsection
+Tillståndsbaerat underhåll
+\end_layout
+
+\begin_layout Standard
+Förebyggande underhåll som består av kontroll och övervakning av enhetens
+ tillstånd avseende dess funktion och egenskaper, samt därav förandledda
+ åtgärder.
+\end_layout
+
+\begin_layout Standard
+NOT: Kontroll och övervakning av funktion och egenskaper kan vara schemalagt,
+ på begäran eller kontinuerligt.
+\end_layout
+
+\begin_layout Subsubsection
+Funktionstillåtande underhåll (On line maintenance)
+\end_layout
+
+\begin_layout Standard
+Underhåll som genomförs på en enhet medan den är i funktion.
+\end_layout
+
+\begin_layout Subsubsection
+Rutinmässigt underhåll
+\end_layout
+
+\begin_layout Standard
+Regesbunden eller återkommande grundläggande underhållsverksamhet vilken
+ vanligtvis ej kräver specialkompetens, behörighet eller specialverktyg.
+\end_layout
+
 \begin_layout Standard
 [ej klar] Swedish Standards Institute, “Underhåll - Terminologi”, SS-EN
- 13305, 2001.
+ 13306, 2001.
  
 \end_layout
 

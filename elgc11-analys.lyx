@@ -2649,6 +2649,15 @@ Samlas data och analys på eget företag växer insikten om maskinernas hälsa
  En underhållsenhet på företaget bör ha tillgång till all uppmätt data då
  fördelarna primärt är att via enkelt trendning kan man lätt urskönja materiella
  förändringar om man känner till hur maskinen körts fram tills nu.
+ Den personal som har hand om insamling respektive analys av data bör ha
+ genomgått utbildning enligt ISO 18436-2:2003 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "iso18436-2-vibtraning"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph
@@ -2827,13 +2836,24 @@ Installation av mätsystem
 \end_layout
 
 \begin_layout Standard
-Fokus på installation av mätsystem ligger såklart på on-line system då ett
- portabelt system inte behöver någon fysisk installation, mer än kanske
- några givare på givna punkter.
- Ett on-line system däremot monteras in i anläggningen och förblir där.
+För installation av mätsystem berörs endast 
+\emph on
+on-line
+\emph default
+ system då ett portabelt system inte behöver någon fysisk installation,
+ mer än kanske några givare på givna punkter.
+ Ett 
+\emph on
+on-line
+\emph default
+ system däremot monteras in i anläggningen och förblir där.
  När systemet sedan är på plats har man tillgång till alla mätpunkter, och
  då även kanske sådana som skulle varit mycket svåra och farliga att mäta
- om man inte använder sig av ett on-line system.
+ om man inte använder sig av ett 
+\emph on
+on-line
+\emph default
+ system.
  
 \end_layout
 
@@ -2896,13 +2916,15 @@ ng syns det markant bland kostnaderna för maskinunderhåll och reparationer
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Ekonomisk jämförelse mellan on- och off-line mätutrusting
+Ekonomisk jämförelse mellan on- och off-line mätutrusting med priser från
+ vibrationsmätningsföretag samt antagande att personalen kostar lika mycket
+ vid båda fallen 
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Ekonomisk-jämförelse-ONOFF"
@@ -2988,7 +3010,7 @@ Hårdvara
 \begin_inset Text
 
 \begin_layout Plain Layout
-100 Tkr
+89 Tkr
 \end_layout
 
 \end_inset
@@ -3006,7 +3028,7 @@ Hårdvara
 \begin_inset Text
 
 \begin_layout Plain Layout
-500 Tkr
+68.5 Tkr
 \end_layout
 
 \end_inset
@@ -3026,7 +3048,7 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
-100 Tkr
+29.5 Tkr
 \end_layout
 
 \end_inset
@@ -3044,7 +3066,7 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+60 Tkr
 \end_layout
 
 \end_inset
@@ -3064,7 +3086,7 @@ PC
 \begin_inset Text
 
 \begin_layout Plain Layout
-200 kr
+50 Tkr
 \end_layout
 
 \end_inset
@@ -3082,7 +3104,7 @@ PC
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+50 Tkr
 \end_layout
 
 \end_inset
@@ -3102,7 +3124,7 @@ Personal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+40 Tkr
 \end_layout
 
 \end_inset
@@ -3120,7 +3142,7 @@ Personal
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+40 Tkr
 \end_layout
 
 \end_inset
@@ -3142,7 +3164,7 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+208.5 Tkr
 \end_layout
 
 \end_inset
@@ -3162,7 +3184,7 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+218.5 Tkr
 \end_layout
 
 \end_inset
@@ -3182,7 +3204,7 @@ Maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
-50 st
+1 st
 \end_layout
 
 \end_inset
@@ -3200,7 +3222,7 @@ Maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
-50 st
+1 st
 \end_layout
 
 \end_inset
@@ -3220,7 +3242,7 @@ Mätpunkter per maskin
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9 st
 \end_layout
 
 \end_inset
@@ -3238,7 +3260,7 @@ Mätpunkter per maskin
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9 st
 \end_layout
 
 \end_inset
@@ -3258,7 +3280,7 @@ Två mätningar per månad
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+18 st
 \end_layout
 
 \end_inset
@@ -3276,7 +3298,7 @@ Två mätningar per månad
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+216
 \end_layout
 
 \end_inset
@@ -3298,7 +3320,7 @@ Kostnad per mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
-4000 kr
+11.6 Tkr
 \end_layout
 
 \end_inset
@@ -3318,7 +3340,7 @@ Kostnad per mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
-40 kr
+1 Tkr
 \end_layout
 
 \end_inset
@@ -3357,6 +3379,14 @@ Med det sagt, bör man också inse att vid implementering av CBM blir det
  reservdelar och produktions- stopp.
  Därför är det viktigt att man inte ser CBM som enbart en kostnad, utan
  att man faktiskt tänker på att det kommer ge vinst i det långa loppet.
+ För beräknat exempel se Bilaga 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Ekonomiberäkning"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3397,6 +3427,10 @@ Listan kan göras lång, men utifrån dessa uttalanden kan man förstå att vibr
 sövervakning nästan alltid lönar sig.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch Ej implementerat
+status open
+
 \begin_layout Subsection
 Investeringskalkyl
 \begin_inset CommandInset label
@@ -3412,6 +3446,11 @@ name "sub:Investeringskalkyl"
 Projektbudgeten baseras på uppskattningar utifrån erfarenhetstal och en
  begränsad marknadsanalys.
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

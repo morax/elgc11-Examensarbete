@@ -95,8 +95,21 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
-The abstract should be no longer than 300 words.
- 
+Even though vibration measurement is not a new phenomenon, many businesses
+ still remain sceptical towards the somewhat abstract method.
+ Same scepticism does not exist when you visit the doctor uses his stetoscope
+ to listen after abnormalities in the sound pattern, even though the similaritie
+s are striking.
+ With todays technology it is possible to diagnose a machines different
+ parts in search for damages by analysing the unique vibrationpatterns they
+ provide.
+\end_layout
+
+\begin_layout Standard
+This study aims to close this gap with the help off an introduction to the
+ different terms and choices that exist in vibration analysis as a tool
+ in preventive maintenance and finally to present guidelines for implementation
+ where economy and availability is considered most pivotal for future decisions.
 \end_layout
 
 \begin_layout Standard
@@ -149,10 +162,6 @@ Detta arbete syftar att minska denna barriär med hjälp av en introduktion
  till de olika begrepp och val som finns inom vibrationsteknisk analys som
  hjälpmedel för underhåll och slutligen presentera en implementeringsmall
  där ekonomi och tillgänglighet anses vara mest vital inför framtida beslut.
-\end_layout
-
-\begin_layout Standard
-Sammanfattningen bör ej överskrida 300 ord.
 \end_layout
 
 \end_body

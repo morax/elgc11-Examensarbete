@@ -126,8 +126,7 @@ Problematiken med källor
 Under arbetets uppbyggnad har kritiken till de källor som studerats ökat
  i takt med mängden referenser.
  En genomgående trend är att den litteratur som går att hitta inom vibrationstek
-nik och CBM som inte är skriven av företag som säljer tjänster inom dessa
- områden.
+nik och CBM är skriven av företag som säljer tjänster inom dessa områden.
  Även ytterst liten andel forskning verkar bedrivas opartiskt, då främst
  inom vibrationstekniska området.
  
@@ -159,12 +158,21 @@ Trovärdigheten på kalkylerna om man antar att värdena stämmer överens med
 \end_layout
 
 \begin_layout Section
-Avancerad teknik kräver stort fokus
+Avancerad teknik kräver stort fokus och engagemang
+\end_layout
+
+\begin_layout Standard
+Att använda vibrationsmätningar som del av underhållet är ingen nyhet men
+ kan vara lika svårt att ekonomiskt motivera som underhållet i sig självt.
+ Destå bättre fungerande underhåll man har på ett företag destå mindre syns
+ arbetet då optimalt sett ingenting går sönder och utgifterna istället förflytta
+s mot själva underhållsenheten.
+ 
 \end_layout
 
 \begin_layout Standard
 För att implementera utrustning mot CBM behöver hela företaget ha insyn
- i tekniken eftersom investeringen är såpass hög och tidskrävande måste
+ i tekniken, eftersom investeringen är såpass hög och tidskrävande måste
  alla berörda parter hålla fokus på målet och 
 \emph on
 varför
@@ -172,7 +180,8 @@ varför
  genomförandet har betydelse.
  CBM är en relativt ny teknik och även om grunden är beprövad måste man
  förstå att det är en prognostisk metod som bör användas som hjälpmedel
- men inte ersätta underhållet helt.
+ men inte ersätta underhållet helt även om det ur ekonomisk synvinkel ser
+ inbjudande ut.
 \end_layout
 
 \begin_layout Section
@@ -182,9 +191,22 @@ Bör Fortum satsa på vibrationsmätningar?
 \begin_layout Standard
 Vibrationsmätningar kan användas i olika faser av underhållet, från bestämning
  av egenfrevenser till haverianalys och bestämning av underhållsintervall
- därför anser vi att åt minståne portabel utrustning är ett viktigt verktyg
+ därför anser vi att åtminstone en portabel utrustning är ett viktigt verktyg
  oavsett storlek på kraftverken.
- 
+ På stora eller kontinuerligt opererande kraftverk där haverier innebär
+ stora ekonomiska förluster rekomenderas ett 
+\emph on
+on-line 
+\emph default
+system där tydliga larmgränser upprättas för minskad haveririsk.
+\end_layout
+
+\begin_layout Standard
+För att sedan effektivisera underhållet och även hela företaget som stort
+ krävs större satsning vilket kanske inte är fullt så intressant i dagsläget.
+ Genomgående gäller att analysen av mätdata bör göras av egen personal till
+ största möjliga mån och konsulter endas inkallas vid specifika fall så
+ som upplärning eller analys som inte faller inom normal drift.
 \end_layout
 
 \end_body
