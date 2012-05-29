@@ -52,7 +52,7 @@
 \DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
 
-\usepackage[toc,page,titletoc]{appendix}
+\usepackage[toc,page,titletoc,header]{appendix}
 \renewcommand{\appendixname}{Appendix}
 \renewcommand{\appendixpagename}{Bilagor}
 \renewcommand{\appendixtocname}{\normalsize {Bilagor}}
@@ -613,7 +613,86 @@ options "sweunsrt"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \start_of_appendix
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset VSpace 20pheight%
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size giant
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.01ex"
+width "100col%"
+height "5pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\series bold
+\size giant
+Bilagor
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "5pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "elgc11-kymmen.lyx"

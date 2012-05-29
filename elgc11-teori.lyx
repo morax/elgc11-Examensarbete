@@ -327,9 +327,18 @@ name "sub:Vad-är-vibrationer?"
 \end_layout
 
 \begin_layout Standard
-Maskinvibrationer är helt enkelt en reciprocerande rörelse hos en maskin
- eller komponent som generellt uppkommer på grund av en eller fler av följande
- orsaker: 
+Maskinvibrationer är helt enkelt en reciprocerande
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Fram och tillbakagående rörelse.
+\end_layout
+
+\end_inset
+
+ rörelse hos en maskin eller komponent som generellt uppkommer på grund
+ av en eller fler av följande orsaker: 
 \end_layout
 
 \begin_layout Itemize
@@ -356,8 +365,8 @@ name "sub:Potentiella-fel"
 \end_layout
 
 \begin_layout Standard
-Många typer fel kan detekteras med hjälp av vibrationsövervakning och Bilaga
- 
+Många typer fel kan detekteras med hjälp av vibrationsövervakning.
+ Bilaga 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "chap:Detekterbara-vibrationsorsaker"
@@ -400,10 +409,10 @@ key "Vibrationer-Resonanser_och_krit.varv"
 
 \begin_layout Standard
 Förutom kritiska varvtal är självexciterande resonanser så som Oil whip
- i glidlager de särklass viktigaste vibrationerna att övervaka då en resonanssvä
-ngning bygger upp sig själv från nästan ingenting tills dess att systemets
- mekaniska begränsningar sätter stopp för ökningen.
- Smörjförhållandet i glidlagret blir då mycket dåliga och körningen bör
+ i glidlager de särklass viktigaste vibrationerna att övervaka.
+ Detta då en resonanssvängning bygger upp sig själv från nästan ingenting
+ tills dess att systemets mekaniska begränsningar sätter stopp för ökningen.
+ Smörjförhållandet i glidlagret blir då mycket dåliga, körningen bör då
  avstanna hastigt för att undvika lagerskador.
 \end_layout
 
@@ -430,7 +439,11 @@ När man överväger valet av maskiner att övervaka bör man lägga prioritet
  hos de som är kritiska.
  Analogin är mycket snarlik den att att göra hälsokontroller på människor,
  det är onödigt att skicka fullt friska personer på kontroll istället för
- de som ligger i riskzonen och verkligen behöver det.
+ de som ligger i riskzonen, som 
+\emph on
+verkligen
+\emph default
+ behöver det.
 \end_layout
 
 \begin_layout Standard
@@ -444,7 +457,14 @@ Maskiner som bidrar med dyra, tidskrävande eller svåra reparationer vid
 \end_layout
 
 \begin_layout Enumerate
-Maskiner kritiska för produktionen eller drift av kraftverket
+Maskiner kritiska för produktionen eller drift av kraftverket se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagram-över-processflöde"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -459,7 +479,7 @@ Maskiner som kan påverka mänsklig eller miljömässig säkerhet
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -550,10 +570,10 @@ Hur datan mäts
 \end_layout
 
 \begin_layout Standard
-Här gäller det att använda rätt typ av givare placerad på rätt plats på
- rätt sätt för att resultatet av mätningen skall bli så bra som möjligt.
+Här gäller det att använda rätt typ av givare placerad på rätt plats och
+ på rätt sätt för att resultatet av mätningen skall bli så bra som möjligt.
  Efter identifiering av intressanta maskinelement eller fenomén hos den
- maskin man vill undersöka måste rätt typ av givare väljas för jobbet.
+ maskin man vill undersöka måste rätt typ av givare väljas.
  Det finns olika typer av givare och de vanligast förekommande är
 \end_layout
 
@@ -571,8 +591,9 @@ Förflyttningsgivare
 
 \begin_layout Standard
 Givaren skall sedan placeras i rätt dominerande plan så nära maskinelementet
- som möjligt eftersom det likt hos människan är svårt att mäta hjärtslaget
- genom att sätta stetoskopet på foten.
+ som möjligt.
+ Eftersom det likt hos människan är svårt att mäta hjärtslaget genom att
+ sätta stetoskopet på foten.
  Vid mätning av lager bör man hålla sig så nära centerlinjen som möjligt.
  Används en accelerometer för att mäta vibrationer bör monteringen göras
  så fast som möjligt och på en yta fri från rost, färgflagor eller annat
@@ -598,15 +619,16 @@ De parametrar som avgör hur mycket och hur snabbt data ska samlas är
 
 
 \series default
- värdet högt bidrar det med ett stort spann på vibrationsfrekvenser och
+-värdet högt bidrar det med ett stort spann på vibrationsfrekvenser och
  för att kunna samla den datan behöver man en snabb mätfrekvens även kallat
  
 \emph on
 sampling rate.
  
 \emph default
-Destå fler spektrallinjer ett spektrum har destå lättare är det för användaren
- att analysera datan men fler spektrallinjer kräver långsammare mätningar.
+Destå fler spektrallinjer ett spektrum har, destå lättare är det för användaren
+ att analysera datan.
+ Dock kräver fler spektrallinjer långsammare mätningar.
  
 \end_layout
 
@@ -621,8 +643,8 @@ nsen.
 \begin_inset Formula $F_{max}\leq30$
 \end_inset
 
- kcpm räcker det generellt med 400 spektrallinjer medan 3200 linjer är att
- föredra vid 
+ kcpm räcker det generellt med 400 spektrallinjer, medan 3200 linjer är
+ att föredra vid 
 \begin_inset Formula $F_{max}>1200$
 \end_inset
 
@@ -643,8 +665,8 @@ key "beginner-vibration,maskinvibration"
  och sampling rate.
  Överlappsdata är ett sätt att återanvända en andel av tidigare mätt vågform
  för att beräkna ett nytt spektrum.
- Större överlappningsandel innebär att man behöver mindre ny data för generera
- ett nytt spektrum vilket gör att spektrumet snabbare kan visas.
+ Större överlappningsandel innebär att man behöver mindre ny data för att
+ generera ett nytt spektrum vilket gör att spektrumet snabbare kan visas.
  Överlappning på 50% är ideal i de flesta fall.
 \end_layout
 
@@ -655,6 +677,15 @@ Hur data behandlas
 \begin_layout Standard
 De parametrar som avgör hur datan bearbetas är vilken form av medelvärdesbildnin
 g, antalet medelvärden och vilken fönstertyp som används.
+ Ett exemel på de olika steg som en signal behandlas kan representeras enligt
+ Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Signalkedja-vid-digitalisering"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -662,7 +693,7 @@ g, antalet medelvärden och vilken fönstertyp som används.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -678,6 +709,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Signalkedja-vid-digitalisering"
+
+\end_inset
+
 Signalkedja vid digitalisering av vibrationsmätning
 \end_layout
 
@@ -734,7 +771,7 @@ där
 \end_inset
 
  antalet spektra.
- Aritmetiskt medelvärde är en användbar metod vid trendning av fel vilket
+ Aritmetiskt medelvärde är en användbar metod vid trendning av fel, vilket
  används flitigt i förebyggande underhåll och reducerar även bakgrundsbruset
  från signalen.
  
@@ -865,11 +902,11 @@ Hur data presenteras
 För att välja hur ett spektrum skall presenteras i analysprogrammet eller
  den handhållna enheten måste man först bestämma vad man vill titta efter
  och vilken skala som skall användas.
- Antalet samt vilka typer av parametrar man kan ställa in spelar stor roll
- i analysarbetet då ett spektra i sig själv innehåller mycket information
+ Antalet samt vilka typer av parametrar man kan ställa in, spelar stor roll
+ i analysarbetet, då ett spektra i sig själv innehåller mycket information
  och valmöjligheten av parametrar hjälper användaren att lätt hitta rätt
  utslag.
- Vid mätningar med handhållen utrustning där maskinkondition avgörs på plats
+ Vid mätningar med handhållen utrustning där maskinkondition avgörs på plats,
  är det rekomenderat att alltid använda samma inställningar som tidigare
  mätningar för att undvika missbedömningar.
 \end_layout
@@ -885,7 +922,15 @@ De enheter som oftast förekommer vid linjär amplitudskala är hastighet i
 \end_inset
 
  och frekvens kcpm alternativt kHz.
- Vid logaritmisk frekvensgradering används primärt vdB till amplitudskalan.
+ Vid logaritmisk frekvensgradering används primärt VdB
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "VdB"
+description "Hastighet mätt i decibelskala eng. \\emph{Velocity Decibel}"
+
+\end_inset
+
+ till amplitudskalan.
 \end_layout
 
 \begin_layout Subsection
@@ -894,7 +939,7 @@ Vibrationsnormer
 
 \begin_layout Standard
 För att avgöra om de uppmätta vibrationerna är skadliga finns två metoder
- att tillgå; egen trendmätning och haverianalys alternativt tröskeltal utifrån
+ att tillgå, egen trendmätning och haverianalys alternativt tröskeltal utifrån
  vibrationsnormer från industristandard och ISO.
  Generellt används standardnormer då primärt SS-EN 10816 där en tumregel
  är att vibrationsamplituden skall hållas under 
@@ -922,12 +967,13 @@ Mätutrustning
 \begin_layout Standard
 Idag är mätutrustningen kompakt och finns tillgänglig som både fast monterad
  och bärbart format.
- Portabla system samt fast monterad utrustning som inte utför kontinuelig
+ Portabla system samt fast monterad utrustning, som inte utför kontinuelig
  mätning kallas 
 \emph on
-off-line
+off-line.
+
 \emph default
- och med hjälp av mikroprocessorer konverteras analoga signaler till digitalt
+ Med hjälp av mikroprocessorer konverteras analoga signaler till digitalt
  FFT
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -938,14 +984,14 @@ description "Fast Fourier Transform är en algoritm, en digital beräkningsrutin
 
  spektrum vilket ger en smidig lösning för momentan inblick i maskinens
  hälsa.
- Detta gör att mätutrustningen är lätt att använda och bära med sig, tyvärr
- innebär detta vissa kompromisser gent de äldre analoga mätinstrumenten.
+ Detta gör att mätutrustningen är lätt att använda och bära med sig.
+ Tyvärr innebär detta vissa kompromisser gent de äldre analoga mätinstrumenten.
  
 \end_layout
 
 \begin_layout Standard
-Ett stort problem med digital portabel utrustning är visningen av vibrationerna,
- då vibrationer sällan är stabila medför detta att mätvärdet måste dämpas
+Ett stort problem med digital portabel utrustning är visningen av vibrationerna.
+ Då vibrationer sällan är stabila medför detta att mätvärdet måste dämpas
  eller medelvärdesbildas till den mån att displayen blir läsbar för operatören.
  Analoga visare ger en bättre representation av maskinvibrationerna, vibrationst
 oppar och även lagerkondition där operatören står för filtreringen, något
@@ -969,19 +1015,20 @@ key "mil1-condition_monitoring"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-För och nackdelar med off-line utrustning
+För- och nackdelar med off-line utrustning
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:OFFLINE-För-och-nackdelar"
@@ -1721,19 +1768,40 @@ Ominvestering vart fjärde år
 \end_layout
 
 \begin_layout Standard
-Ett system av integrerad hårdvara och mjukvara som kontinueligt utför mätningar
+Ett system av integrerad hårdvara och mjukvara som kontinuerligt utför mätningar
  på maskinen dygnet runt kallas 
 \emph on
 on-line.
  
 \emph default
-Datan presenteras sedan som information om maskinens hälsa via lättåtskådliga
+Datan presenteras sedan som information om maskinens hälsa via lättåskådliga
  grafer och värden med hjälp av en dator.
  Detta gör det lätt för operatören att avgöra när och om en åtgärd bör initieras.
  Systemet kan även användas som bidrag till övervakning av produktionens
  effektivitet.
  All rådata sparas så underhållsingenjörer lätt kan plocka ut intressanta
  värden för vidare analys av specifika maskinelement.
+ För en sammanfattning av för- och nackdelar med 
+\emph on
+off-line
+\emph default
+ utrustning se Tabell 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:OFFLINE-För-och-nackdelar"
+
+\end_inset
+
+ respektive Tabell 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:ONLINE-För-och-nackdelar"
+
+\end_inset
+
+ för 
+\emph on
+on-line.
 \end_layout
 
 \begin_layout Standard
@@ -1746,7 +1814,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-För och nackdelar med on-line utrustning
+För- och nackdelar med on-line utrustning
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:ONLINE-För-och-nackdelar"
@@ -2345,6 +2413,13 @@ description "Förutbestämt underhåll eng. \\emph{Predictive Maintenance}"
 
 \end_inset
 
+ se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Underhållstyper"
+
+\end_inset
+
 ) där man byter ut/reparerar innan fel uppstår, skillnaden är att PdM tenderar
  att vara mer utrustningsfokuserad medan CBM är systemorienterat samt att
  underhållet justeras med hjälp av P-F intervall.
@@ -2467,9 +2542,9 @@ Följande åtaganden bör göras för att CBM skall vara applicerbart och effekt
 
 \begin_layout Standard
 P-F intervallet måste vara konsekvent nog så inte åtgärder görs för tidigt
- eller att fel inträffar före den planerade åtgärden, intervallet bör dessutom
- vara av praktisk tidsrymd förslagsvis dagar eller veckor för att vara en
- god kandidat för CBM.
+ eller att fel inträffar före den planerade åtgärden.
+ Intervallet bör dessutom vara av praktisk tidsrymd förslagsvis dagar eller
+ veckor för att vara en god kandidat för CBM.
  P-F intervallet skall vara definierat så en tydlig varning uppstår med
  erfodelig tid för planering och utförande av åtgärd.
  Mest relevant i detta sammanhang är att underhållet måste vara billigare
@@ -2517,6 +2592,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Processflöde-vid-implementering"
+
+\end_inset
+
 Processflöde vid implementering
 \end_layout
 
@@ -2552,7 +2633,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Processflöde av mätdata
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Processflöde-vid-livslängd"
+
+\end_inset
+
+Processflöde vid livslängdsuppskattning
 \end_layout
 
 \end_inset
@@ -2591,7 +2678,15 @@ Grafisk representation över återkopplingen som försegår vid implementering
 För att öka prestandan hos CBM system används nu mer fuzzy logic, neurala
  nät och applikation av Dempster-Shaferteori.
  CBM system värderas efter dess förmåga att säkert diagnostisera fel samt
- beräkna hur lång tid som återstår innan fel inträffar.
+ beräkna hur lång tid som återstår innan fel inträffar vilket är en viktig
+ del för underhållet se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Processflöde-vid-livslängd"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -2599,18 +2694,26 @@ Implementering av CBM system
 \end_layout
 
 \begin_layout Standard
-Nyckelordet för en lyckad implementering av CBM system är långsiktig planering.
+Nyckelordet för en lyckad implementering av CBM system är långsiktig planering
+ se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Processflöde-vid-implementering"
+
+\end_inset
+
+.
  Lång tid före realisering av övervakning och analys av produktionen behövs
  gedigen insikt om vad som skall undersökas och hur detta utförs.
  För att verkligen börja spara pengar med det nya sättet att planera underhållsa
 rbetet måste en grundlig analys av befintligt underhåll göras.
- Allt som inte fungerar enligt orginalplanen måste rättas till före en större
- förändring initieras.
+ Allt som inte fungerar enligt orginalplanen måste rättas till före det
+ att en större förändring initieras.
 \end_layout
 
 \begin_layout Standard
 Eftersom grundtanken med ett CBM system är mjukvarustyrda prognoser krävs
- högkvaltiativ mätdata så val av givare och dess installation bör göras
+ högkvalitativ mätdata, så val av givare och dess installation bör göras
  med största omsorg.
  Man kan med fördel använda sig av utrustning som följer någon av följande
  tre standarder
@@ -2630,6 +2733,18 @@ MIMOSA
 
 \begin_layout Subsection
 För- och nackdelar med ett CBM system
+\end_layout
+
+\begin_layout Standard
+Även om knapphändig forskning gjorts inom CBM som visar en mätbar (procentuell)
+ förbättring kan man ändå enligt Tabell 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Sammanfattning-av-CBM"
+
+\end_inset
+
+ sammanfatta generella för- och nackdelar.
 \end_layout
 
 \begin_layout Standard
@@ -2665,7 +2780,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Sammanfattning av för och nackdelar med CBM system
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Sammanfattning-av-CBM"
+
+\end_inset
+
+Sammanfattning av för- och nackdelar med CBM system
 \end_layout
 
 \end_inset
@@ -3010,7 +3131,7 @@ Minskar kostnader för reservdelar och arbete
 \begin_inset Text
 
 \begin_layout Plain Layout
-Förbättrar produkkvalitén
+Förbättrar produktkvalitén
 \end_layout
 
 \end_inset

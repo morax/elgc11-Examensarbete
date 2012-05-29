@@ -123,8 +123,8 @@ reference "chap:Analys-av-Kymmens"
 
 \end_inset
 
-) sker vibrationsmätningen på Fortum sker i regel med hjälp av portabel
- vibrationsutrustning där datan sedan skickas till konsult för analys.
+) sker vibrationsmätningen på Fortum i regel med hjälp av portabel vibrationsutr
+ustning där datan sedan skickas till konsult för analys.
  Delar av mätdata sparas på en egen server i Alvesta medan majoriteten finns
  hos konsulten.
 \end_layout
@@ -147,9 +147,10 @@ Vibrationsmätning av kraftverk
 Ökade materialspänningar kan uppkomma via belägg och errosion som i sin
  tur påverkar balanseringen eller temperaturrellaterad expansion som ändrar
  komponentens uppriktning.
- Dessa problem bidrar med stor dynamisk belastning på lager som leder till
- förkortad livslängd men är lätt identifierade med hjälp av periodiska vibration
-smätningar och det finns välbeprövade metoder för direkta åtgärder 
+ Dessa problem bidrar med stor dynamisk belastning på lager, som leder till
+ förkortad livslängd, men är lätt identifierade med hjälp av periodiska
+ vibrationsmätningar och det finns välbeprövade metoder för direkta åtgärder
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "vibration_tutorial"
@@ -164,13 +165,14 @@ Typ av mätningar
 \end_layout
 
 \begin_layout Standard
-För att få en bra diagnos över vad som kan vara fel i anläggningarna krävs
+För att få en bra diagnos över vad som kan vara fel i anläggningarna, krävs
  att man mäter på rätt punkter i systemet.
  Mäter man på fel punkter, eller inte samma punkt upprepade gånger, löper
  man stor risk att ställa felaktiga diagnoser och det kan bli kostsamt.
  Mätningarna hos Fortum idag verkar vara begränsade till enbart lager (styrlager
-, bärlager och turbinlager), huruvida detta är tillräckligt för att kunna
- göra en god diagnos över hela systemet återstår att se.
+, bärlager och turbinlager).
+ Huruvida detta är tillräckligt för att kunna göra en god diagnos över hela
+ systemet återstår att se.
 \end_layout
 
 \begin_layout Standard
@@ -181,15 +183,15 @@ Mätpunkterna i sin tur skall tas på blottade delar i maskineriet som normalt
 \end_layout
 
 \begin_layout Standard
-Man bör vara försiktig så att man försäkrar sig om att mätningarna representerar
- vibrationerna i lagerhuset och inte inkluderar någon lokal resonans eller
+Man bör vara försiktig, så att man försäkrar sig om att mätningarna representera
+r vibrationerna i lagerhuset och inte inkluderar någon lokal resonans eller
  amplitud.
  Placeringen av vibrationsgivare bör vara sådan att den tillhandahåller
  tillräcklig känslighet till de dynamiska krafterna av maskinen under olika
  drift- förhållanden.
  Typiskt för detta, speciellt i långsamtgående maskinerier, är att man behöver
- två ortogonala radiella mätriktningar på varje lagerhus och att dessa punkter
- samt riktningar skall väljas med extrem omsorg 
+ två ortogonala radiella mätriktningar på varje lagerhus, och att dessa
+ punkter samt riktningar skall väljas med extrem omsorg 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "iso10816-5"
@@ -201,13 +203,14 @@ key "iso10816-5"
 
 \begin_layout Standard
 Om off-line system brukas, skall mätpunkterna och driftsförhållandena vara
- samma mätning efter mätning, misslyckas man med detta löper man risk att
- dra felaktiga beslut angående vibrationsnivåerna.
+ samma mätning efter mätning.
+ Misslyckas man med detta löper man risk att dra felaktiga beslut angående
+ vibrationsnivåerna.
 \end_layout
 
 \begin_layout Standard
-Följande punkter bedöms som nödvändiga att mäta på i en anläggning se Bilaga
- 
+Följande punkter bedöms som nödvändiga att mäta på i en anläggning.
+ Se Bilaga 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Detekterbara-vibrationsorsaker"
@@ -217,13 +220,13 @@ reference "chap:Detekterbara-vibrationsorsaker"
  för detekterbara fel.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Stator
 \end_layout
 
 \begin_layout Standard
-Stillastående del i en elektrisk maskin.
- Den är ofta konstruerad som en ring av magnetiskt material med inåtriktade
+är en stillastående del i en elektrisk maskin.
+ Den är ofta konstruerad som en ring av ferromagnetiskt material med inåtriktade
  poler försedda med magnetlindningar.
  I andra fall har statorn en plåtkärna som på innersidan är försedd med
  lindningar i spår 
@@ -253,12 +256,12 @@ Statorstomme
 Fundament
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Rotor
 \end_layout
 
 \begin_layout Standard
-Roterande del i en elektrisk maskin.
+är roterande del i en elektrisk maskin.
 \end_layout
 
 \begin_layout Standard
@@ -282,13 +285,13 @@ Rotorpoler - Om vibrationer detekteras i någon av föregående punkter kan
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Lager
 \end_layout
 
 \begin_layout Standard
-Maskindel som håller uppe roterande axlar på plats och har till syfte att
- minska friktionen mellan axeln och bärytan 
+är en maskindel som håller uppe roterande axlar på plats och har till syfte
+ att minska friktionen mellan axeln och bärytan 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hemsida_lager"
@@ -296,10 +299,10 @@ key "Hemsida_lager"
 \end_inset
 
 .
- I vattenkraftverk existerar främst glidlager, förutom på dom mycket små
+ I vattenkraftverk existerar främst glidlager, förutom på de mycket små
  kraftverken.
- Följande analys är därför på just glidlager, och kullager behandlas i senare
- avsnitt.
+ Följande analys är därför på just glidlager.
+ Kullager behandlas i senare avsnitt.
 \end_layout
 
 \begin_layout Standard
@@ -352,13 +355,13 @@ key "iso10816-5"
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Växlar
 \end_layout
 
 \begin_layout Standard
-Anordning som gör att en maskin kan arbeta under gynnsamma varvtal oberoende
- av skiftande hastighets- och belastningsförhållanden 
+är en anordning som gör att en maskin kan arbeta under gynnsamma varvtal
+ oberoende av skiftande hastighets- och belastningsförhållanden 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hemsida_vaxlar"
@@ -391,13 +394,13 @@ Lager
 Kåpor
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Ledskenor
 \end_layout
 
 \begin_layout Standard
-Hydrauliskt reglerad anordning som möjliggör reglering av vattenflödet genom
- en turbin och optimering av verkningsgraden 
+är en hydrauliskt reglerad anordning som möjliggör reglering av vattenflödet
+ genom en turbin och optimering av verkningsgraden 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hemsida_ledskovel"
@@ -436,19 +439,32 @@ Typ av mätutrustning
 \end_layout
 
 \begin_layout Standard
+Första ledet i mätutrustningen är givaren och Tabell 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Ekonomisk-översikt-givare"
+
+\end_inset
+
+ sammanfattar både den ekonomiska samt mättekniska bredd bland dessa.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Ekonomisk-översikt-givare"
+
+\end_inset
+
 Ekonomisk översikt på givartyper
 \end_layout
 
@@ -591,7 +607,7 @@ SKF
 \uwave off
 \noun off
 \color none
-6,000-
+1,000-
 \end_layout
 
 \end_inset
@@ -1741,12 +1757,13 @@ Nuvarande mätutrustning är två portabla vibrationsmätningskit med antaget
 
 \begin_layout Standard
 Genom kontinuerlig mätning kan man analysera, trenda och alarmera de olika
- vibrationerna i en anläggning, och tack vare detta kan man enkelt förutse
- direkt haveri eller detektera när något kan behöva underhåll.
+ vibrationerna i en anläggning.
+ Tack vare detta kan man enkelt förutse direkt haveri eller detektera när
+ något kan behöva underhåll.
  Detta möjliggör underhållsarbete på rätt del, vid rätt tid och av rätt
  anledning.
  Genom arkivering av vibrationsdata över en längre tidsperiod och en dokumentera
-d historik över underhållsarbetet kan man enkelt skapa schema för kommande
+d historik över underhållsarbetet, kan man enkelt skapa schema för kommande
  underhållsarbete sådant att man får maximal drivtid på maskinerna för de
  lägsta servicekostnaderna.
  Bara det mest effektiva och riktade underhållsarbetet behöver utföras.
@@ -1905,17 +1922,17 @@ Fortum skulle därför utan tvekan gynnas av on-line system på deras vattenkraf
 rk.
  Det ger kontinuerlig information om anläggningen, möjlighet att koppla
  driften till produktionen, mer avancerad analys av erhållna mätdatan och
- tillåter kontinuerlig mätning på mätpunkter som annars kan vara svåra och
- farliga att mäta på med off-line system.
+ tillåter kontinuerlig mätning på mätpunkter, som annars kan vara svåra
+ och farliga att mäta på med off-line system.
  
 \end_layout
 
 \begin_layout Standard
 Efter man valt typ av övervakningssystem bör man först och främst klargöra
- sitt behov med utrustningen så att man inte köper en utrustning som bara
+ sitt behov med utrustningen, så att man inte köper en utrustning som bara
  står och samlar damm p.g.a.
- otillräckliga vibrationsmätningsegenskaper eller mätutrustning som inte
- kan hantera dom önskade mätningarna.
+ otillräckliga vibrationsmätningsegenskaper.
+ Eller mätutrustning som inte kan hantera de önskade mätningarna.
  Punkter som sedan bör läggas mest vikt på vid val av vibrationsmätningssystem
  sammanfattas i Tabell 
 \begin_inset CommandInset ref
@@ -2571,11 +2588,12 @@ Vid ett mer komprimerat on-line system kan man mäta på bara ett fåtal av
  system som kan cirkulera inom Fortum och användas på mindre kritiska anläggning
 ar.
  Dessa Off-line system används då främst vid diagnos av nuvarande maskin-och
- lagerhälsa, vid installation av nya maskiner, och balansering.
+ lagerhälsa, vid installation av nya maskiner och balansering.
  Om något suspekt detekteras bör det följas upp med vidare mätningar.
  Detta kan dock bli problematiskt om fel detekteras vid flera av anläggningarna
- utan on-line system, då kanske antalet vibrationsutrustningar eller personal
- med kunskap ej räcker till.
+ utan on-line system.
+ Då kanske antalet vibrationsutrustningar eller personal med kunskap ej
+ räcker till.
  
 \end_layout
 
@@ -2606,7 +2624,7 @@ Analys av mätdata
 Vem som skall analysera datan beror främst på var intresset av informationen
  ligger, d.v.s.
  vem som i slutändan skall fatta beslut.
- Det kan utifrån ses som en trivial fråga men bör betas upp i tre steg
+ Det kan utifrån ses som en trivial fråga men bör delas upp i tre steg
 \end_layout
 
 \begin_layout Enumerate
@@ -2626,14 +2644,14 @@ Konsulter
 \end_layout
 
 \begin_layout Standard
-Då vibrationstekniska företag har stor kompetens och vana inom vibrationsanalys
- är det vanligt inom industrin att konsultera analysen men även om detta
- är en enkel lösning kortsiktigt innebär det i slutändan mindre insikt och
- trovärdighet på dessa rapporter.
+Då vibrationstekniska företag har stor kompetens och vana inom vibrationsanalys,
+ är det vanligt inom industrin att konsultera analysen.
+ Även om detta är en enkel lösning kortsiktigt innebär det i slutändan mindre
+ insikt och trovärdighet på dessa rapporter.
  En av de mer vitala bristerna i de rapporter som studerats i detta arbete
  är att rapporterna undanskymmer trendning och jämförelsetal med tidigare
- mätningar vilket gör att rapporten visar att kraftverket fungerar men inte
- hur bra.
+ mätningar, vilket gör att rapporten visar att kraftverket fungerar men
+ inte hur bra.
  Konsulter bör i stället ligga i uppstartsfasen och sedan primärt användas
  i utbildningssyfte av egen personal.
 \end_layout
@@ -2667,8 +2685,8 @@ CBM system
 \begin_layout Standard
 När egen personal har god kunskap om vikten av bra vibrationsmätningar som
  verktyg i underhållsarbetet, dvs man ser klart och tydligt vikten av varför
- man utför och analyserar mätningar kan man implementera ett CBM system
- vilket inte bara kommer effektivisera underhållet men även ge kraft åt
+ man utför och analyserar mätningar kan man implementera ett CBM system.
+ Detta kommer inte bara effektivisera underhållet, utan även ge kraft åt
  större beslut inom företaget då total analys av produktionen synkroniseras
  via ett system.
  
@@ -2684,20 +2702,20 @@ gstekniken.
  Om man har tillgång till gammal data och den är lätt att tolka, så kan
  man använda de gamla mätningarna som riktlinjer för de nya mätningarna
  och analys blir avsevärt mycket simplare.
- Hos Fortum, i dagsläget, skickas majoriteten av mätresultaten till SKF,
- som är leverantörer, i Luleå.
+ Hos Fortum skickas i dagsläget majoriteten av mätresultaten till SKF, som
+ är leverantörer, i Luleå.
  Av SKF får man sedan en tillståndsrapport där nuvarande lagerstatus rapporteras
  och rekommendationer på åtgärder om nödvändigt.
 \end_layout
 
 \begin_layout Standard
 Vid analys av rapporten visades vissa brister beroende på vem som är den
- tänkte mottagaren då presenterade grafer och dylikt kräver gedigen kunskap
+ tänkte mottagaren, då presenterade grafer och dylikt kräver gedigen kunskap
  för att avläsas.
  Den kanske mest viktiga informationen saknades, det vill säga en lättåskådlig
  trendkurva över respektive komponent då man vid effektivt underhållsarbete
  är mer intresserad av förändringen av konditionen.
- Som det ser ut idag aggerar rapporten mer som en larmindikator.
+ Som det ser ut idag agerar rapporten mer som en larmindikator.
 \end_layout
 
 \begin_layout Standard
@@ -2840,7 +2858,7 @@ För installation av mätsystem berörs endast
 \emph on
 on-line
 \emph default
- system då ett portabelt system inte behöver någon fysisk installation,
+ system, då ett portabelt system inte behöver någon fysisk installation,
  mer än kanske några givare på givna punkter.
  Ett 
 \emph on
@@ -2862,8 +2880,8 @@ Installationen sker typiskt av leverantören och beroende på hur rigorösa
  mätningar man har bestämt sig för att ha påverkas tiden samt driftsförhållanden
 a vid installation.
  Men installationen sker allt som oftast under de mest gynsamma förhållandena
- för kunden och efter installation påverkas inte produktionen negativt av
- utrustningen på något sätt.
+ för kunden, vilket efter installation inte påverkar produktionen negativt
+ av utrustningen på något sätt.
 \end_layout
 
 \begin_layout Section
@@ -3374,7 +3392,7 @@ er osv.
 
 \begin_layout Standard
 Med det sagt, bör man också inse att vid implementering av CBM blir det
- ofta en stor kostnad i investeringsfasen men att dessa pengar sedan skall
+ ofta en stor kostnad i investeringsfasen, men att dessa pengar sedan skall
  fås igen genom ett mycket bättre underhållsarbete, med mindre reparationer,
  reservdelar och produktions- stopp.
  Därför är det viktigt att man inte ser CBM som enbart en kostnad, utan

@@ -113,7 +113,7 @@ name "chap:Slutsats"
 
 \emph on
 Detta kapitel presenterar slutsatserna av detta arbete och inleds med en
- diskussion gällande de problem som observerats under arbetets gång och
+ diskussion gällande de problem, som observerats under arbetets gång och
  avslutas med riktlinjer för vidare studier och implementation av övervakningssy
 stem.
 \end_layout
@@ -202,7 +202,7 @@ system där tydliga larmgränser upprättas för minskad haveririsk.
 \end_layout
 
 \begin_layout Standard
-För att sedan effektivisera underhållet och även hela företaget som stort
+För att sedan effektivisera underhållet och även hela företaget i stort
  krävs större satsning vilket kanske inte är fullt så intressant i dagsläget.
  Genomgående gäller att analysen av mätdata bör göras av egen personal till
  största möjliga mån och konsulter endas inkallas vid specifika fall så
