@@ -418,9 +418,9 @@ Förutom kritiska varvtal är självexciterande resonanser så som Oil whip
 
 \begin_layout Standard
 Kavitation är ett tillstånd som ofta uppträder i vattenturbiner i samband
- med att ett reducerat vätsketryck skapar bubblor nära rotorns yta.
- När bubblorna spricker överförs ganska stora krafter på rotorn vilket leder
- till att gropar bildas på ytan.
+ med att ett reducerat vätsketryck skapar bubblor nära turbinbladens yta.
+ När bubblorna spricker överförs ganska stora krafter på turbinbladens vilket
+ leder till att gropar bildas på ytan.
 \end_layout
 
 \begin_layout Subsection
@@ -985,7 +985,8 @@ description "Fast Fourier Transform är en algoritm, en digital beräkningsrutin
  spektrum vilket ger en smidig lösning för momentan inblick i maskinens
  hälsa.
  Detta gör att mätutrustningen är lätt att använda och bära med sig.
- Tyvärr innebär detta vissa kompromisser gent de äldre analoga mätinstrumenten.
+ Tyvärr innebär detta vissa kompromisser gentemot de äldre analoga mätinstrument
+en.
  
 \end_layout
 
@@ -1022,7 +1023,7 @@ key "mil1-condition_monitoring"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -1475,7 +1476,7 @@ Lägre kostnad per mätpunkt
 \begin_inset Text
 
 \begin_layout Plain Layout
-Svårt att ersätta personal för vibrationsmäting
+Svårt att avsätta personal för vibrationsmäting
 \end_layout
 
 \end_inset
@@ -2478,7 +2479,7 @@ reference "fig:P-F-intervall"
 
  och beskriver tiden mellan det ett fel beräknas att upptäckas och haveri
  inträffar.
- Även om många fel inte är åldersrellaterade avger de flesta maskinelement
+ Även om många fel inte är åldersrelaterade avger de flesta maskinelement
  en tydlig indikation innan de fallerar.
  Underhållsintervallet vid PdM tar inte hänsyn till haverifrekvensen eller
  hur kritiskt ett maskinelement är vilket CBM gör genom att filosofin bygger
@@ -2657,7 +2658,7 @@ Processflöde vid livslängdsuppskattning
 
 \begin_layout Plain Layout
 Grafisk representation över återkopplingen som försegår vid implementering
- av samt underhåll med CBM
+ av, samt underhåll med CBM
 \end_layout
 
 \end_inset

@@ -703,7 +703,7 @@ Normalt har multiplarna högre amplitud än 1X.
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -808,7 +808,7 @@ Kommentar
 \begin_inset Text
 
 \begin_layout Plain Layout
-Excentriskt luftgap i rotor
+Excentriskt luftgap i stator
 \end_layout
 
 \end_inset

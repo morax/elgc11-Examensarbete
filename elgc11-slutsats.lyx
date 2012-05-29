@@ -137,19 +137,20 @@ Ekonomisk trovärdighet
 \end_layout
 
 \begin_layout Standard
-De ekonomiska kalkylerna är mycket svåra att göra bra då väldigt lite nödvändig
- information finns att tillgå, och därför används några värden som saknar
- referens.
+De ekonomiska kalkylerna är mycket svåra att göra bra, då väldigt lite nödvändig
+ information finns att tillgå.
+ Därför används några värden som saknar referens.
  Kalkylerna är dock fortfarande bra för att skapa en god bild över hur relativt
  små förändringar i t.ex väntetider och reparationstider skapar stora förändringa
 r i kostnader.
- Detta anser vi är viktigt att poängtera då det är en stor (kanske den största)
- punkt i vårt argument till varför man bör överväga att implementera CBM.
+ Detta anser vi är viktigt att poängtera då det är en stor punkt, kanske
+ den största i vårt argument till varför man bör överväga att implementera
+ CBM.
 \end_layout
 
 \begin_layout Standard
 Trovärdigheten på kalkylerna om man antar att värdena stämmer överens med
- verkligheten anses hög, det inte är några avancerade kalkyler med många
+ verkligheten anses hög, då det inte är några avancerade kalkyler med många
  oförklarliga termer.
  Det ses enkelt i kalkylen och man inser även med sunt förnuft att lyckas
  man förutse ett haveri och kan ha allt redo för när man skall byta/underhålla

@@ -351,7 +351,7 @@ reference "fig:Karta-över-kraftverksområdet."
  Rottnan, Granån via en överledningstunnel samt den naturliga vattentillrinninge
 n.
  Kraftverket körs inte kontinueligt utan produktionen sköts helt via parabollänk
- till centralen Stockholm.
+ till centralen i Stockholm.
  Sammanfattad information finns enligt Tabell 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -682,7 +682,7 @@ Visuell inspektion
 
 \begin_layout Standard
 Kraftverket består av fyra våningar där första våningen har kontrollrum,
- topp av generator samt travers för lyft av generatorn.
+ topp av generator samt travers för lyft av aggregatet.
  Våning två inehåller statorn och dess separata kylvattensystem.
  Här finns även temperaturmätare för lager med analoga visare.
 \end_layout
@@ -691,13 +691,15 @@ Kraftverket består av fyra våningar där första våningen har kontrollrum,
 Turbinrummet ligger på våning tre där man har god översyn över vattenintaget,
  turbinhuset, styrning av ledskenor, turbinstyrlager och kompressor med
  tillhörande ackumulatortank som används vid pumpdrift av kraftverket.
- Pumpen fungerar genom att man stänger den övre ventilen, fyller turbinrummet
- med luft samtidigt som generatorn körs som motor upp till maximal effekt.
- Sedan öppnas porten och luften avbryts vilket gör turbinen till en pump.
+ Pumpen fungerar genom att man stänger den övre trottelventilen, fyller
+ turbinkammare med luft samtidigt som generatorn körs som motor upp till
+ maximal effekt.
+ Trottelventilen öppnas sedan och luften trycks ut vilket gör turbinen till
+ en pump.
 \end_layout
 
 \begin_layout Standard
-Våning fyra huserar utflödesporten från turbinen där även en serviceport
+Våning fyra huserar utflödesventilen från turbinen där även en manlucka
  finns för inspektion och mindre reparation av turbinblad m.m.
 \end_layout
 

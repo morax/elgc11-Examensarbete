@@ -125,7 +125,7 @@ reference "chap:Analys-av-Kymmens"
 
 ) sker vibrationsmätningen på Fortum i regel med hjälp av portabel vibrationsutr
 ustning där datan sedan skickas till konsult för analys.
- Delar av mätdata sparas på en egen server i Alvesta medan majoriteten finns
+ Delar av mätdata sparas på en egen server i Avesta medan majoriteten finns
  hos konsulten.
 \end_layout
 
@@ -136,7 +136,8 @@ Generatorer och turbiner
 \begin_layout Standard
 Generellt är det inga större fysiska svårigheter att implementera och installera
  ett fast vibrationsmätningssystem i kraftverken och kommunikationsvägar
- finns redan installerade i kraftverken då de redan styrs via annan ort.
+ finns redan installerade i kraftverken då de redan styrs från en driftcentral
+ i Stockholm.
 \end_layout
 
 \begin_layout Section
@@ -144,9 +145,9 @@ Vibrationsmätning av kraftverk
 \end_layout
 
 \begin_layout Standard
-Ökade materialspänningar kan uppkomma via belägg och errosion som i sin
- tur påverkar balanseringen eller temperaturrellaterad expansion som ändrar
- komponentens uppriktning.
+Ökade materialspänningar kan uppkomma via beläggningar och errosion, som
+ i sin tur påverkar balanseringen eller temperaturrellaterad expansion,
+ som ändrar komponentens uppriktning.
  Dessa problem bidrar med stor dynamisk belastning på lager, som leder till
  förkortad livslängd, men är lätt identifierade med hjälp av periodiska
  vibrationsmätningar och det finns välbeprövade metoder för direkta åtgärder
@@ -177,8 +178,8 @@ För att få en bra diagnos över vad som kan vara fel i anläggningarna, krävs
 
 \begin_layout Standard
 Mätpunkterna i sin tur skall tas på blottade delar i maskineriet som normalt
- är tillgängliga och så nära vibrationskälla samt i linje med kraften som
- möjligt.
+ är tillgängliga och så nära vibrationskällan, samt i linje med kraften
+ som möjligt.
  Exempelvis på alla huvudsakliga lager av maskinen.
 \end_layout
 
@@ -188,7 +189,7 @@ r vibrationerna i lagerhuset och inte inkluderar någon lokal resonans eller
  amplitud.
  Placeringen av vibrationsgivare bör vara sådan att den tillhandahåller
  tillräcklig känslighet till de dynamiska krafterna av maskinen under olika
- drift- förhållanden.
+ driftförhållanden.
  Typiskt för detta, speciellt i långsamtgående maskinerier, är att man behöver
  två ortogonala radiella mätriktningar på varje lagerhus, och att dessa
  punkter samt riktningar skall väljas med extrem omsorg 
@@ -226,10 +227,9 @@ Stator
 
 \begin_layout Standard
 är en stillastående del i en elektrisk maskin.
- Den är ofta konstruerad som en ring av ferromagnetiskt material med inåtriktade
- poler försedda med magnetlindningar.
- I andra fall har statorn en plåtkärna som på innersidan är försedd med
- lindningar i spår 
+ Den är ofta konstruerad som en ring av järnplåtar som är ihopsvetsade samt
+ på innsidan består den av ett stort antal plåtar, som är magnetiskt orgenterade
+ och fastlåsta, samt försedda med spår i vilken lindningen är placerad 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hemsida_stator"
@@ -273,7 +273,7 @@ Styrlager - övre och undre
 \end_layout
 
 \begin_layout Itemize
-Turbinlager
+Bärlager
 \end_layout
 
 \begin_layout Itemize
@@ -290,8 +290,8 @@ Lager
 \end_layout
 
 \begin_layout Standard
-är en maskindel som håller uppe roterande axlar på plats och har till syfte
- att minska friktionen mellan axeln och bärytan 
+är en maskindel som håller roterande axlar på plats och har till syfte att
+ minska friktionen mellan axeln och bärytan 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hemsida_lager"
@@ -339,8 +339,8 @@ status open
 Viktigt att tänka på vid vertikala maskiner i hydroelektriska anläggningar
  är att mätdata vid nedre styrlager ibland misstolkas; vibrationsnivåerna
  som erhålls vid sådana lager och deras kringliggande utrustning som är
- styvt inbäddade i maskineriet är ibland en produkt av hydrauliska krafter,
- direkt överförda från den hydrauliska maskinen via fundamentet 
+ styvt inbäddade i maskineriet är ibland en produkt av hydrologiska krafter,
+ direkt överförda från den hydrologiska maskinen via fundamentet 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "iso10816-5"
@@ -430,7 +430,7 @@ I dagsläget har man inte någon självklar punkt att mäta vibrationerna som
  kan uppstå p.g.a.
  ledskenorna, men en rekommendation är att helt enkelt följa ISO 10816-5:2000(E)
  som säger "Mätpunkterna i sin tur skall tas på blottade delar i maskineriet
- som normalt är tillgängliga och så nära vibrationskälla samt i linje med
+ som normalt är tillgängliga och så nära vibrationskällan samt i linje med
  kraften som möjligt." 
 \end_layout
 
@@ -1881,7 +1881,7 @@ Kombiinstrument - Allt fler av vibrationsmätteknikens möjligheter förenas
  temperatur.
 \end_layout
 
-\begin_layout Minisec
+\begin_layout Paragraph
 On-line övervakningsutrustning
 \end_layout
 
@@ -2572,8 +2572,7 @@ Garantier och livslängd
 
 \begin_layout Standard
 Som nämns ovan vore ett on-line system att föredra, åtminstone på Fortums
- mer kritiska kraftverk där ett haveri skulle orsaka stora förseningar och
- i sin tur stora förluster.
+ mer kritiska kraftverk där ett haveri skulle orsaka stora produktionsförluster.
  Vid ett komplett sådant system skulle man mäta alla rekommenderade punkter
  kontinuerligt, och med möjlighet att konstant övervaka systemet för en
  väsentligt mer exakt diagnos av maskinhälsan.
@@ -2702,8 +2701,8 @@ gstekniken.
  Om man har tillgång till gammal data och den är lätt att tolka, så kan
  man använda de gamla mätningarna som riktlinjer för de nya mätningarna
  och analys blir avsevärt mycket simplare.
- Hos Fortum skickas i dagsläget majoriteten av mätresultaten till SKF, som
- är leverantörer, i Luleå.
+ Hos Fortum skickas i dagsläget majoriteten av mätresultaten till SKF i
+ Luleå.
  Av SKF får man sedan en tillståndsrapport där nuvarande lagerstatus rapporteras
  och rekommendationer på åtgärder om nödvändigt.
 \end_layout
@@ -2877,8 +2876,8 @@ on-line
 
 \begin_layout Standard
 Installationen sker typiskt av leverantören och beroende på hur rigorösa
- mätningar man har bestämt sig för att ha påverkas tiden samt driftsförhållanden
-a vid installation.
+ mätningar man har bestämt sig för att ha, påverkas tiden samt driftsförhållande
+na vid installation.
  Men installationen sker allt som oftast under de mest gynsamma förhållandena
  för kunden, vilket efter installation inte påverkar produktionen negativt
  av utrustningen på något sätt.
@@ -2912,9 +2911,9 @@ reference "tab:Ekonomisk-jämförelse-ONOFF"
 \end_layout
 
 \begin_layout Standard
-Att underhåll har en direkt anknytning till besparingar då främst när risken
- för totalhaverier i stort sett kan elimineras helt, är ingen nyhet men
- destå bättre underhållet sköts destå svårare blir det att peka på vinsterna
+Att underhåll har en direkt anknytning till besparingar, då främst när risken
+ för totalhaverier i stort sett kan elimineras helt, är ingen nyhet, men
+ destå bättre underhållet sköts, destå svårare blir det att peka på vinsterna
  då 
 \begin_inset Quotes eld
 \end_inset
@@ -3386,15 +3385,15 @@ er osv.
  Ett halvhjärtat försök att implementera CBM, resulterar allt som oftast
  i att det nya systemet blir ett mindre använt komplement till det gamla
  underhållssystemet.
- Detta i sin tur skapar resulterar i större utgifter på underhållet än innan
- man implementerade CBM.
+ Detta i sin tur resulterar i större utgifter på underhållet än innan man
+ implementerade CBM.
 \end_layout
 
 \begin_layout Standard
 Med det sagt, bör man också inse att vid implementering av CBM blir det
  ofta en stor kostnad i investeringsfasen, men att dessa pengar sedan skall
  fås igen genom ett mycket bättre underhållsarbete, med mindre reparationer,
- reservdelar och produktions- stopp.
+ reservdelar och produktionsstopp.
  Därför är det viktigt att man inte ser CBM som enbart en kostnad, utan
  att man faktiskt tänker på att det kommer ge vinst i det långa loppet.
  För beräknat exempel se Bilaga 
