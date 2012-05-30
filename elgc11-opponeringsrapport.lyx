@@ -349,5 +349,142 @@ Språkbehandling
 Genomgång av kapitel
 \end_layout
 
+\begin_layout Standard
+2.2.1.2 Konstig figurref, borde vara 
+\begin_inset Quotes eld
+\end_inset
+
+...
+ enligt Figur 3
+\begin_inset Quotes erd
+\end_inset
+
+ eller motsvarande.
+\end_layout
+
+\begin_layout Standard
+5.1.2.1 saknar referens mot Tabell 1
+\end_layout
+
+\begin_layout Section
+Observerade stavfel/ordval
+\end_layout
+
+\begin_layout Paragraph
+Abstract §1 
+\end_layout
+
+\begin_layout Standard
+vary much borde vara vary greatly
+\end_layout
+
+\begin_layout Paragraph
+Terminologi
+\end_layout
+
+\begin_layout Standard
+CAN stora bokstäver Controller Area Network
+\end_layout
+
+\begin_layout Standard
+2.3.2 Byt ; mot :
+\end_layout
+
+\begin_layout Section
+Mall
+\end_layout
+
+\begin_layout Subsection
+Sammanfattning
+\end_layout
+
+\begin_layout Subsection
+Inledning
+\end_layout
+
+\begin_layout Subsection
+Referensram
+\end_layout
+
+\begin_layout Subsection
+Preciserad undersökningsuppgift
+\end_layout
+
+\begin_layout Subsection
+Metod
+\end_layout
+
+\begin_layout Subsection
+Analys
+\end_layout
+
+\begin_layout Subsection
+Slutsatser
+\end_layout
+
+\begin_layout Subsection
+Språk och struktur
+\end_layout
+
+\begin_layout Subsection
+Figurer och tabeller
+\end_layout
+
+\begin_layout Subsection
+Övrigt
+\end_layout
+
+\begin_layout Section
+Mall 2
+\end_layout
+
+\begin_layout Subsection
+Inehållsmässiga synpunkter
+\end_layout
+
+\begin_layout Subsubsection
+Syfte, mål och problemställning
+\end_layout
+
+\begin_layout Subsubsection
+Metod
+\end_layout
+
+\begin_layout Subsubsection
+Innehåll
+\end_layout
+
+\begin_layout Subsubsection
+Slutsats
+\end_layout
+
+\begin_layout Subsection
+Rapporttekniska synpunkter
+\end_layout
+
+\begin_layout Subsubsection
+Disposition och layout
+\end_layout
+
+\begin_layout Subsubsection
+Referenshantering
+\end_layout
+
+\begin_layout Subsubsection
+Språkligt bruk
+\end_layout
+
+\begin_layout Subsection
+Formalia
+\end_layout
+
+\begin_layout Subsection
+Helhetsintryck och slutkommentar
+\end_layout
+
+\begin_layout Standard
+Bra jobbat Emil och grattis till ett väl genomfört examensarbete!
+\end_layout
+
 \end_body
 \end_document

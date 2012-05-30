@@ -97,10 +97,10 @@ thispagestyle{empty}
 \begin_layout Standard
 Even though vibration measurement is not a new phenomenon, many businesses
  still remain sceptical towards the somewhat abstract method.
- Same scepticism does not exist when you visit the doctor uses his stethoscope
- to listen after abnormalities in the sound pattern, even though the similaritie
-s are striking.
- With todays technology it is possible to diagnose a machines different
+ Same scepticism does not exist when you visit the doctor and he uses his
+ stethoscope to listen after abnormalities in the sound pattern, even though
+ the similarities are striking.
+ With todays technology it is possible to diagnose a machine's different
  parts in search for damages by analysing the unique vibrationpatterns they
  provide.
 \end_layout
@@ -147,7 +147,7 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
-Vibrationsmätning är inget nytt fenomén men många företag anser sig ändå
+Vibrationsmätning är inget nytt fenomen men många företag anser sig ändå
  skeptiska till den abstrakta metoden.
  Samma skeptisism finns inte vid ett läkarbesök där doktorn lyssnar efter
  oljud med sitt stetoskop, ändå är likheterna slående.
@@ -159,8 +159,8 @@ ar efter skador genom att analysera det unika vibrationsmönster de bidrar
 
 \begin_layout Standard
 Detta arbete syftar att minska denna barriär med hjälp av en introduktion
- till de olika begrepp och val som finns inom vibrationsteknisk analys 
- som hjälpmedel för underhåll.
+ till de olika begrepp och val som finns inom vibrationsteknisk analys som
+ hjälpmedel för underhåll.
  Slutligen presenteras en implementeringsmall där ekonomi och tillgänglighet
  anses vara mest vital inför framtida beslut.
 \end_layout

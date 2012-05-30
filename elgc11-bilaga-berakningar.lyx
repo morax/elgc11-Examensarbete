@@ -269,7 +269,7 @@ Låt oss för enkelhetens skull anta att man får 1 fel som tvingar avbrott
 \begin_inset Formula $40\cdot2000=$
 \end_inset
 
-80 000 kr då det ej är antaget att reparationstiden minskar i detta exempel.
+80 000 kr antaget att reparationstiden konstant är 40h i detta exempel.
  Sedan beräknas stillaståendekostnaden som är den stora kostnaden enligt
  
 \end_layout
@@ -277,7 +277,7 @@ Låt oss för enkelhetens skull anta att man får 1 fel som tvingar avbrott
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mbox{Stillaståendekostnad}=(1-A)\cdot\mbox{potentiellvinst}/\mbox{år}\label{eq:Stillaståendekostnad}
+\mbox{Stillaståendekostnad}=(1-A_{0})\cdot\mbox{potentiellvinst}/\mbox{år}\label{eq:Stillaståendekostnad}
 \end{equation}
 
 \end_inset
@@ -292,7 +292,7 @@ där
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-A=\cfrac{MTBM}{MTBM+MDT}\label{eq:-1}
+A_{0}=\cfrac{MTBM}{MTBM+MDT}\label{eq:-1}
 \end{equation}
 
 \end_inset

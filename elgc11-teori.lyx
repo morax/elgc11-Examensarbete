@@ -327,18 +327,9 @@ name "sub:Vad-är-vibrationer?"
 \end_layout
 
 \begin_layout Standard
-Maskinvibrationer är helt enkelt en reciprocerande
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Fram och tillbakagående rörelse.
-\end_layout
-
-\end_inset
-
- rörelse hos en maskin eller komponent som generellt uppkommer på grund
- av en eller fler av följande orsaker: 
+Maskinvibrationer är helt enkelt en reciprocerande rörelse hos en maskin
+ eller komponent som generellt uppkommer på grund av en eller fler av följande
+ orsaker: 
 \end_layout
 
 \begin_layout Itemize
@@ -626,14 +617,14 @@ De parametrar som avgör hur mycket och hur snabbt data ska samlas är
 sampling rate.
  
 \emph default
-Destå fler spektrallinjer ett spektrum har, destå lättare är det för användaren
+Desto fler spektrallinjer ett spektrum har, destå lättare är det för användaren
  att analysera datan.
  Dock kräver fler spektrallinjer långsammare mätningar.
  
 \end_layout
 
 \begin_layout Standard
-En rekomendation för bestämning av 
+En rekommendation för bestämning av 
 \begin_inset Formula $F_{max}$
 \end_inset
 
@@ -907,7 +898,7 @@ För att välja hur ett spektrum skall presenteras i analysprogrammet eller
  och valmöjligheten av parametrar hjälper användaren att lätt hitta rätt
  utslag.
  Vid mätningar med handhållen utrustning där maskinkondition avgörs på plats,
- är det rekomenderat att alltid använda samma inställningar som tidigare
+ är det rekommenderat att alltid använda samma inställningar som tidigare
  mätningar för att undvika missbedömningar.
 \end_layout
 

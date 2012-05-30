@@ -11,12 +11,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %% Watermarking: [firstpage], [nostamp]
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[firstpage]{draftwatermark}
+%\usepackage[firstpage]{draftwatermark}
 
-\SetWatermarkFontSize{15 cm}
-\SetWatermarkScale{3}
-\SetWatermarkLightness{0.9}
-\SetWatermarkText{UTKAST}
+%\SetWatermarkFontSize{15 cm}
+%\SetWatermarkScale{3}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkText{UTKAST}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -380,7 +380,7 @@ theorems-sec-bytype
 
 \begin_layout Standard
 \begin_inset Branch Print
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset CommandInset include

@@ -229,14 +229,7 @@ Stator
 är en stillastående del i en elektrisk maskin.
  Den är ofta konstruerad som en ring av järnplåtar som är ihopsvetsade samt
  på innsidan består den av ett stort antal plåtar, som är magnetiskt orgenterade
- och fastlåsta, samt försedda med spår i vilken lindningen är placerad 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Hemsida_stator"
-
-\end_inset
-
-.
+ och fastlåsta, samt försedda med spår i vilken lindningen är placerad.
  
 \end_layout
 
@@ -2913,7 +2906,7 @@ reference "tab:Ekonomisk-jämförelse-ONOFF"
 \begin_layout Standard
 Att underhåll har en direkt anknytning till besparingar, då främst när risken
  för totalhaverier i stort sett kan elimineras helt, är ingen nyhet, men
- destå bättre underhållet sköts, destå svårare blir det att peka på vinsterna
+ destå bättre underhållet sköts, desto svårare blir det att peka på vinsterna
  då 
 \begin_inset Quotes eld
 \end_inset
@@ -3315,7 +3308,7 @@ Två mätningar per månad
 \begin_inset Text
 
 \begin_layout Plain Layout
-216
+216 st
 \end_layout
 
 \end_inset
