@@ -203,8 +203,9 @@ figs-within-sections
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_title "Progressrapport 1"
+\pdf_title "Opponeringsrapport"
 \pdf_author "Henrik Storm, Simon Lundell"
+\pdf_keywords "Christoffer Danielsson, Batec AB, Examensarbete, styrsystem, hydraulik, vattenkraftverk"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
@@ -278,15 +279,11 @@ Från:
 \series bold
 Till:
 \series default
- Christoffer Danielsson, Arild Moldsvon, Tryggve Grahn
+ Christoffer Danielsson, Arild Moldsvor, Tryggve Grahn
 \end_layout
 
 \begin_layout Address
-Karlstads Universitet, Fakulteten för teknik- och naturvetenskap
-\end_layout
-
-\begin_layout Abstract
-Sammanfattning
+Karlstads universitet, Fakulteten för teknik- och naturvetenskap
 \end_layout
 
 \begin_layout Standard
@@ -343,7 +340,7 @@ Genomgående hålls en hög nivå på opponeringsrapporten där specifika stavfe
 \end_layout
 
 \begin_layout Section
-Inehållsmässiga synpunkter
+Innehållsmässiga synpunkter
 \end_layout
 
 \begin_layout Subsection
@@ -353,9 +350,9 @@ Syfte, mål och problemställning
 \begin_layout Standard
 Problemställningen och syftet med rapporten känns relevant och gediget definiera
 t.
- Målsättningen är att skapa ett koncept för turbinstyrning i småskaliga
- vattenkraftverk i form av en kompakt modul bestående av PLC styrenhet och
- hydraulik med ackumulatortank.
+ Målsättningen är att skapa ett koncept åt Batec AB för turbinstyrning i
+ småskaliga vattenkraftverk i form av en kompakt modul bestående av PLC
+ styrenhet och hydraulik med ackumulatortank.
 \end_layout
 
 \begin_layout Standard
@@ -367,10 +364,9 @@ Mer specifik målsättning än så framgår inte i inledningen men författaren
 
 \begin_layout Standard
 Det är lite svårt att förstå direkt om arbetet bara avser styrning av Kaplanturb
-iner i sammanfattningen, dock om man vet hur vattenkraftverk fungerar inser
- man dock att det avser båda.
- Det framgår heller inte till vilka läsare rapporten är syftad, och är man
- enbart en lekman inom området får man kanske fel intryck.
+iner i sammanfattningen, om man vet hur vattenkraftverk fungerar inser man
+ dock att det avser båda.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -404,7 +400,7 @@ Innehåll
 \begin_layout Standard
 Rapporten har ett bra innehåll.
  Man får inledningsvis en bra överblick över syftet med arbetet och vilka
- mål man har.
+ mål som förväntas.
  Sedmera får man en bra introduktion i hur vattenkraft fungerar för att
  skapa vidare förståelse för vikten av detta arbete.
  
@@ -414,7 +410,7 @@ Rapporten har ett bra innehåll.
 Dagens styrsystem vilket ämnas att omstruktureras introduceras och läsaren
  får en bra inblick i vilka åtaganden som arbetet berör gällande funktion
  och design.
- Detta skapar även en djupare försteålse för problematiken av dessa ändringar
+ Detta skapar även en djupare förståelse för problematiken av dessa ändringar
  som involveras i projektets mål.
  Ett genomförandesätt presenteras och delas in i fyra underrubriker, detta
  är en god idé då det är mycket fakta som behandlas men blir lite svårläst
@@ -431,8 +427,8 @@ Slutsats och diskussion
 \begin_layout Standard
 Denna sektion är indelad i två kapitel där problematiken vid projektets
  utförande, ouppnådda mål och projektets framtid presenteras.
- Detta är avsnitt som lyfter rapporten som helhet med mycket välskrivna
- paragrafer vilka beskriver 
+ Sammanfattningsvis är vi övertygade om att Batec AB kommer ha stor nytta
+ av denna rapport i vidare arbete.
 \end_layout
 
 \begin_layout Section
@@ -444,8 +440,11 @@ Disposition och layout
 \end_layout
 
 \begin_layout Standard
-Som helhet ser och känns rapporten enhetlig och följer klassisk disposition.
- Rapporten innefattar åtta kapitel med maximalt tre nivåer i kapitelheirarkin.
+Som helhet ser och känns rapporten enhetlig och följer klassisk disposition
+ även om avsnittet metod gärna hade flyttats till kapitlet Inledning.
+ Rapporten innefattar åtta kapitel med maximalt tre nivåer i kapitelhierarkin.
+ Kapitel 5 (Genomförande) är lite yvigt och saknar ibland motiverande underlag
+ presenterade för läsaren vid diverse beslut som tagits.
  Ur typografisk synvinkel framträder styrkorna med LaTeX gentemot WYSIWYG
 \begin_inset Foot
 status collapsed
@@ -457,13 +456,13 @@ What You See Is What You Get
 \end_inset
 
  varianter av ordbehandlare på ett tydligt vis.
- Med det menas att inga onödiga typsnitt eller textstorlekar använts.
+ Med det menas att inga onödiga typsnitt eller textstorlekar använts, generellt
+ är layout på rapporten är stilren och lättläst.
  Dock används sidhänvisningar lite väl vidlyftigt inom textmassan.
  Figurer och tabeller saknar ofta hänvisning i brödstexten medan sektioner
  refereras frekvent.
- Önskvärt ur layoutsynpunkt vore vänsterjusterade tabeller samt enhetliga
- punklistor.
- 
+ Önskvärt ur layoutsynpunkt vore vänsterjusterade tabeller samt enhetligt
+ formaterade punktlistor.
 \end_layout
 
 \begin_layout Subsection
@@ -492,7 +491,7 @@ ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/natbib/natbib.pdf
 
 \end_inset
 
- och fotnötter förekommer i rapporten vilket i enstaka fall kan anses som
+ och fotnoter förekommer i rapporten vilket i enstaka fall kan anses som
  inkonsekvent.
  Bortsett från detta är referenshanteringen väl implementerad där läsaren
  lätt kan hitta refererad litteratur vid önskad fördjupning via referenslistan.
@@ -504,8 +503,8 @@ Språkligt bruk
 \end_layout
 
 \begin_layout Standard
-Stundvis extremt branchspecifik vokabulär utan fotnot eller förklaring men
- över lag är det mesta förklarat och löptexten är lätt att följa.
+Stundvis lite väl branchspecifikt vokabulär utan fotnot eller förklaring
+ men över lag är det mesta förklarat och löptexten är lätt att följa.
  En formell ton fortlöper genom hela arbetet vilket är kutym i tekniska
  rapporter.
 \end_layout
@@ -523,7 +522,8 @@ Bilagor
 \begin_inset Quotes erd
 \end_inset
 
- saknas i innehållsförteckningen vilket anses vara den enda miss CD gjort.
+ saknas i innehållsförteckningen vilket anses vara den enda fadäs Christoffer
+ gjort.
  Det finns inga direkt störande detaljer i rapporten men vissa paragrafer
  resp.
  underrubriker vore lämpligt att hålla enhetligt genom hela rapporten.
@@ -534,21 +534,17 @@ Helhetsintryck och slutkommentar
 \end_layout
 
 \begin_layout Standard
-Bra jobbat Emil och grattis till ett väl genomfört examensarbete!
-\end_layout
-
-\begin_layout Standard
 En bra genomförd rapport med bra innehåll, dock lite svårläst stundvis då
  det blir många intenderingar och man tappar bort sig lite i texten.
  Detta anses dock som en petitess i det stora hela, då det är ett mycket
  omfattande arbete och är allt annat än trivialt att genomföra, så en eloge
- till CD som gjorde detta med bravur.
- 
+ till Christoffer som gjorde detta med bravur.
+ Bra jobbat Emil och grattis till ett väl genomfört examensarbete!
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch test
-status open
+status collapsed
 
 \begin_layout Section
 Sammanfattande omdöme av rapporten
@@ -593,6 +589,24 @@ Sammanfattning, abstract och nyckelord,
 
 \begin_layout Itemize
 Språkbehandling
+\end_layout
+
+\begin_layout Section
+Fragur
+\end_layout
+
+\begin_layout Enumerate
+Modelerade du även PID regleringen? (saknas i rapportae)
+\end_layout
+
+\begin_layout Enumerate
+Om du inte varit lika begränsad i val av komponenter, tror du resultatet
+ skulle blivit avsevärt annorlunda? (bättre)
+\end_layout
+
+\begin_layout Enumerate
+Fungerar konceptet inom ramen för småskaligt vattenkraftverk (10MW) eller
+ max 1.5MW?
 \end_layout
 
 \end_inset
