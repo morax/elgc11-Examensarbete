@@ -227,6 +227,11 @@ figs-within-sections
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
+\branch test
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -256,7 +261,8 @@ Opponeringsrapport
 \begin_inset Newline newline
 \end_inset
 
-Titel på hans arbete
+Konstruktion hydroelektrisk av modulär turbinstyrning i kraftproduktion
+ 
 \end_layout
 
 \begin_layout Address
@@ -272,7 +278,7 @@ Från:
 \series bold
 Till:
 \series default
- Christoffer Danielsson, Arild Moldsvon, Tryggve Gran
+ Christoffer Danielsson, Arild Moldsvon, Tryggve Grahn
 \end_layout
 
 \begin_layout Address
@@ -293,6 +299,258 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Section
+Inledning
+\end_layout
+
+\begin_layout Standard
+'Konstruktion hydroelektrisk av modulär turbinstyrning i kraftproduktion'
+ är ett examensarbete gjort av Christoffer Danielsson vilket beskriver skapandep
+rocessen av en modulär styrenhet för reglering av ledskenor samt skovelblad
+ vid Kaplanturbiner, som används i småskaliga vattenkraftverk.
+ Arbetet är genomfört i sammarbete med Batec AB.
+ 
+\end_layout
+
+\begin_layout Standard
+Rapporten för läsaren genom hela konstruktionens resa, från önskemål från
+ Batec AB till färdig mall för förverkligande, med tydlig anknytning till
+ teori och krav.
+ Slutprodukten anses uppfylla de krav som näms.
+\end_layout
+
+\begin_layout Standard
+Denna opponeringsrapport är en del av examinationen i kursen ELGC11 vid
+ Karlstads universitet och består av tre huvuddelar
+\end_layout
+
+\begin_layout Itemize
+Innehållsmässiga punkter -- med fokus på arbetets mål/syfte/metod/teori/genomför
+ande/resultat
+\end_layout
+
+\begin_layout Itemize
+Rapporttekniska synpunkter -- behandlar rapportens språk, layout och övrig
+ formalia
+\end_layout
+
+\begin_layout Itemize
+Slutkommentar
+\end_layout
+
+\begin_layout Standard
+Genomgående hålls en hög nivå på opponeringsrapporten där specifika stavfel
+ och formateringsmissar ej behandlas om de inte är direkt ledande.
+\end_layout
+
+\begin_layout Section
+Inehållsmässiga synpunkter
+\end_layout
+
+\begin_layout Subsection
+Syfte, mål och problemställning
+\end_layout
+
+\begin_layout Standard
+Problemställningen och syftet med rapporten känns relevant och gediget definiera
+t.
+ Målsättningen är att skapa ett koncept för turbinstyrning i småskaliga
+ vattenkraftverk i form av en kompakt modul bestående av PLC styrenhet och
+ hydraulik med ackumulatortank.
+\end_layout
+
+\begin_layout Standard
+Mer specifik målsättning än så framgår inte i inledningen men författaren
+ adderar bitvis tillskott till krav och avgränsningar vidare i rapporten
+ så läsaren får slutligen en tydlig bild av vad som skall åstadkommas vid
+ respektive delmoment.
+\end_layout
+
+\begin_layout Standard
+Det är lite svårt att förstå direkt om arbetet bara avser styrning av Kaplanturb
+iner i sammanfattningen, dock om man vet hur vattenkraftverk fungerar inser
+ man dock att det avser båda.
+ Det framgår heller inte till vilka läsare rapporten är syftad, och är man
+ enbart en lekman inom området får man kanske fel intryck.
+\end_layout
+
+\begin_layout Subsection
+Metod
+\end_layout
+
+\begin_layout Standard
+Valet av metoder bör definieras i inledningen då Litteraturstidie och Top-Down
+ beskriver den generella metododiken som används i arbetet men följande
+ CAD, Hydraulikkonstruktion samt Modularisering kanske lämpar sig bättre
+ under 
+\emph on
+Strategival
+\emph default
+ eller dylikt.
+ Med det sagt är metodvalen väl beskrivna och tydligt använda vidare i arbetet.
+\end_layout
+
+\begin_layout Standard
+Metoden man använt för att lösa problemet är beskrivet kanske något sent
+ i rapporten, och där står det sedan först vilka metodiker man använt blandat
+ med något som är mer strategier än metoder.
+ Det gör ändå sitt syfte och det får arbetet att se strukturerat och genomtänkt
+ ut.
+\end_layout
+
+\begin_layout Subsection
+Innehåll
+\end_layout
+
+\begin_layout Standard
+Rapporten har ett bra innehåll.
+ Man får inledningsvis en bra överblick över syftet med arbetet och vilka
+ mål man har.
+ Sedmera får man en bra introduktion i hur vattenkraft fungerar för att
+ skapa vidare förståelse för vikten av detta arbete.
+ 
+\end_layout
+
+\begin_layout Standard
+Dagens styrsystem vilket ämnas att omstruktureras introduceras och läsaren
+ får en bra inblick i vilka åtaganden som arbetet berör gällande funktion
+ och design.
+ Detta skapar även en djupare försteålse för problematiken av dessa ändringar
+ som involveras i projektets mål.
+ Ett genomförandesätt presenteras och delas in i fyra underrubriker, detta
+ är en god idé då det är mycket fakta som behandlas men blir lite svårläst
+ och har ett lite sämre flöde än övriga rapporten.
+ Ett bra resultat presenteras och man ser klart och tydligt vilken produkt
+ som skapats, dess kompatiblitet, egenskaper samt vilka mål som inte uppnåts
+ i arbetet.
+\end_layout
+
+\begin_layout Subsection
+Slutsats och diskussion
+\end_layout
+
+\begin_layout Standard
+Denna sektion är indelad i två kapitel där problematiken vid projektets
+ utförande, ouppnådda mål och projektets framtid presenteras.
+ Detta är avsnitt som lyfter rapporten som helhet med mycket välskrivna
+ paragrafer vilka beskriver 
+\end_layout
+
+\begin_layout Section
+Rapporttekniska synpunkter
+\end_layout
+
+\begin_layout Subsection
+Disposition och layout
+\end_layout
+
+\begin_layout Standard
+Som helhet ser och känns rapporten enhetlig och följer klassisk disposition.
+ Rapporten innefattar åtta kapitel med maximalt tre nivåer i kapitelheirarkin.
+ Ur typografisk synvinkel framträder styrkorna med LaTeX gentemot WYSIWYG
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+What You See Is What You Get
+\end_layout
+
+\end_inset
+
+ varianter av ordbehandlare på ett tydligt vis.
+ Med det menas att inga onödiga typsnitt eller textstorlekar använts.
+ Dock används sidhänvisningar lite väl vidlyftigt inom textmassan.
+ Figurer och tabeller saknar ofta hänvisning i brödstexten medan sektioner
+ refereras frekvent.
+ Önskvärt ur layoutsynpunkt vore vänsterjusterade tabeller samt enhetliga
+ punklistor.
+ 
+\end_layout
+
+\begin_layout Subsection
+Referenshantering
+\end_layout
+
+\begin_layout Standard
+Blandning mellan Natbib
+\begin_inset Foot
+status collapsed
+
+\begin_layout Standard
+Natural Sciences Citations and References 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/natbib/natbib.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ och fotnötter förekommer i rapporten vilket i enstaka fall kan anses som
+ inkonsekvent.
+ Bortsett från detta är referenshanteringen väl implementerad där läsaren
+ lätt kan hitta refererad litteratur vid önskad fördjupning via referenslistan.
+ Cred för adderade litteraturtips.
+\end_layout
+
+\begin_layout Subsection
+Språkligt bruk
+\end_layout
+
+\begin_layout Standard
+Stundvis extremt branchspecifik vokabulär utan fotnot eller förklaring men
+ över lag är det mesta förklarat och löptexten är lätt att följa.
+ En formell ton fortlöper genom hela arbetet vilket är kutym i tekniska
+ rapporter.
+\end_layout
+
+\begin_layout Subsection
+Formalia
+\end_layout
+
+\begin_layout Standard
+Rubrik 
+\begin_inset Quotes eld
+\end_inset
+
+Bilagor
+\begin_inset Quotes erd
+\end_inset
+
+ saknas i innehållsförteckningen vilket anses vara den enda miss CD gjort.
+ Det finns inga direkt störande detaljer i rapporten men vissa paragrafer
+ resp.
+ underrubriker vore lämpligt att hålla enhetligt genom hela rapporten.
+\end_layout
+
+\begin_layout Section
+Helhetsintryck och slutkommentar
+\end_layout
+
+\begin_layout Standard
+Bra jobbat Emil och grattis till ett väl genomfört examensarbete!
+\end_layout
+
+\begin_layout Standard
+En bra genomförd rapport med bra innehåll, dock lite svårläst stundvis då
+ det blir många intenderingar och man tappar bort sig lite i texten.
+ Detta anses dock som en petitess i det stora hela, då det är ett mycket
+ omfattande arbete och är allt annat än trivialt att genomföra, så en eloge
+ till CD som gjorde detta med bravur.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch test
+status open
+
+\begin_layout Section
 Sammanfattande omdöme av rapporten
 \end_layout
 
@@ -303,14 +561,6 @@ Kortfattade synpunkter
 \begin_layout Standard
 Kortfattade övergripande synpunkter på exjobbsrapporten (positivt och negativt)
  Saker som kan kommenteras är t ex: 
-\end_layout
-
-\begin_layout Itemize
-Titel, 
-\end_layout
-
-\begin_layout Itemize
-Begreppsapparat, 
 \end_layout
 
 \begin_layout Itemize
@@ -345,145 +595,9 @@ Sammanfattning, abstract och nyckelord,
 Språkbehandling
 \end_layout
 
-\begin_layout Section
-Genomgång av kapitel
-\end_layout
-
-\begin_layout Standard
-2.2.1.2 Konstig figurref, borde vara 
-\begin_inset Quotes eld
 \end_inset
 
-...
- enligt Figur 3
-\begin_inset Quotes erd
-\end_inset
 
- eller motsvarande.
-\end_layout
-
-\begin_layout Standard
-5.1.2.1 saknar referens mot Tabell 1
-\end_layout
-
-\begin_layout Section
-Observerade stavfel/ordval
-\end_layout
-
-\begin_layout Paragraph
-Abstract §1 
-\end_layout
-
-\begin_layout Standard
-vary much borde vara vary greatly
-\end_layout
-
-\begin_layout Paragraph
-Terminologi
-\end_layout
-
-\begin_layout Standard
-CAN stora bokstäver Controller Area Network
-\end_layout
-
-\begin_layout Standard
-2.3.2 Byt ; mot :
-\end_layout
-
-\begin_layout Section
-Mall
-\end_layout
-
-\begin_layout Subsection
-Sammanfattning
-\end_layout
-
-\begin_layout Subsection
-Inledning
-\end_layout
-
-\begin_layout Subsection
-Referensram
-\end_layout
-
-\begin_layout Subsection
-Preciserad undersökningsuppgift
-\end_layout
-
-\begin_layout Subsection
-Metod
-\end_layout
-
-\begin_layout Subsection
-Analys
-\end_layout
-
-\begin_layout Subsection
-Slutsatser
-\end_layout
-
-\begin_layout Subsection
-Språk och struktur
-\end_layout
-
-\begin_layout Subsection
-Figurer och tabeller
-\end_layout
-
-\begin_layout Subsection
-Övrigt
-\end_layout
-
-\begin_layout Section
-Mall 2
-\end_layout
-
-\begin_layout Subsection
-Inehållsmässiga synpunkter
-\end_layout
-
-\begin_layout Subsubsection
-Syfte, mål och problemställning
-\end_layout
-
-\begin_layout Subsubsection
-Metod
-\end_layout
-
-\begin_layout Subsubsection
-Innehåll
-\end_layout
-
-\begin_layout Subsubsection
-Slutsats
-\end_layout
-
-\begin_layout Subsection
-Rapporttekniska synpunkter
-\end_layout
-
-\begin_layout Subsubsection
-Disposition och layout
-\end_layout
-
-\begin_layout Subsubsection
-Referenshantering
-\end_layout
-
-\begin_layout Subsubsection
-Språkligt bruk
-\end_layout
-
-\begin_layout Subsection
-Formalia
-\end_layout
-
-\begin_layout Subsection
-Helhetsintryck och slutkommentar
-\end_layout
-
-\begin_layout Standard
-Bra jobbat Emil och grattis till ett väl genomfört examensarbete!
 \end_layout
 
 \end_body
