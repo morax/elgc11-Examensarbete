@@ -163,7 +163,7 @@ on/off-line konceptet
 
 \end_deeper
 \begin_layout Itemize
-Underhålls strategier
+Underhålls strategier (grafae)
 \end_layout
 
 \begin_deeper
@@ -175,6 +175,12 @@ FU
 CBM
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+p-f intervall
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 Ekonomisk jämförelse
@@ -185,6 +191,12 @@ Ekonomisk jämförelse
 online wins, flawless victory
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+MTBF grafae
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 svårt att mäta, FU osynligt om inte data loggas
 \end_layout
@@ -199,14 +211,32 @@ svårt att mäta, FU osynligt om inte data loggas
 Fortum bör satsa på vibrationsmätning men ...
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+dyrt
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Utbildning med ISO cert
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+bra
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 CBM är något som industrin verkar satsa på
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+ja
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Ansvarsdistribution (fokus på datalagring)
 \end_layout

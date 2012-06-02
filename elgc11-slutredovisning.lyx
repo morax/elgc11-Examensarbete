@@ -127,7 +127,7 @@ Vibrationsövervakning av Fortums vattenkraftverk
 status open
 
 \begin_layout Plain Layout
-Vibrationsbevakning
+Vibrationsövervakning
 \begin_inset Note Note
 status collapsed
 
@@ -240,7 +240,7 @@ Fakulteten för teknik- och naturvetenskap
 \begin_inset Newline newline
 \end_inset
 
-Karlstads Universitet
+Karlstads universitet
 \begin_inset ERT
 status collapsed
 
@@ -286,7 +286,7 @@ Keep it simple, no one is interested in your street address.
 status open
 
 \begin_layout Plain Layout
-Karlstads Universitet
+Karlstads universitet
 \begin_inset Note Note
 status collapsed
 
@@ -305,7 +305,7 @@ optional, but mostly needed
 \end_layout
 
 \begin_layout Date
-Slutåredovisning, 2012
+Slutredovisning ELGC11, 2012
 \begin_inset Note Note
 status collapsed
 
@@ -365,9 +365,9 @@ status open
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
-pgfdeclareimage[height=0.5cm]{institution-logo}{institution-logo-filename}
+pgfdeclareimage[height=0.5cm]{institution-logo}{figurer/kau-eps-converted-to.pdf}
 \end_layout
 
 \begin_layout Plain Layout
@@ -376,7 +376,7 @@ pgfdeclareimage[height=0.5cm]{institution-logo}{institution-logo-filename}
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
 logo{
 \backslash
@@ -642,6 +642,16 @@ Problembeskrivning
 \end_layout
 
 \begin_layout Itemize
+Förklara för Fortum varför och om de skall satsa på vibrationsövervakning
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 Vad kan mätas och hur tillförlitliga är prognoserna
 \end_layout
 
@@ -675,7 +685,7 @@ Vem skall göra vad?
 Investeringskalkyl
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Metod
 \end_layout
 
@@ -708,63 +718,209 @@ Samtal med personal och leverantörer
 \end_layout
 
 \begin_layout Section
-Vad är vibrationsövervakning?
+Vibrationsövervakning
+\end_layout
+
+\begin_layout Subsection
+Vad är vibrationer
 \end_layout
 
 \begin_layout BeginFrame
-Vad är vibrationsövervakning?
+Vad är vibrationer
 \end_layout
 
 \begin_layout Itemize
-Kontakt med leverantörer av mätutrustning
+Vibrationer är helt enkelt en fram och tillbakagående rörelse som kan bero
+ av en eller flera av följande orsaker
 \end_layout
 
 \begin_deeper
-\begin_layout Pause
+\begin_layout Itemize
+Glapp
+\end_layout
 
+\begin_layout Itemize
+Kraftstötar
+\end_layout
+
+\begin_layout Itemize
+Resonans
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Hur mäter man vibrationer
+\end_layout
+
+\begin_layout BeginFrame
+Hur mäter man vibrationer?
+\end_layout
+
+\begin_layout Itemize
+Olika typer av givare
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Accelerometer (Piezo)
+\end_layout
+
+\begin_layout Itemize
+Hastighetsgivare
+\end_layout
+
+\begin_layout Itemize
+Förflyttningsgivare
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Koppling mellan vibrationsbevakning och CBM
+
+\emph on
+On-line 
+\emph default
+och 
+\emph on
+off-line
+\emph default
+ system
 \end_layout
 
 \begin_deeper
-\begin_layout Pause
+\begin_layout Itemize
+Portabel
+\end_layout
 
+\begin_layout Itemize
+Fast monterad
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Varför ska Fortum mäta vibrationer
+\end_layout
+
+\begin_layout BeginFrame
+Varför ska Fortum mäta vibrationer?
+\end_layout
+
+\begin_layout Itemize
+Identifiering av fel på turbin samt generator kan upptäckas i god tid
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Glapp, resonans, slitna lager, obalans m.m.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Kostnadskalkyl
-\end_layout
-
-\begin_layout EndFrame
-
+Minskar onödigt underhåll
 \end_layout
 
 \begin_layout Section
-Varför CBM?
+Underhåll
+\end_layout
+
+\begin_layout Subsection
+Underhållsstrategier
 \end_layout
 
 \begin_layout BeginFrame
-Varför CBM?
+Underhållsstrategier
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figurer/underhallstyper.svg
+	height 70theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Underhållstrategier utifrån SS-EN 13306:2010
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Vad är CBM?
+\end_layout
+
+\begin_layout BeginFrame
+Vad är CBM?
 \end_layout
 
 \begin_layout Itemize
-Shitz
+Likt förutbestämt underhåll (PdM) men där intervallet samt vad som skall
+ underhållas bestäms av maskinens kondition.
+\end_layout
+
+\begin_layout Itemize
+Ju mer data, desto bättre prognoser kan göras.
+\end_layout
+
+\begin_layout Itemize
+Implementering kräver stort fokus då ett halvfärdigt system är lika dåligt
+ som att inte ha något alls.
 \end_layout
 
 \begin_layout Section
-Resultat
+Diskussion och slutsats
 \end_layout
 
 \begin_layout BeginFrame
-Resultat
+Diskussion och slutsats
 \end_layout
 
 \begin_layout Itemize
-nitz
+En rekommendation är att för små resp.
+ ej kontinuerligt drivna kraftverk använda ett portabelt instrument
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+On-line
+\emph default
+ övervakning är en bra investering vid stora eller nya vattenkraftverk
+\end_layout
+
+\begin_layout Itemize
+Generellt gäller at lagring av mätdata bör ske inom företaget
+\end_layout
+
+\begin_layout Itemize
+Undviks haveri minskar produktionsförlusterna
+\end_layout
+
+\begin_layout Itemize
+Läge att investera ty ålder kommen
+\end_layout
+
+\begin_layout Itemize
+Det finns lite opartisk forskning gjord med fallstudier inom ämnet vilket
+ gör det svårt att bedöma hur bra det fungerar i praktiken.
 \end_layout
 
 \begin_layout Section*
@@ -780,9 +936,9 @@ Fokus ligger på
 \color none
  
 \color red
-betydelsen av vibrationsmätning
+utbildning av egen peronal
 \color none
- i vattenkraftverk.
+ inom Fortum.
 \end_layout
 
 \begin_deeper
@@ -792,13 +948,13 @@ betydelsen av vibrationsmätning
 
 \end_deeper
 \begin_layout Itemize
-Huvudproblemet är att
+Vibrationsövervakning är ett
 \color none
  
 \color red
-göra en opartisk bedömning
+bra verktyg för underhållsarbetet
 \color none
- av utrustning, ansvarsdistribution och investeringspotential.
+ vilket man bör satsa på.
 \end_layout
 
 \begin_layout EndFrame
