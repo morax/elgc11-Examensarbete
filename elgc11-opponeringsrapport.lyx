@@ -474,7 +474,7 @@ Blandning mellan Natbib
 \begin_inset Foot
 status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Natural Sciences Citations and References 
 \begin_inset Flex URL
 status collapsed
@@ -544,7 +544,7 @@ En bra genomförd rapport med bra innehåll, dock lite svårläst stundvis då
 
 \begin_layout Standard
 \begin_inset Branch test
-status collapsed
+status open
 
 \begin_layout Section
 Sammanfattande omdöme av rapporten
@@ -609,6 +609,12 @@ Fungerar konceptet inom ramen för småskaligt vattenkraftverk (10MW) eller
  max 1.5MW?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+går det att skala upp kolvae eller sprängs stycket
+\end_layout
+
+\end_deeper
 \end_inset
 
 
