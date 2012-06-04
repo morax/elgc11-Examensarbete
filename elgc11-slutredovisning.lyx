@@ -72,6 +72,11 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 0
+\branch osynligt
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -781,6 +786,182 @@ Fast monterad utrustning
 \end_layout
 
 \end_deeper
+\begin_layout BeginFrame
+För- och nackdelar med Off-line system
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Fördelar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+- Portabelt
+\end_layout
+
+\begin_layout Block
+- Obegränsade mätningar
+\end_layout
+
+\begin_layout Block
+- Relativt låg investeringskostnad
+\end_layout
+
+\begin_layout Block
+- Balansering kan göras på plats
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Nackdelar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+- Svårt att vara konsekvent
+\end_layout
+
+\begin_layout Block
+- Arbetssamt
+\end_layout
+
+\begin_layout Block
+- Oftast använd endast vid haveri/larm
+\end_layout
+
+\begin_layout BeginFrame
+För- och nackdelar med On-line system
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Fördelar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+- Hög kvalitet på mätdata
+\end_layout
+
+\begin_layout Block
+- Automatisk
+\end_layout
+
+\begin_layout Block
+- Direktlarm
+\end_layout
+
+\begin_layout Block
+- Livslängdsuppskattning
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Nackdelar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+- Begränsat antal mätpunkter
+\end_layout
+
+\begin_layout Block
+- Kräver analytiker eller konsult
+\end_layout
+
+\begin_layout Block
+- Relativt hög investeringskostnad
+\end_layout
+
+\begin_layout Block
+\begin_inset Branch osynligt
+status collapsed
+
 \begin_layout BeginFrame
 För- och nackdelar med off-line utrustning
 \end_layout
@@ -1765,6 +1946,11 @@ Fungerar med och utan säkerhetsbevakning
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Varför ska Fortum mäta vibrationer
 \end_layout
@@ -1921,16 +2107,16 @@ On-line
 \end_layout
 
 \begin_layout Itemize
-Generellt gäller at lagring av mätdata bör ske inom företaget
-\end_layout
-
-\begin_layout Itemize
 Undviks haveri minskar produktionsförlusterna
 \end_layout
 
 \begin_layout Itemize
 Läge att investera då kraftverken börjar bli gamla och risken för haveri
  ökar
+\end_layout
+
+\begin_layout Itemize
+Generellt gäller at lagring av mätdata bör ske inom företaget
 \end_layout
 
 \begin_layout BeginFrame

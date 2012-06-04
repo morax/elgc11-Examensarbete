@@ -202,7 +202,7 @@ figs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement H
-\paperfontsize default
+\paperfontsize 12
 \spacing single
 \use_hyperref true
 \pdf_title "Opponeringsrapport"
@@ -264,7 +264,7 @@ Opponeringsrapport
 \begin_inset Newline newline
 \end_inset
 
-Konstruktion hydroelektrisk av modulär turbinstyrning i kraftproduktion
+Konstruktion av modulär turbinstyrning i hydroelektrisk kraftproduktion
  
 \end_layout
 
@@ -302,7 +302,7 @@ Inledning
 \end_layout
 
 \begin_layout Standard
-'Konstruktion hydroelektrisk av modulär turbinstyrning i kraftproduktion'
+'Konstruktion av modulär turbinstyrning i hydroelektrisk kraftproduktion'
  är ett examensarbete gjort av Christoffer Danielsson vilket beskriver skapandep
 rocessen av en modulär styrenhet för reglering av ledskenor samt skovelblad
  vid Kaplanturbiner, som används i småskaliga vattenkraftverk.
@@ -541,7 +541,7 @@ En bra genomförd rapport med bra innehåll, dock lite svårläst stundvis då
  Detta anses dock som en petitess i det stora hela, då det är ett mycket
  omfattande arbete och är allt annat än trivialt att genomföra, så en eloge
  till Christoffer som gjorde detta med bravur.
- Bra jobbat Emil och grattis till ett väl genomfört examensarbete!
+ Bra jobbat Christoffer och grattis till ett väl genomfört examensarbete!
 \end_layout
 
 \begin_layout Standard
@@ -549,52 +549,7 @@ En bra genomförd rapport med bra innehåll, dock lite svårläst stundvis då
 status collapsed
 
 \begin_layout Section
-Sammanfattande omdöme av rapporten
-\end_layout
-
-\begin_layout Section
-Kortfattade synpunkter
-\end_layout
-
-\begin_layout Standard
-Kortfattade övergripande synpunkter på exjobbsrapporten (positivt och negativt)
- Saker som kan kommenteras är t ex: 
-\end_layout
-
-\begin_layout Itemize
-Argumentering och slutsatsdragning, 
-\end_layout
-
-\begin_layout Itemize
-Vetenskapliga metoder och tekniker, 
-\end_layout
-
-\begin_layout Itemize
-Rapportens disposition, 
-\end_layout
-
-\begin_layout Itemize
-Kapitelindelning, rubriker och innehållsförteckning, 
-\end_layout
-
-\begin_layout Itemize
-Klarhet, relevans och förståelse (finns den röda tråden?), 
-\end_layout
-
-\begin_layout Itemize
-Referat, citat, notapparat och källförteckning, 
-\end_layout
-
-\begin_layout Itemize
-Sammanfattning, abstract och nyckelord, 
-\end_layout
-
-\begin_layout Itemize
-Språkbehandling
-\end_layout
-
-\begin_layout Section
-Fragur
+Frågor
 \end_layout
 
 \begin_layout Enumerate
@@ -613,7 +568,7 @@ Fungerar konceptet inom ramen för småskaligt vattenkraftverk (10MW) eller
 
 \begin_deeper
 \begin_layout Enumerate
-går det att skala upp kolvae eller sprängs stycket
+går det att skala upp hydraulikkonstruktionen eller sprängs stycket
 \end_layout
 
 \end_deeper
