@@ -5,7 +5,9 @@
 \textclass extarticle
 \begin_preamble
 \usepackage{fancyhdr}
-\usepackage{xcolor}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+
 \usepackage{caption}
 \usepackage[utf8]{inputenc}
 \usepackage{ucs}
@@ -215,7 +217,7 @@ figs-within-sections
 \pdf_colorlinks true
 \pdf_backref false
 \pdf_pdfusetitle true
-\pdf_quoted_options "linkcolor=blue, citecolor=blue, urlcolor=blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
+\pdf_quoted_options "linkcolor=NavyBlue, citecolor=DarkRed, urlcolor=Blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
 \papersize a4paper
 \use_geometry true
 \use_amsmath 1
@@ -544,7 +546,7 @@ En bra genomförd rapport med bra innehåll, dock lite svårläst stundvis då
 
 \begin_layout Standard
 \begin_inset Branch test
-status open
+status collapsed
 
 \begin_layout Section
 Sammanfattande omdöme av rapporten
