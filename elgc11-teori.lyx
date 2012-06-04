@@ -1011,10 +1011,54 @@ key "mil1-condition_monitoring"
 \end_layout
 
 \begin_layout Standard
+Ett system av integrerad hårdvara och mjukvara som kontinuerligt utför mätningar
+ på maskinen dygnet runt kallas 
+\emph on
+on-line.
+ 
+\emph default
+Datan presenteras sedan som information om maskinens hälsa via lättåskådliga
+ grafer och värden med hjälp av en dator.
+ Detta gör det lätt för operatören att avgöra när och om en åtgärd bör initieras.
+ Systemet kan även användas som bidrag till övervakning av produktionens
+ effektivitet.
+ All rådata sparas så underhållsingenjörer lätt kan plocka ut intressanta
+ värden för vidare analys av specifika maskinelement.
+ För en sammanfattning av för- och nackdelar med 
+\emph on
+off-line
+\emph default
+ utrustning se Tabell 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:OFFLINE-För-och-nackdelar"
+
+\end_inset
+
+ respektive Tabell 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:ONLINE-För-och-nackdelar"
+
+\end_inset
+
+ för 
+\emph on
+on-line.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -1057,6 +1101,7 @@ name "tab:OFFLINE-För-och-nackdelar"
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Fördelar
 \end_layout
 
@@ -1077,6 +1122,7 @@ Fördelar
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Nackdelar
 \end_layout
 
@@ -1097,6 +1143,8 @@ Nackdelar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -1106,6 +1154,8 @@ Nackdelar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Portabilitet
 \end_layout
 
@@ -1115,6 +1165,8 @@ Portabilitet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -1124,6 +1176,8 @@ Portabilitet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Svårt att utföra korrekt mätning
 \end_layout
 
@@ -1135,6 +1189,8 @@ Svårt att utföra korrekt mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -1144,6 +1200,8 @@ Svårt att utföra korrekt mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Obegränsade mätningar
 \end_layout
 
@@ -1153,6 +1211,8 @@ Obegränsade mätningar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -1162,6 +1222,8 @@ Obegränsade mätningar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Begränsad för kritiska maskiner
 \end_layout
 
@@ -1173,6 +1235,8 @@ Begränsad för kritiska maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -1182,6 +1246,8 @@ Begränsad för kritiska maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Visuell inspektion på samma gång
 \end_layout
 
@@ -1191,6 +1257,8 @@ Visuell inspektion på samma gång
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -1200,6 +1268,8 @@ Visuell inspektion på samma gång
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Arbetssamt och kräver utbildad personal
 \end_layout
 
@@ -1211,6 +1281,8 @@ Arbetssamt och kräver utbildad personal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4
 \end_layout
 
@@ -1220,6 +1292,8 @@ Arbetssamt och kräver utbildad personal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Dataansamling är relativt enkel
 \end_layout
 
@@ -1229,6 +1303,8 @@ Dataansamling är relativt enkel
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4
 \end_layout
 
@@ -1238,6 +1314,8 @@ Dataansamling är relativt enkel
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mätfrekvensen är begränsad
 \end_layout
 
@@ -1249,6 +1327,8 @@ Mätfrekvensen är begränsad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 5
 \end_layout
 
@@ -1258,6 +1338,8 @@ Mätfrekvensen är begränsad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Möjlighet till rotorbalansering på plats
 \end_layout
 
@@ -1267,6 +1349,8 @@ Möjlighet till rotorbalansering på plats
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 5
 \end_layout
 
@@ -1276,6 +1360,8 @@ Möjlighet till rotorbalansering på plats
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Falsklarm p.g.a.
  processfaktorer
 \end_layout
@@ -1288,6 +1374,8 @@ Falsklarm p.g.a.
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 6
 \end_layout
 
@@ -1297,6 +1385,8 @@ Falsklarm p.g.a.
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Kräver ingen installation på maskinen
 \end_layout
 
@@ -1306,6 +1396,8 @@ Kräver ingen installation på maskinen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 6
 \end_layout
 
@@ -1315,6 +1407,8 @@ Kräver ingen installation på maskinen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Okända problem förblir osynliga
 \end_layout
 
@@ -1326,6 +1420,8 @@ Okända problem förblir osynliga
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 7
 \end_layout
 
@@ -1335,6 +1431,8 @@ Okända problem förblir osynliga
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Stör ej befintligt installerad utrustning
 \end_layout
 
@@ -1344,6 +1442,8 @@ Stör ej befintligt installerad utrustning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 7
 \end_layout
 
@@ -1353,6 +1453,8 @@ Stör ej befintligt installerad utrustning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Oftast begränsad frekvens och amplitud vid mätning
 \end_layout
 
@@ -1364,6 +1466,8 @@ Oftast begränsad frekvens och amplitud vid mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 8
 \end_layout
 
@@ -1373,6 +1477,8 @@ Oftast begränsad frekvens och amplitud vid mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Grundutbildning tar 5 dagar
 \end_layout
 
@@ -1382,6 +1488,8 @@ Grundutbildning tar 5 dagar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 8
 \end_layout
 
@@ -1391,6 +1499,8 @@ Grundutbildning tar 5 dagar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Analysen blir begränsad utan fasdata
 \end_layout
 
@@ -1402,6 +1512,8 @@ Analysen blir begränsad utan fasdata
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9
 \end_layout
 
@@ -1411,6 +1523,8 @@ Analysen blir begränsad utan fasdata
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Relativt låg investeringskostand
 \end_layout
 
@@ -1420,6 +1534,8 @@ Relativt låg investeringskostand
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9
 \end_layout
 
@@ -1429,6 +1545,8 @@ Relativt låg investeringskostand
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Ofta endast använd vid haveri/larm
 \end_layout
 
@@ -1440,6 +1558,8 @@ Ofta endast använd vid haveri/larm
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10
 \end_layout
 
@@ -1449,6 +1569,8 @@ Ofta endast använd vid haveri/larm
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Lägre kostnad per mätpunkt
 \end_layout
 
@@ -1458,6 +1580,8 @@ Lägre kostnad per mätpunkt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10
 \end_layout
 
@@ -1467,6 +1591,8 @@ Lägre kostnad per mätpunkt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Svårt att avsätta personal för vibrationsmäting
 \end_layout
 
@@ -1496,6 +1622,8 @@ Svårt att avsätta personal för vibrationsmäting
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11
 \end_layout
 
@@ -1505,6 +1633,8 @@ Svårt att avsätta personal för vibrationsmäting
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Förbrukningsmateriel: kablar, batterier, sensorer
 \end_layout
 
@@ -1534,6 +1664,8 @@ Förbrukningsmateriel: kablar, batterier, sensorer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12
 \end_layout
 
@@ -1543,6 +1675,8 @@ Förbrukningsmateriel: kablar, batterier, sensorer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Data förlorad vid mätutrustningshaveri
 \end_layout
 
@@ -1572,6 +1706,8 @@ Data förlorad vid mätutrustningshaveri
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13
 \end_layout
 
@@ -1581,6 +1717,8 @@ Data förlorad vid mätutrustningshaveri
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Datan är sällan distribuerad
 \end_layout
 
@@ -1610,6 +1748,8 @@ Datan är sällan distribuerad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 14
 \end_layout
 
@@ -1619,6 +1759,8 @@ Datan är sällan distribuerad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Endast sedd som en underhållsfunktion
 \end_layout
 
@@ -1648,6 +1790,8 @@ Endast sedd som en underhållsfunktion
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 15
 \end_layout
 
@@ -1657,6 +1801,8 @@ Endast sedd som en underhållsfunktion
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Sällan integrerad med CMMS
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1694,6 +1840,8 @@ description "Computerized maintenance management system"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 16
 \end_layout
 
@@ -1703,6 +1851,8 @@ description "Computerized maintenance management system"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Sällan synliga för operatörer
 \end_layout
 
@@ -1732,6 +1882,8 @@ Sällan synliga för operatörer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 17
 \end_layout
 
@@ -1741,6 +1893,8 @@ Sällan synliga för operatörer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Ominvestering vart fjärde år
 \end_layout
 
@@ -1757,43 +1911,6 @@ Ominvestering vart fjärde år
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Ett system av integrerad hårdvara och mjukvara som kontinuerligt utför mätningar
- på maskinen dygnet runt kallas 
-\emph on
-on-line.
- 
-\emph default
-Datan presenteras sedan som information om maskinens hälsa via lättåskådliga
- grafer och värden med hjälp av en dator.
- Detta gör det lätt för operatören att avgöra när och om en åtgärd bör initieras.
- Systemet kan även användas som bidrag till övervakning av produktionens
- effektivitet.
- All rådata sparas så underhållsingenjörer lätt kan plocka ut intressanta
- värden för vidare analys av specifika maskinelement.
- För en sammanfattning av för- och nackdelar med 
-\emph on
-off-line
-\emph default
- utrustning se Tabell 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:OFFLINE-För-och-nackdelar"
-
-\end_inset
-
- respektive Tabell 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:ONLINE-För-och-nackdelar"
-
-\end_inset
-
- för 
-\emph on
-on-line.
 \end_layout
 
 \begin_layout Standard
@@ -1843,6 +1960,7 @@ name "tab:ONLINE-För-och-nackdelar"
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Fördelar
 \end_layout
 
@@ -1863,6 +1981,7 @@ Fördelar
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Nackdelar
 \end_layout
 
@@ -1883,6 +2002,8 @@ Nackdelar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -1892,6 +2013,8 @@ Nackdelar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Högkvalitetsdata tillgänglig för maskinanalys
 \end_layout
 
@@ -1901,6 +2024,8 @@ Högkvalitetsdata tillgänglig för maskinanalys
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -1910,6 +2035,8 @@ Högkvalitetsdata tillgänglig för maskinanalys
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mätningarna är begränsade till antalet installerade sensorer
 \end_layout
 
@@ -1921,6 +2048,8 @@ Mätningarna är begränsade till antalet installerade sensorer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -1930,6 +2059,8 @@ Mätningarna är begränsade till antalet installerade sensorer
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mätningar görs automatiskt och kontinuerligt
 \end_layout
 
@@ -1939,6 +2070,8 @@ Mätningar görs automatiskt och kontinuerligt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -1948,6 +2081,8 @@ Mätningar görs automatiskt och kontinuerligt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Kräver att sensorerna är kopplade till CCR
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1967,6 +2102,8 @@ description "Operatorscentralen eng. \\emph{Central Control Room}"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -1976,6 +2113,8 @@ description "Operatorscentralen eng. \\emph{Central Control Room}"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Konstant kvalitet på mätningarna
 \end_layout
 
@@ -1985,6 +2124,8 @@ Konstant kvalitet på mätningarna
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -1994,6 +2135,8 @@ Konstant kvalitet på mätningarna
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Analys av data kan vara komplex
 \end_layout
 
@@ -2005,6 +2148,8 @@ Analys av data kan vara komplex
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4
 \end_layout
 
@@ -2014,6 +2159,8 @@ Analys av data kan vara komplex
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Direktlarm vid maskinfel
 \end_layout
 
@@ -2023,6 +2170,8 @@ Direktlarm vid maskinfel
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4
 \end_layout
 
@@ -2032,6 +2181,8 @@ Direktlarm vid maskinfel
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Kräver en utbildad diagnostiker eller konsult
 \end_layout
 
@@ -2043,6 +2194,8 @@ Kräver en utbildad diagnostiker eller konsult
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 5
 \end_layout
 
@@ -2052,6 +2205,8 @@ Kräver en utbildad diagnostiker eller konsult
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Amplitud, frekvens, fas och last mäts
 \end_layout
 
@@ -2061,6 +2216,8 @@ Amplitud, frekvens, fas och last mäts
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 5
 \end_layout
 
@@ -2070,6 +2227,8 @@ Amplitud, frekvens, fas och last mäts
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Hög kostnad per mätpunkt
 \end_layout
 
@@ -2081,6 +2240,8 @@ Hög kostnad per mätpunkt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 6
 \end_layout
 
@@ -2090,6 +2251,8 @@ Hög kostnad per mätpunkt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mycket kraftfullt analysinstrument
 \end_layout
 
@@ -2099,6 +2262,8 @@ Mycket kraftfullt analysinstrument
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 6
 \end_layout
 
@@ -2108,6 +2273,8 @@ Mycket kraftfullt analysinstrument
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Relativt hög investeringskostnad
 \end_layout
 
@@ -2119,6 +2286,8 @@ Relativt hög investeringskostnad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 7
 \end_layout
 
@@ -2128,6 +2297,8 @@ Relativt hög investeringskostnad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Kan länkas med annan processdata
 \end_layout
 
@@ -2157,6 +2328,8 @@ Kan länkas med annan processdata
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 8
 \end_layout
 
@@ -2166,6 +2339,8 @@ Kan länkas med annan processdata
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Datan distribueras via DCS
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -2203,6 +2378,8 @@ description "Distributed control system"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9
 \end_layout
 
@@ -2212,6 +2389,8 @@ description "Distributed control system"
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Synlig för operatörer och konsulter
 \end_layout
 
@@ -2241,6 +2420,8 @@ Synlig för operatörer och konsulter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10
 \end_layout
 
@@ -2250,6 +2431,8 @@ Synlig för operatörer och konsulter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Fungerar med och utan säkerhetsbevakning
 \end_layout
 
@@ -2279,6 +2462,8 @@ Fungerar med och utan säkerhetsbevakning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11
 \end_layout
 
@@ -2288,6 +2473,8 @@ Fungerar med och utan säkerhetsbevakning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Idealisk för livslängdsuppskattning
 \end_layout
 
@@ -2740,6 +2927,10 @@ reference "tab:Sammanfattning-av-CBM"
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch Ej implementerat
 status open
 
@@ -2808,6 +2999,7 @@ Sammanfattning av för- och nackdelar med CBM system
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Fördelar
 \end_layout
 
@@ -2828,6 +3020,7 @@ Fördelar
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Nackdelar
 \end_layout
 
@@ -2848,6 +3041,8 @@ Nackdelar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -2857,6 +3052,8 @@ Nackdelar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Reduktion av underhållskostnad
 \end_layout
 
@@ -2866,6 +3063,8 @@ Reduktion av underhållskostnad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -2875,6 +3074,8 @@ Reduktion av underhållskostnad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Diagnostisk utrustning är kostsamt och ökar investeringen
 \end_layout
 
@@ -2886,6 +3087,8 @@ Diagnostisk utrustning är kostsamt och ökar investeringen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -2895,6 +3098,8 @@ Diagnostisk utrustning är kostsamt och ökar investeringen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Minskad risk för haveri
 \end_layout
 
@@ -2904,6 +3109,8 @@ Minskad risk för haveri
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -2913,6 +3120,8 @@ Minskad risk för haveri
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Höga utbildningskostnader
 \end_layout
 
@@ -2924,6 +3133,8 @@ Höga utbildningskostnader
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -2933,6 +3144,8 @@ Höga utbildningskostnader
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Reduktion av driftstopp
 \end_layout
 
@@ -2942,6 +3155,8 @@ Reduktion av driftstopp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -2951,6 +3166,8 @@ Reduktion av driftstopp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Ledningen kan inte se den potentiella besparingen
 \end_layout
 
@@ -2962,6 +3179,8 @@ Ledningen kan inte se den potentiella besparingen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4
 \end_layout
 
@@ -2971,6 +3190,8 @@ Ledningen kan inte se den potentiella besparingen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Ökning av produktion
 \end_layout
 
@@ -3000,6 +3221,8 @@ Ledningen kan inte se den potentiella besparingen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 5
 \end_layout
 
@@ -3009,6 +3232,8 @@ Ledningen kan inte se den potentiella besparingen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Ökad komponentlivslängd
 \end_layout
 
@@ -3038,6 +3263,8 @@ Ledningen kan inte se den potentiella besparingen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 6
 \end_layout
 
@@ -3047,6 +3274,8 @@ Ledningen kan inte se den potentiella besparingen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Tillåter förebyggande åtgärder
 \end_layout
 
@@ -3076,6 +3305,8 @@ Tillåter förebyggande åtgärder
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 7
 \end_layout
 
@@ -3085,6 +3316,8 @@ Tillåter förebyggande åtgärder
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Minskar kostnader för reservdelar och arbete
 \end_layout
 
@@ -3114,6 +3347,8 @@ Minskar kostnader för reservdelar och arbete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 8
 \end_layout
 
@@ -3123,6 +3358,8 @@ Minskar kostnader för reservdelar och arbete
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Förbättrar produktkvalitén
 \end_layout
 
@@ -3152,6 +3389,8 @@ Förbättrar produktkvalitén
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9
 \end_layout
 
@@ -3161,6 +3400,8 @@ Förbättrar produktkvalitén
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Förbättrar person- och miljösäkerheten
 \end_layout
 
@@ -3190,6 +3431,8 @@ Förbättrar person- och miljösäkerheten
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10
 \end_layout
 
@@ -3199,6 +3442,8 @@ Förbättrar person- och miljösäkerheten
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Förbättrar arbetsmoralen
 \end_layout
 
@@ -3228,6 +3473,8 @@ Förbättrar arbetsmoralen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11
 \end_layout
 
@@ -3237,6 +3484,8 @@ Förbättrar arbetsmoralen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Energieffektiviserar
 \end_layout
 

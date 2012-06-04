@@ -481,6 +481,7 @@ Ekonomisk översikt på givartyper
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Mätområde
 \end_layout
 
@@ -492,6 +493,7 @@ Mätområde
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Givare
 \end_layout
 
@@ -503,6 +505,7 @@ Givare
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Exempel på leverantörer
 \end_layout
 
@@ -514,6 +517,7 @@ Exempel på leverantörer
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Ca pris
 \end_layout
 
@@ -526,17 +530,7 @@ Ca pris
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Statorkärna
 \end_layout
 
@@ -547,17 +541,7 @@ Statorkärna
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Accelerometer
 \end_layout
 
@@ -568,17 +552,7 @@ Accelerometer
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 SKF
 \end_layout
 
@@ -589,17 +563,7 @@ SKF
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 1,000-
 \end_layout
 
@@ -612,17 +576,7 @@ SKF
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Statorstomme/ fundament
 \end_layout
 
@@ -633,17 +587,7 @@ Statorstomme/ fundament
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Hastighetsgivare
 \end_layout
 
@@ -654,17 +598,7 @@ Hastighetsgivare
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Bently Nevada
 \end_layout
 
@@ -674,6 +608,8 @@ Bently Nevada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10,000 kr/givare
 \end_layout
 
@@ -686,17 +622,7 @@ Bently Nevada
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Rotor/ axelsträng exkl.
  poler
 \end_layout
@@ -708,17 +634,7 @@ Rotor/ axelsträng exkl.
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Förflyttningsgivare
 \end_layout
 
@@ -729,17 +645,7 @@ Förflyttningsgivare
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 VMI AB
 \end_layout
 
@@ -761,17 +667,7 @@ VMI AB
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Växlar
 \end_layout
 
@@ -791,17 +687,7 @@ Växlar
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Forbes Marshall
 \end_layout
 
@@ -823,17 +709,7 @@ Forbes Marshall
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Bärlager
 \end_layout
 
@@ -873,17 +749,7 @@ Bärlager
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Styrlager (övre)
 \end_layout
 
@@ -923,17 +789,7 @@ Styrlager (övre)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Styrlager (undre)
 \end_layout
 
@@ -973,17 +829,7 @@ Styrlager (undre)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Turbinlager
 \end_layout
 
@@ -1023,17 +869,7 @@ Turbinlager
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Kåpor
 \end_layout
 
@@ -1073,17 +909,7 @@ Kåpor
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Ledskenor
 \end_layout
 
@@ -1124,6 +950,7 @@ Ledskenor
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Alt.
  Mätmetod lager
 \end_layout
@@ -1164,17 +991,7 @@ Alt.
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Bärlager
 \end_layout
 
@@ -1185,17 +1002,7 @@ Bärlager
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Konduktivitetsgivare
 \end_layout
 
@@ -1206,17 +1013,7 @@ Konduktivitetsgivare
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Endress+Hausser
 \end_layout
 
@@ -1227,17 +1024,7 @@ Endress+Hausser
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 8,000 kr
 \end_layout
 
@@ -1250,17 +1037,7 @@ Endress+Hausser
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Styrlager (övre)
 \end_layout
 
@@ -1271,17 +1048,7 @@ Styrlager (övre)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Vatten i olja
 \end_layout
 
@@ -1292,17 +1059,7 @@ Vatten i olja
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Pall, Hydraul syd
 \end_layout
 
@@ -1313,17 +1070,7 @@ Pall, Hydraul syd
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 10,000 kr
 \end_layout
 
@@ -1336,17 +1083,7 @@ Pall, Hydraul syd
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Styrlager (undre)
 \end_layout
 
@@ -1357,17 +1094,7 @@ Styrlager (undre)
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Oljeanalys
 \end_layout
 
@@ -1378,17 +1105,7 @@ Oljeanalys
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Shell
 \end_layout
 
@@ -1399,17 +1116,7 @@ Shell
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 2,000 kr/gång
 \end_layout
 
@@ -1422,17 +1129,7 @@ Shell
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Turbinlager
 \end_layout
 
@@ -1443,17 +1140,7 @@ Turbinlager
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Partikelräkningsgivare
 \end_layout
 
@@ -1464,17 +1151,7 @@ Partikelräkningsgivare
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Hydac, Colly
 \end_layout
 
@@ -1485,17 +1162,7 @@ Hydac, Colly
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 100,000 kr
 \end_layout
 
@@ -1508,17 +1175,7 @@ Hydac, Colly
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Turbinaxel
 \end_layout
 
@@ -1529,17 +1186,7 @@ Turbinaxel
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Hall-element
 \end_layout
 
@@ -1550,17 +1197,7 @@ Hall-element
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Honeywell
 \end_layout
 
@@ -1571,17 +1208,7 @@ Honeywell
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 100-300 kr
 \end_layout
 
@@ -1612,17 +1239,7 @@ Honeywell
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Hamlin
 \end_layout
 
@@ -1644,17 +1261,7 @@ Hamlin
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Rotorpoler
 \end_layout
 
@@ -1665,17 +1272,7 @@ Rotorpoler
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 Multimeter
 \end_layout
 
@@ -1686,17 +1283,7 @@ Multimeter
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 ELFA
 \end_layout
 
@@ -1707,17 +1294,7 @@ ELFA
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\size footnotesize
 300-5,000 kr
 \end_layout
 
@@ -1984,6 +1561,7 @@ name "tab:Kriterier for komponentval"
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Hårdvara
 \end_layout
 
@@ -2004,6 +1582,7 @@ Hårdvara
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Mjukvara
 \end_layout
 
@@ -2024,6 +1603,8 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -2033,6 +1614,8 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Bevisad pålitlighet
 \end_layout
 
@@ -2042,6 +1625,8 @@ Bevisad pålitlighet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
@@ -2051,6 +1636,8 @@ Bevisad pålitlighet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Det måste ha standardfunktioner och vara lätt att använda
 \end_layout
 
@@ -2062,6 +1649,8 @@ Det måste ha standardfunktioner och vara lätt att använda
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -2071,6 +1660,8 @@ Det måste ha standardfunktioner och vara lätt att använda
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Flexibel för utbyggnad
 \end_layout
 
@@ -2080,6 +1671,8 @@ Flexibel för utbyggnad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
@@ -2089,6 +1682,8 @@ Flexibel för utbyggnad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Definierar vilken typ av data som samlas
 \end_layout
 
@@ -2100,6 +1695,8 @@ Definierar vilken typ av data som samlas
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -2109,6 +1706,8 @@ Definierar vilken typ av data som samlas
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Bra kostnad/prestanda ratio för investeringen
 \end_layout
 
@@ -2118,6 +1717,8 @@ Bra kostnad/prestanda ratio för investeringen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 3
 \end_layout
 
@@ -2127,6 +1728,8 @@ Bra kostnad/prestanda ratio för investeringen
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Definierar hur dynamisk och processdata samlas
 \end_layout
 
@@ -2138,6 +1741,8 @@ Definierar hur dynamisk och processdata samlas
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4
 \end_layout
 
@@ -2147,6 +1752,8 @@ Definierar hur dynamisk och processdata samlas
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Enkelt interface mellan hårdvara och mjukvara
 \end_layout
 
@@ -2156,6 +1763,8 @@ Enkelt interface mellan hårdvara och mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 4
 \end_layout
 
@@ -2165,6 +1774,8 @@ Enkelt interface mellan hårdvara och mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Sparar processinformation
 \end_layout
 
@@ -2176,6 +1787,8 @@ Sparar processinformation
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 5
 \end_layout
 
@@ -2185,6 +1798,8 @@ Sparar processinformation
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Frekvens och dynamisk område
 \end_layout
 
@@ -2194,6 +1809,8 @@ Frekvens och dynamisk område
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 5
 \end_layout
 
@@ -2203,6 +1820,8 @@ Frekvens och dynamisk område
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Intelligent alarmfunktion som automatiskt genererar rapporter
 \end_layout
 
@@ -2214,6 +1833,8 @@ Intelligent alarmfunktion som automatiskt genererar rapporter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 6
 \end_layout
 
@@ -2223,6 +1844,8 @@ Intelligent alarmfunktion som automatiskt genererar rapporter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mätparametrar
 \end_layout
 
@@ -2232,6 +1855,8 @@ Mätparametrar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 6
 \end_layout
 
@@ -2241,6 +1866,8 @@ Mätparametrar
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Möjlighet att dela data mellan olika kraftverk
 \end_layout
 
@@ -2252,6 +1879,8 @@ Möjlighet att dela data mellan olika kraftverk
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 7
 \end_layout
 
@@ -2261,6 +1890,8 @@ Möjlighet att dela data mellan olika kraftverk
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Funktionstyp
 \end_layout
 
@@ -2270,6 +1901,8 @@ Funktionstyp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 7
 \end_layout
 
@@ -2279,6 +1912,8 @@ Funktionstyp
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Möjlighet att extrahera data för extern analys
 \end_layout
 
@@ -2290,6 +1925,8 @@ Möjlighet att extrahera data för extern analys
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 8
 \end_layout
 
@@ -2299,6 +1936,8 @@ Möjlighet att extrahera data för extern analys
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Transduktortyp och anslutning
 \end_layout
 
@@ -2308,6 +1947,8 @@ Transduktortyp och anslutning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 8
 \end_layout
 
@@ -2317,6 +1958,8 @@ Transduktortyp och anslutning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Lättvindighet för skapande av rapporter
 \end_layout
 
@@ -2328,6 +1971,8 @@ Lättvindighet för skapande av rapporter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9
 \end_layout
 
@@ -2337,6 +1982,8 @@ Lättvindighet för skapande av rapporter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Fas och hastighetsreferens
 \end_layout
 
@@ -2346,6 +1993,8 @@ Fas och hastighetsreferens
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9
 \end_layout
 
@@ -2355,6 +2004,8 @@ Fas och hastighetsreferens
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Länkar till CMMS
 \end_layout
 
@@ -2366,6 +2017,8 @@ Länkar till CMMS
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10
 \end_layout
 
@@ -2375,6 +2028,8 @@ Länkar till CMMS
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Data kommunikation
 \end_layout
 
@@ -2384,6 +2039,8 @@ Data kommunikation
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 10
 \end_layout
 
@@ -2393,6 +2050,8 @@ Data kommunikation
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Möjlighet att exportera data för andra typer av rapporter
 \end_layout
 
@@ -2404,6 +2063,8 @@ Möjlighet att exportera data för andra typer av rapporter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11
 \end_layout
 
@@ -2413,6 +2074,8 @@ Möjlighet att exportera data för andra typer av rapporter
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Antal år reservdelar finns tillhanda
 \end_layout
 
@@ -2422,6 +2085,8 @@ Antal år reservdelar finns tillhanda
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11
 \end_layout
 
@@ -2431,6 +2096,8 @@ Antal år reservdelar finns tillhanda
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Antal år med support
 \end_layout
 
@@ -2442,6 +2109,8 @@ Antal år med support
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12
 \end_layout
 
@@ -2451,6 +2120,8 @@ Antal år med support
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Uppgraderbarhet
 \end_layout
 
@@ -2460,6 +2131,8 @@ Uppgraderbarhet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 12
 \end_layout
 
@@ -2469,6 +2142,8 @@ Uppgraderbarhet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Uppgraderbarhet
 \end_layout
 
@@ -2480,6 +2155,8 @@ Uppgraderbarhet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13
 \end_layout
 
@@ -2489,6 +2166,8 @@ Uppgraderbarhet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Lokal support med kärnkompetens
 \end_layout
 
@@ -2498,6 +2177,8 @@ Lokal support med kärnkompetens
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 13
 \end_layout
 
@@ -2507,6 +2188,8 @@ Lokal support med kärnkompetens
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Lokal eller webbasserad support med hög tillgänglighet
 \end_layout
 
@@ -2518,6 +2201,8 @@ Lokal eller webbasserad support med hög tillgänglighet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 14
 \end_layout
 
@@ -2527,6 +2212,8 @@ Lokal eller webbasserad support med hög tillgänglighet
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Garantier och livslängd
 \end_layout
 
@@ -2536,6 +2223,8 @@ Garantier och livslängd
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 14
 \end_layout
 
@@ -2545,6 +2234,8 @@ Garantier och livslängd
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Garantier och livslängd
 \end_layout
 
@@ -2711,10 +2402,26 @@ Vid analys av rapporten visades vissa brister beroende på vem som är den
 \end_layout
 
 \begin_layout Standard
+Ett förslag är att istället använda sig av en server för lagring av all
+ mätdata, då inte enkom vibrationsmätningar enligt Figur 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Förslag-till-mätdataflöde"
+
+\end_inset
+
+ vilket sedan gör det möjligt att när som helst hämta önskad data för analys
+ samt minskar den annars stora omställningen mot CBM.
+ En central lagringsenhet för vibrationsdata ger framförallt en bättre översikt
+ över hur lagerkondition och dylikt ändras över tid vilket i särklass är
+ den bästa metoden att undvika haverier.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2749,22 +2456,6 @@ name "fig:Förslag-till-mätdataflöde"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Ett förslag är att istället använda sig av en server för lagring av all
- mätdata, då inte enkom vibrationsmätningar enligt Figur 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "fig:Förslag-till-mätdataflöde"
-
-\end_inset
-
- vilket sedan gör det möjligt att när som helst hämta önskad data för analys
- samt minskar den annars stora omställningen mot CBM.
- En central lagringsenhet för vibrationsdata ger framförallt en bättre översikt
- över hur lagerkondition och dylikt ändras över tid vilket i särklass är
- den bästa metoden att undvika haverier.
 \end_layout
 
 \begin_layout Subsection
@@ -2971,6 +2662,7 @@ name "tab:Ekonomisk-jämförelse-ONOFF"
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Off-line
 \end_layout
 
@@ -2991,6 +2683,7 @@ Off-line
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 On-line
 \end_layout
 
@@ -3011,6 +2704,8 @@ On-line
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Hårdvara
 \end_layout
 
@@ -3020,6 +2715,8 @@ Hårdvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 89 Tkr
 \end_layout
 
@@ -3029,6 +2726,8 @@ Hårdvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Hårdvara
 \end_layout
 
@@ -3038,6 +2737,8 @@ Hårdvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 68.5 Tkr
 \end_layout
 
@@ -3049,6 +2750,8 @@ Hårdvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mjukvara
 \end_layout
 
@@ -3058,6 +2761,8 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 29.5 Tkr
 \end_layout
 
@@ -3067,6 +2772,8 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mjukvara
 \end_layout
 
@@ -3076,6 +2783,8 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 60 Tkr
 \end_layout
 
@@ -3087,6 +2796,8 @@ Mjukvara
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 PC
 \end_layout
 
@@ -3096,6 +2807,8 @@ PC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 50 Tkr
 \end_layout
 
@@ -3105,6 +2818,8 @@ PC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 PC
 \end_layout
 
@@ -3114,6 +2829,8 @@ PC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 50 Tkr
 \end_layout
 
@@ -3125,6 +2842,8 @@ PC
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Personal
 \end_layout
 
@@ -3134,6 +2853,8 @@ Personal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 40 Tkr
 \end_layout
 
@@ -3143,6 +2864,8 @@ Personal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Personal
 \end_layout
 
@@ -3152,6 +2875,8 @@ Personal
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 40 Tkr
 \end_layout
 
@@ -3165,6 +2890,7 @@ Personal
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Total
 \end_layout
 
@@ -3174,6 +2900,8 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 208.5 Tkr
 \end_layout
 
@@ -3185,6 +2913,7 @@ Total
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Total
 \end_layout
 
@@ -3194,6 +2923,8 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 218.5 Tkr
 \end_layout
 
@@ -3205,6 +2936,8 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Maskiner
 \end_layout
 
@@ -3214,6 +2947,8 @@ Maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1 st
 \end_layout
 
@@ -3223,6 +2958,8 @@ Maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Maskiner
 \end_layout
 
@@ -3232,6 +2969,8 @@ Maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1 st
 \end_layout
 
@@ -3243,6 +2982,8 @@ Maskiner
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mätpunkter per maskin
 \end_layout
 
@@ -3252,6 +2993,8 @@ Mätpunkter per maskin
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9 st
 \end_layout
 
@@ -3261,6 +3004,8 @@ Mätpunkter per maskin
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Mätpunkter per maskin
 \end_layout
 
@@ -3270,6 +3015,8 @@ Mätpunkter per maskin
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 9 st
 \end_layout
 
@@ -3281,6 +3028,8 @@ Mätpunkter per maskin
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Två mätningar per månad
 \end_layout
 
@@ -3290,6 +3039,8 @@ Två mätningar per månad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 18 st
 \end_layout
 
@@ -3299,6 +3050,8 @@ Två mätningar per månad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 24 mätningar per dag
 \end_layout
 
@@ -3308,6 +3061,8 @@ Två mätningar per månad
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 216 st
 \end_layout
 
@@ -3321,6 +3076,7 @@ Två mätningar per månad
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Kostnad per mätning
 \end_layout
 
@@ -3330,6 +3086,8 @@ Kostnad per mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 11.6 Tkr
 \end_layout
 
@@ -3341,6 +3099,7 @@ Kostnad per mätning
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Kostnad per mätning
 \end_layout
 
@@ -3350,6 +3109,8 @@ Kostnad per mätning
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1 Tkr
 \end_layout
 

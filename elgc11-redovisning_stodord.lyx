@@ -1,0 +1,217 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass extarticle
+\use_default_options true
+\maintain_unincluded_children false
+\language swedish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 14
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Inledning
+\end_layout
+
+\begin_layout Subsection
+Problembeskrivning
+\end_layout
+
+\begin_layout Standard
+Visa för Fortum varför de ska satsa på vibrationsmätning
+\begin_inset Newline newline
+\end_inset
+
+Vad kan mätas?
+\begin_inset Newline newline
+\end_inset
+
+Prognoserna - Normer, riskvärden osv?
+\begin_inset Newline newline
+\end_inset
+
+Val av vibrationssystem
+\begin_inset Newline newline
+\end_inset
+
+Hur skall man mäta och vem ska analysera datan?
+\end_layout
+
+\begin_layout Subsection
+Metod
+\end_layout
+
+\begin_layout Standard
+Vi har valt att arbeta med en ...
+\begin_inset Newline newline
+\end_inset
+
+Källkritisk litteraturstudie där många KÄLLOR vägs mot varandra
+\begin_inset Newline newline
+\end_inset
+
+Besök på Kymmens vattenkraftverk (visuell inspektion och intervju)
+\begin_inset Newline newline
+\end_inset
+
+Samtal med Fortums personal och vibrationsmätningsföretag
+\end_layout
+
+\begin_layout Section
+Vibrationsbevakning
+\end_layout
+
+\begin_layout Subsection
+Fördelar med on-line
+\end_layout
+
+\begin_layout Standard
+Automatiskt - kräver inte att någon personal utför mätningarna
+\begin_inset Newline newline
+\end_inset
+
+Direktlarm - Nivåstyrt
+\begin_inset Newline newline
+\end_inset
+
+Livslängdsuppskattning - Viktigt för CBM
+\end_layout
+
+\begin_layout Section
+Underhållstrategier
+\end_layout
+
+\begin_layout Standard
+En av många standarder, vi valde ISO 13306
+\begin_inset Newline newline
+\end_inset
+
+CM - Laga vid haveri
+\begin_inset Newline newline
+\end_inset
+
+PdM - Vanligast, Service på en Bil
+\end_layout
+
+\begin_layout Subsection
+Vad är CBM
+\end_layout
+
+\begin_layout Standard
+Likt PdM
+\begin_inset Newline newline
+\end_inset
+
+Vad och när bestäms av maskinhälsan
+\begin_inset Newline newline
+\end_inset
+
+Intervallet kallas P-F intervall
+\begin_inset Newline newline
+\end_inset
+
+Kräver mycket data: temperatur, vibration, elektriska parametrar och andra
+ processvariabler
+\end_layout
+
+\begin_layout Section
+Slutsatser
+\end_layout
+
+\begin_layout Standard
+Portabelt - små kraftverk 
+\begin_inset Newline newline
+\end_inset
+
+On-line - stora nya eller kritiska kraftverk
+\begin_inset Newline newline
+\end_inset
+
+Produktionsförluster - Fortum win-win
+\begin_inset Newline newline
+\end_inset
+
+Livslängd - håller på att gå ur tiden så mer bevakning kan behövas
+\begin_inset Newline newline
+\end_inset
+
+Lagring - Egen personal, konsulter, flera som är intresserade av datan
+\end_layout
+
+\begin_layout Section
+Diskussion
+\end_layout
+
+\begin_layout Standard
+Opartisk - källkritik säljare?
+\begin_inset Newline newline
+\end_inset
+
+Svårt att bedöma - ont om praktiska fall (EON har men släpper inte info)
+\end_layout
+
+\end_body
+\end_document
