@@ -147,7 +147,7 @@ bfseries Henrik Storm
 \backslash
 
 \backslash
- Simon Lundell}
+[0.2cm] Simon Lundell}
 \backslash
 
 \backslash
@@ -172,7 +172,7 @@ emph{Degree Project}
 \backslash
 
 \backslash
- 
+[0.2cm] 
 \backslash
 Large Mekatronikingenjörsprogrammet }
 \backslash
@@ -249,8 +249,8 @@ begin{flushleft}
 
 
 \backslash
-large Detta examensarbete omfattar 22.5 hp och ingår i Mekatronikingenjörsprogram
-met, 180 hp, vid Karlstads universitet.
+normalsize Detta examensarbete omfattar 22.5 hp och ingår i Mekatronikingenjörspr
+ogrammet, 180 hp, vid Karlstads universitet.
  This 22.5 hp Degree Project is part of the 3 year, 180 hp, Mechatronic Engineeri
 ng course at Karlstad University, Sweden
 \end_layout
@@ -294,6 +294,22 @@ end{center}
 
 \backslash
 restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
 \end_layout
 
 \end_inset

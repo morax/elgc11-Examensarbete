@@ -115,7 +115,7 @@ name "chap:Terminologi"
 \end_layout
 
 \begin_layout Standard
-Följande definitioner är hämtade ur Svensk Standard 13306 vilket rekomenderas
+Följande definitioner är hämtade ur Svensk Standard 13306 vilket rekommenderas
  att följas för att undvika missförstånd 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -174,7 +174,7 @@ Förebyggande underhåll
 \begin_inset Text
 
 \begin_layout Plain Layout
-Underhåll som genomförs vid förutbestämda intervall eller enlligt förutbestämda
+Underhåll som genomförs vid förutbestämda intervall eller enligt förutbestämda
  kriterier och i avsikt att minska sannolikheten för fel eller degradering
  av enhetens funktion.
 \end_layout
@@ -245,7 +245,7 @@ Tillståndsbaserat underhåll
 
 \begin_layout Plain Layout
 Förebyggande underhåll som består av kontroll och övervakning av enhetens
- tillstånd avseende dess funktion och egenskaper, samt därav förandledda
+ tillstånd avseende dess funktion och egenskaper, samt därav föranledda
  åtgärder.NOT: Kontroll och övervakning av funktion och egenskaper kan vara
  schemalagt, på begäran eller kontinuerligt.
 \end_layout
@@ -292,7 +292,7 @@ Rutinmässigt underhåll
 \begin_inset Text
 
 \begin_layout Plain Layout
-Regesbunden eller återkommande grundläggande underhållsverksamhet vilken
+Regelbunden eller återkommande grundläggande underhållsverksamhet vilken
  vanligtvis ej kräver specialkompetens, behörighet eller specialverktyg.
 \end_layout
 
@@ -577,7 +577,7 @@ Underhållsplan
 
 \begin_layout Plain Layout
 Strukturerad gruppering av uppgifter som inkluderar aktiviteter, förfaringssätt,
- resurser och tidsomfattning som erfodras för att utföra underhållet
+ resurser och tidsomfattning som erfordras för att utföra underhållet
 \end_layout
 
 \end_inset
@@ -623,9 +623,9 @@ Underhållssäkerhet
 \begin_inset Text
 
 \begin_layout Plain Layout
-Förmågan hos underhållsorganisationen att tilhandahålla de rätta underhållsresur
-serna på erfoderlig plats, för att utföra krävda underhållsåtgärder på en
- enhet, vid en anvigen tidpunkt eller under ett angivet tidsintervall.
+Förmågan hos underhållsorganisationen att tillhandahålla de rätta underhållsresu
+rserna på erforderlig plats, för att utföra krävda underhållsåtgärder på
+ en enhet, vid en angiven tidpunkt eller under ett angivet tidsintervall.
 \end_layout
 
 \end_inset
@@ -649,10 +649,10 @@ Driftsäkerhet
 \begin_layout Plain Layout
 Förmågan hos en enhet att kunna utföra krävd funktion under angivna betingelser
  vid ett givet tillfälle eller under ett givet tidsintervall, förutsatt
- att erfoderliga stödfunktioner finns tillgängliga.
+ att erforderliga stödfunktioner finns tillgängliga.
  NOT 1: Driftsäkerheten är beroende av de kombinerade egenskaperna funktionsmäss
 ighet, underhållsmässighet och underhållssäkerhet.
- NOT 2: Erfoderliga stödfunktioner, andra än underhållsresurser, påverkar
+ NOT 2: Erforderliga stödfunktioner, andra än underhållsresurser, påverkar
  inte enhetens tillgänglighet.
 \end_layout
 
@@ -710,8 +710,8 @@ Underhållsmässighet
 \begin_layout Plain Layout
 Förmågan hos en enhet, som används enligt angivna betingelser, att vidmakthållas
  i, eller återställas till ett sådant tillstånd att den kan utföra krävd
- funktion, när underhållet utförs under anfivna betingelser och underanvändning
- av föstställda förfaringssätt och resurser.
+ funktion, när underhållet utförs under angivna betingelser och underanvändning
+ av fastställda förfaringssätt och resurser.
  NOT: Underhållsmässigheten kan också användas som ett mått.
 \end_layout
 
@@ -734,7 +734,7 @@ Redundans
 \begin_inset Text
 
 \begin_layout Plain Layout
-Förekomst av mer än en möjlighet att vid ett angevet tillfälle kunna utföra
+Förekomst av mer än en möjlighet att vid ett angivet tillfälle kunna utföra
  krävd funktion hos en enhet.
 \end_layout
 

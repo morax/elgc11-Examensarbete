@@ -563,7 +563,7 @@ Hur datan mäts
 \begin_layout Standard
 Här gäller det att använda rätt typ av givare placerad på rätt plats och
  på rätt sätt för att resultatet av mätningen skall bli så bra som möjligt.
- Efter identifiering av intressanta maskinelement eller fenomén hos den
+ Efter identifiering av intressanta maskinelement eller fenomen hos den
  maskin man vill undersöka måste rätt typ av givare väljas.
  Det finns olika typer av givare och de vanligast förekommande är
 \end_layout
@@ -617,7 +617,7 @@ De parametrar som avgör hur mycket och hur snabbt data ska samlas är
 sampling rate.
  
 \emph default
-Desto fler spektrallinjer ett spektrum har, destå lättare är det för användaren
+Desto fler spektrallinjer ett spektrum har, desto lättare är det för användaren
  att analysera datan.
  Dock kräver fler spektrallinjer långsammare mätningar.
  
@@ -668,8 +668,8 @@ Hur data behandlas
 \begin_layout Standard
 De parametrar som avgör hur datan bearbetas är vilken form av medelvärdesbildnin
 g, antalet medelvärden och vilken fönstertyp som används.
- Ett exemel på de olika steg som en signal behandlas kan representeras enligt
- Figur 
+ Ett exempel på de olika steg som en signal behandlas kan representeras
+ enligt Figur 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Signalkedja-vid-digitalisering"
@@ -725,7 +725,7 @@ Medelvärdesbildning
 
 \begin_layout Standard
 måste användas för att bestämma nivån på signalen vid varje frekvens.
- Anledningen till att man gör ett medelvärde av spektrat är för att minska
+ Anledningen till att man gör ett medelvärde av spektra är för att minska
  bidraget som mätstörningar skapar.
  Olika metoder används vid medelvärdesbildning så som aritmetiskt medelvärde,
  kvadratiskt medelvärde, 'Peak hold' och synkront medelvärde 
@@ -736,7 +736,7 @@ key "fft-signalprocessing,beginner-vibration"
 \end_inset
 
 .
- Den vanligaste metoden är aritmetiskt medelvärde som är rekomenderad i
+ Den vanligaste metoden är aritmetiskt medelvärde som är rekommenderad i
  de flesta fall och fungerar enligt följande ekvation.
  
 \end_layout
@@ -856,11 +856,11 @@ Antal medelvärden
 
 \begin_layout Standard
 man använder vid medelvärdesbildning antar en viktig roll i den bemärkelsen
- att ju större antal spektra som används destå mer brus filtreras men kräver
+ att ju större antal spektra som används desto mer brus filtreras men kräver
  också att mer data behandlas.
  Detta medför att det tar längre tid att visa upp ett medelvärdesbildat
  spektra.
- Fyra samples räcker i de flesta fall för medelvärdesbildning.
+ Fyra sampels räcker i de flesta fall för medelvärdesbildning.
 \end_layout
 
 \begin_layout Paragraph
@@ -869,7 +869,7 @@ Fönster
 
 \begin_layout Standard
 är parametern som bestämmer vilken fönsterfunktion som används för ytterligare
- filtrering vid signalbehandlingen för att lättare urskönja spikarna i FFT-spekt
+ filtrering vid signalbehandlingen för att lättare urskilja spikarna i FFT-spekt
 rat.
  Den mest förekommande typen är Hann fönster
 \begin_inset Foot
@@ -958,7 +958,7 @@ Mätutrustning
 \begin_layout Standard
 Idag är mätutrustningen kompakt och finns tillgänglig som både fast monterad
  och bärbart format.
- Portabla system samt fast monterad utrustning, som inte utför kontinuelig
+ Portabla system samt fast monterad utrustning, som inte utför kontinuerlig
  mätning kallas 
 \emph on
 off-line.
@@ -1017,7 +1017,7 @@ Ett system av integrerad hårdvara och mjukvara som kontinuerligt utför mätnin
 on-line.
  
 \emph default
-Datan presenteras sedan som information om maskinens hälsa via lättåskådliga
+Mätdata presenteras sedan som information om maskinens hälsa via lättåskådliga
  grafer och värden med hjälp av en dator.
  Detta gör det lätt för operatören att avgöra när och om en åtgärd bör initieras.
  Systemet kan även användas som bidrag till övervakning av produktionens
@@ -1270,7 +1270,7 @@ Visuell inspektion på samma gång
 \begin_layout Plain Layout
 
 \size footnotesize
-Arbetssamt och kräver utbildad personal
+Arbetsamt och kräver utbildad personal
 \end_layout
 
 \end_inset
@@ -1525,7 +1525,7 @@ Analysen blir begränsad utan fasdata
 \begin_layout Plain Layout
 
 \size footnotesize
-Relativt låg investeringskostand
+Relativt låg investeringskostnad
 \end_layout
 
 \end_inset
@@ -1895,7 +1895,7 @@ Sällan synliga för operatörer
 \begin_layout Plain Layout
 
 \size footnotesize
-Ominvestering vart fjärde år
+Återinvestering vart fjärde år
 \end_layout
 
 \end_inset
@@ -2725,7 +2725,7 @@ P-F intervallet måste vara konsekvent nog så inte åtgärder görs för tidigt
  Intervallet bör dessutom vara av praktisk tidsrymd förslagsvis dagar eller
  veckor för att vara en god kandidat för CBM.
  P-F intervallet skall vara definierat så en tydlig varning uppstår med
- erfodelig tid för planering och utförande av åtgärd.
+ erforderlig tid för planering och utförande av åtgärd.
  Mest relevant i detta sammanhang är att underhållet måste vara billigare
  än ett potentiellt haveri över MTBF (Mean Time Between Failures).
  
@@ -2745,10 +2745,25 @@ Då kraven på produktivitet, kvalitet, lagerkontroll och maskinlivslängd
 \end_layout
 
 \begin_layout Standard
+För att öka prestandan hos CBM system används nu mer fuzzy logic, neuronnät
+ och applikation av Dempster-Shaferteori.
+ CBM system värderas efter dess förmåga att säkert diagnostisera fel samt
+ beräkna hur lång tid som återstår innan fel inträffar vilket är en viktig
+ del för underhållet se Figur 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Processflöde-vid-livslängd"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -2835,8 +2850,8 @@ Processflöde vid livslängdsuppskattning
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Grafisk representation över återkopplingen som försegår vid implementering
- av, samt underhåll med CBM
+Grafisk representation över återkopplingen som sker vid implementering av,
+ samt underhåll med CBM
 \end_layout
 
 \end_inset
@@ -2844,28 +2859,9 @@ Grafisk representation över återkopplingen som försegår vid implementering
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-För att öka prestandan hos CBM system används nu mer fuzzy logic, neurala
- nät och applikation av Dempster-Shaferteori.
- CBM system värderas efter dess förmåga att säkert diagnostisera fel samt
- beräkna hur lång tid som återstår innan fel inträffar vilket är en viktig
- del för underhållet se Figur 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Processflöde-vid-livslängd"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Subsection

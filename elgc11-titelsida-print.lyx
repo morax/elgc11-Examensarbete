@@ -142,9 +142,7 @@ textwidth]{figurer/kau.eps}
 
 
 \backslash
-textsc{
-\backslash
-small Fakulteten för teknik- och naturvetenskap}
+small Fakulteten för teknik- och naturvetenskap 
 \backslash
 
 \backslash
@@ -242,7 +240,7 @@ bfseries Henrik Storm
 \backslash
 
 \backslash
-Simon Lundell}
+[0.2cm] Simon Lundell}
 \backslash
 
 \backslash
@@ -321,9 +319,7 @@ emph{Handledare:}
 
 \begin_layout Plain Layout
 
-Krister 
-\backslash
-textsc{Ström}
+Krister Ström
 \backslash
 
 \backslash
@@ -332,9 +328,7 @@ textsc{Ström}
 
 \begin_layout Plain Layout
 
-Torbjörn 
-\backslash
-textsc{Berg}
+Torbjörn Berg
 \backslash
 
 \backslash
@@ -384,6 +378,17 @@ restoregeometry
 
 \backslash
 end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
 \end_layout
 
 \begin_layout Plain Layout

@@ -103,7 +103,7 @@ thispagestyle{empty}
 
 
 \backslash
-newgeometry{left=2.5cm,right=2.5cm,bottom=0.1cm} 
+newgeometry{left=2.5cm,right=2.5cm,bottom=1cm} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -152,7 +152,7 @@ LARGE Karlstads universitet}
 
 
 \backslash
-large Fakulteten för teknik- och naturvetenskap
+small Fakulteten för teknik- och naturvetenskap
 \backslash
 
 \backslash
@@ -223,9 +223,7 @@ HRule
 
 { 
 \backslash
-Large Henrik 
-\backslash
-textsc{Storm}
+Large Henrik Storm
 \backslash
 
 \backslash
@@ -234,9 +232,7 @@ textsc{Storm}
 
 \begin_layout Plain Layout
 
-Simon 
-\backslash
-textsc{Lundell}
+Simon Lundell
 \backslash
 
 \backslash
@@ -275,7 +271,7 @@ HRule
 
 
 \backslash
-large 
+normalsize 
 \backslash
 bfseries Examensarbete vid Mekatronikingenjörsprogrammet
 \backslash
@@ -288,9 +284,7 @@ bfseries Examensarbete vid Mekatronikingenjörsprogrammet
 
 {
 \backslash
-small 
-\backslash
-today}
+small vt 2012}
 \end_layout
 
 \begin_layout Plain Layout

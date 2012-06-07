@@ -270,7 +270,7 @@ Låt oss för enkelhetens skull anta att man får 1 fel som tvingar avbrott
 \end_inset
 
 80 000 kr antaget att reparationstiden konstant är 40h i detta exempel.
- Sedan beräknas stillaståendekostnaden som är den stora kostnaden enligt
+ Sedan beräknas stilleståndskostnaden som är den stora kostnaden enligt
  
 \end_layout
 
@@ -500,7 +500,7 @@ Man minskar
  på lager, samt att arbetsordern är gjord så inga onödiga väntetider tillkommer,
  tiden att utföra arbetet antas kvarstå.
  Detta innebär i sin tur att man kan öka den operativa tillgängligheten
- och stillaståendekostnaden sjunker.
+ och stilleståndskostnaden sjunker.
  Ponera att operativa tillgängligheten A efter FU ökar till 0,99 vid 1 fel/år.
  
 \end_layout
@@ -520,7 +520,7 @@ reference "eq:Stillaståendekostnad"
 
 \end_inset
 
- att före FU är stillaståendekostnaderna 657 600kr/år och efter FU 164 400kr/år.
+ att före FU är stilleståndskostnaderna 657 600kr/år och efter FU 164 400kr/år.
  Total kostnad före FU blir således 80 000 + 657 600 = 737 600kr och efter
  FU 80 000 + 164 400 = 244 400kr
 \end_layout
@@ -543,7 +543,7 @@ Underhållsterminologi
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Undehåll Kombination av alla tekniska, administrativa och ledningens åtgärder
+Underhåll Kombination av alla tekniska, administrativa och ledningens åtgärder
  under en enhets livstid avsedda att vidmakthålla den i, eller återställa
  den till, ett sådant tillstånd att den kan utföra krävd funktion.
 \end_layout
@@ -557,7 +557,7 @@ etens mål.
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 Underhållsplan Strukturerad gruppering av uppgifter som inkluderar aktiviteter,
- förfaringssätt, resurser och tidsomfattning som erfodras för att utföra
+ förfaringssätt, resurser och tidsomfattning som erfordras för att utföra
  underhållet.
 \end_layout
 
@@ -570,9 +570,9 @@ Tillförlitlighet En sammanfattande benämning för att beskriva egenskapen
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Underhållssäkerhet Förmågan hos underhållsorganisationen att tilhandahålla
- de rätta underhållsresurserna på erfoderlig plats, för att utföra krävda
- underhållsåtgärder på en enhet, vid en anvigen tidpunkt eller under ett
+Underhållssäkerhet Förmågan hos underhållsorganisationen att tillhandahålla
+ de rätta underhållsresurserna på erforderlig plats, för att utföra krävda
+ underhållsåtgärder på en enhet, vid en angiven tidpunkt eller under ett
  angivet tidsintervall.
 \end_layout
 
@@ -580,7 +580,7 @@ Underhållssäkerhet Förmågan hos underhållsorganisationen att tilhandahålla
 \labelwidthstring 00.00.0000
 Driftsäkerhet Förmågan hos en enhet att kunna utföra krävd funktion under
  angivna betingelser vid ett givet tillfälle eller under ett givet tidsintervall
-, förutsatt att erfoderliga stödfunktioner finns tillgängliga.
+, förutsatt att erforderliga stödfunktioner finns tillgängliga.
 \begin_inset Newline newline
 \end_inset
 
@@ -589,7 +589,7 @@ het, underhållsmässighet och underhållssäkerhet.
 \begin_inset Newline newline
 \end_inset
 
-not2: Erfoderliga stödfunktioner, andra än underhållsresurser, påverkar
+not2: Erforderliga stödfunktioner, andra än underhållsresurser, påverkar
  inte enhetens tillgänglighet.
 \end_layout
 
@@ -616,8 +616,8 @@ funktionssäkerhet
 \labelwidthstring 00.00.0000
 Underhållsmässighet Förmågan hos en enhet, som används enligt angivna betingelse
 r, att vidmakthållas i, eller återställas till ett sådant tillstånd att
- den kan utföra krävd funktion, när underhållet utförs under anfivna betingelser
- och underanvändning av föstställda förfaringssätt och resurser.
+ den kan utföra krävd funktion, när underhållet utförs under angivna betingelser
+ och underanvändning av fastställda förfaringssätt och resurser.
 \begin_inset Newline newline
 \end_inset
 
@@ -626,7 +626,7 @@ not: Underhållsmässigheten kan också användas som ett mått.
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-Redundans Förekomst av mer än en möjlighet att vid ett angevet tillfälle
+Redundans Förekomst av mer än en möjlighet att vid ett angivet tillfälle
  kunna utföra krävd funktion hos en enhet.
 \end_layout
 
@@ -668,7 +668,7 @@ Förebyggande underhåll
 \end_layout
 
 \begin_layout Standard
-Underhåll som genomförs vid förutbestämda intervall eller enlligt förutbestämda
+Underhåll som genomförs vid förutbestämda intervall eller enligt förutbestämda
  kriterier och i avsikt att minska sannolikheten för fel eller degradering
  av enhetens funktion.
 \end_layout
@@ -692,12 +692,12 @@ Förebyggande underhåll som genomförs i enhetlighet med bestämda intervaller
 \end_layout
 
 \begin_layout Subsubsection
-Tillståndsbaerat underhåll
+Tillståndsbaserat underhåll
 \end_layout
 
 \begin_layout Standard
 Förebyggande underhåll som består av kontroll och övervakning av enhetens
- tillstånd avseende dess funktion och egenskaper, samt därav förandledda
+ tillstånd avseende dess funktion och egenskaper, samt därav föranledda
  åtgärder.
 \end_layout
 
@@ -719,7 +719,7 @@ Rutinmässigt underhåll
 \end_layout
 
 \begin_layout Standard
-Regesbunden eller återkommande grundläggande underhållsverksamhet vilken
+Regelbunden eller återkommande grundläggande underhållsverksamhet vilken
  vanligtvis ej kräver specialkompetens, behörighet eller specialverktyg.
 \end_layout
 

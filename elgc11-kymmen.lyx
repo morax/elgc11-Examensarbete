@@ -350,8 +350,8 @@ reference "fig:Karta-över-kraftverksområdet."
  Det primära vattenmagasinet är Kymmen som tar nytta av vattenföringen från
  Rottnan, Granån via en överledningstunnel samt den naturliga vattentillrinninge
 n.
- Kraftverket körs inte kontinueligt utan produktionen sköts helt via parabollänk
- till centralen i Stockholm.
+ Kraftverket körs inte kontinuerligt utan produktionen sköts helt via parabollän
+k till centralen i Stockholm.
  Sammanfattad information finns enligt Tabell 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -683,7 +683,7 @@ Visuell inspektion
 \begin_layout Standard
 Kraftverket består av fyra våningar där första våningen har kontrollrum,
  topp av generator samt travers för lyft av aggregatet.
- Våning två inehåller statorn och dess separata kylvattensystem.
+ Våning två innehåller statorn och dess separata kylvattensystem.
  Här finns även temperaturmätare för lager med analoga visare.
 \end_layout
 
@@ -780,7 +780,7 @@ name "tab:Mätpunkter-och-givartyper"
 
 \end_inset
 
-Mätpunkter och givartyper vid vibrationmätning på Kymmen.
+Mätpunkter och givartyper vid vibrationsmäting på Kymmen.
  Teckenförklaring: X- radiell, Y- axiell, Z-tangentiell.
 \end_layout
 

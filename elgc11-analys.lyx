@@ -106,7 +106,7 @@ Analys
 
 \emph on
 Detta kapitel sammanfogar teori, intervjuer och besök på Kymmens kraftverk
- som en generell analys av hurvida vibrationsmätning skall utföras på ett
+ som en generell analys av huruvida vibrationsmätning skall utföras på ett
  kraftverk.
  
 \end_layout
@@ -145,7 +145,7 @@ Vibrationsmätning av kraftverk
 \end_layout
 
 \begin_layout Standard
-Ökade materialspänningar kan uppkomma via beläggningar och errosion, som
+Ökade materialspänningar kan uppkomma via beläggningar och erosion, som
  i sin tur påverkar balanseringen eller temperaturrellaterad expansion,
  som ändrar komponentens uppriktning.
  Dessa problem bidrar med stor dynamisk belastning på lager, som leder till
@@ -228,7 +228,7 @@ Stator
 \begin_layout Standard
 är en stillastående del i en elektrisk maskin.
  Den är ofta konstruerad som en ring av järnplåtar som är ihopsvetsade samt
- på innsidan består den av ett stort antal plåtar, som är magnetiskt orgenterade
+ på insidan består den av ett stort antal plåtar, som är magnetiskt orienterade
  och fastlåsta, samt försedda med spår i vilken lindningen är placerad.
  
 \end_layout
@@ -1708,7 +1708,7 @@ Definierar vilken typ av data som samlas
 \begin_layout Plain Layout
 
 \size footnotesize
-Bra kostnad/prestanda ratio för investeringen
+Bra kostnad/prestanda kvot för investeringen
 \end_layout
 
 \end_inset
@@ -2190,7 +2190,7 @@ Lokal support med kärnkompetens
 \begin_layout Plain Layout
 
 \size footnotesize
-Lokal eller webbasserad support med hög tillgänglighet
+Lokal eller webbaserad support med hög tillgänglighet
 \end_layout
 
 \end_inset
@@ -2285,7 +2285,7 @@ ar.
 status open
 
 \begin_layout Subsection
-Kompatiblitet med ny utrustning
+Kompatibilitet med ny utrustning
 \end_layout
 
 \begin_layout Standard
@@ -2463,8 +2463,8 @@ Ansvarsdistribution
 \end_layout
 
 \begin_layout Standard
-Då flera enheter är länkade till underhållet och sedmera även vibrationsbevaknin
-gen delas det för enkelheten upp i två ansvarsområden: analys och åtgärd.
+Då flera enheter är länkade till underhållet och sedermera även vibrationsbevakn
+ingen delas det för enkelheten upp i två ansvarsområden: analys och åtgärd.
  Analys innefattar all personal inom underhåll och övriga enheter som bidrar
  med beslutsunderlag innan åtgärd.
  Skillnaden från dagens struktur är att en analytiker tillkommer som (om
@@ -2472,7 +2472,7 @@ gen delas det för enkelheten upp i två ansvarsområden: analys och åtgärd.
  Som Figur 
 \begin_inset CommandInset ref
 LatexCommand vref
-reference "fig:Ansvarsdistribution-vid-underhå"
+reference "fig:Ansvarsfördelning-vid-underhå"
 
 \end_inset
 
@@ -2508,10 +2508,10 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Ansvardistribution vid vibrationsanalys och underhållsbeslut
+Ansvarsfördelning vid vibrationsanalys och underhållsbeslut
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Ansvarsdistribution-vid-underhå"
+name "fig:Ansvarsfördelning-vid-underhå"
 
 \end_inset
 
@@ -2562,7 +2562,7 @@ on-line
 Installationen sker typiskt av leverantören och beroende på hur rigorösa
  mätningar man har bestämt sig för att ha, påverkas tiden samt driftsförhållande
 na vid installation.
- Men installationen sker allt som oftast under de mest gynsamma förhållandena
+ Men installationen sker allt som oftast under de mest gynnsamma förhållandena
  för kunden, vilket efter installation inte påverkar produktionen negativt
  av utrustningen på något sätt.
 \end_layout
@@ -2597,7 +2597,7 @@ reference "tab:Ekonomisk-jämförelse-ONOFF"
 \begin_layout Standard
 Att underhåll har en direkt anknytning till besparingar, då främst när risken
  för totalhaverier i stort sett kan elimineras helt, är ingen nyhet, men
- destå bättre underhållet sköts, desto svårare blir det att peka på vinsterna
+ desto bättre underhållet sköts, desto svårare blir det att peka på vinsterna
  då 
 \begin_inset Quotes eld
 \end_inset
@@ -2623,7 +2623,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Ekonomisk jämförelse mellan on- och off-line mätutrusting med priser från
+Ekonomisk jämförelse mellan on- och off-line mätutrustning med priser från
  vibrationsmätningsföretag samt antagande att personalen kostar lika mycket
  vid båda fallen 
 \begin_inset CommandInset label
@@ -3169,15 +3169,15 @@ nella investeringskalkyler då det är många faktorer som spelar in på den
 \end_layout
 
 \begin_layout Itemize
-På några tiotal år har hundratals datoriserade rondsystem erörvrat processindust
-rin i Sverige.
+På några tiotal år har hundratals datoriserade rondsystem erövrat processindustr
+in i Sverige.
  Verksamheten engagerar en stor personalstyrka och orsaken är naturligtvis
  att det lönar sig.
 \end_layout
 
 \begin_layout Itemize
-Rondverksamheten byggs oftas ut till kontinuerlig vibrationsövervakning
- i ett allt högre tempo, t.ex.
+Rondverksamheten byggs ofta ut till kontinuerlig vibrationsövervakning i
+ ett allt högre tempo, t.ex.
  pappersmaskiner i pappersindustrin bestyckas med hundratals givare.
 \end_layout
 

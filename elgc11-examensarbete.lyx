@@ -274,7 +274,7 @@
       };
    \end{tikzpicture}
   }
-\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+\titlespacing*{\chapter}{0pt}{20pt}{-60pt}
 \end_preamble
 \options svgnames,liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot,twoside,parskip=half
 \use_default_options true
@@ -393,7 +393,7 @@ filename "elgc11-titelsida-print.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 

@@ -278,8 +278,9 @@ radiell
 \noindent
 
 \size footnotesize
-Böjd rotor pga termisk spänning kan orsaka en ökande amplitud med en ökande
- temperatur som följd
+Böjd rotor p.g.a.
+ termisk spänning kan orsaka en ökande amplitud med en ökande temperatur
+ som följd
 \end_layout
 
 \end_inset
@@ -523,7 +524,7 @@ Böjd axel vid koppling
 \begin_layout Plain Layout
 
 \size footnotesize
-axell, radiell, tangentiell
+axiell, radiell, tangentiell
 \end_layout
 
 \end_inset
@@ -534,7 +535,7 @@ axell, radiell, tangentiell
 \begin_layout Plain Layout
 
 \size footnotesize
-Kast i en koppling uppträder som ett uppriktingsfel
+Kast i en koppling uppträder som ett uppriktningsfel
 \end_layout
 
 \end_inset
@@ -1526,7 +1527,7 @@ Snedställt lager
 \begin_layout Plain Layout
 
 \size footnotesize
-radiell, axell
+radiell, axiell
 \end_layout
 
 \end_inset
@@ -1713,7 +1714,7 @@ Kommentar
 \begin_layout Plain Layout
 
 \size footnotesize
-Defekt innering, liten singeldefekt
+Defekt innerring, liten singeldefekt
 \end_layout
 
 \end_inset
@@ -1814,7 +1815,7 @@ Radiell last ökar nivån
 \begin_layout Plain Layout
 
 \size footnotesize
-Defekt innering, två eller tre små defekter
+Defekt innerring, två eller tre små defekter
 \end_layout
 
 \end_inset
@@ -1861,7 +1862,7 @@ Bredbandsbrus, ökning av nivån
 
 \size footnotesize
 Defekt innerring, många små defekter med skalning runt hela lagerbanan (freq
- omriktare)
+ omvandlare)
 \end_layout
 
 \end_inset
@@ -2105,7 +2106,7 @@ radiell
 \begin_layout Plain Layout
 
 \size footnotesize
-Skadad rullkroppshållar.
+Skadad rullkroppshållare.
  Brott på ett sälle
 \end_layout
 
@@ -2185,7 +2186,8 @@ radiell
 \begin_layout Plain Layout
 
 \size footnotesize
-Brus pga spillror av hållaren i lagret
+Brus p.g.a.
+ spillror av hållaren i lagret
 \end_layout
 
 \end_inset
