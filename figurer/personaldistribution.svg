@@ -60,8 +60,8 @@
       </clipPath>
     </defs>
     <g fill="rgb(236,236,241)" transform="matrix(1,0,0,1,6,107)" stroke="rgb(236,236,241)">
-      <path d="M9.5433 -91.1161 L9.5433 -61.1161 L778.3977 -61.1161 L778.3977 -91.1161 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <rect x="9.5433" width="768.8545" height="352.0177" y="-61.1161" clip-path="url(#clipPath2)" stroke="none"/>
+      <path d="M9.5433 -91.1161 L9.5433 -61.1161 L778.7209 -61.1161 L778.7209 -91.1161 Z" clip-path="url(#clipPath2)" stroke="none"/>
+      <rect x="9.5433" width="769.1777" height="352.0177" y="-61.1161" clip-path="url(#clipPath2)" stroke="none"/>
       <rect x="9.5433" y="-61.1161" clip-path="url(#clipPath2)" fill="white" width="229.6858" height="352.0177" stroke="none"/>
       <rect x="239.229" y="-61.1161" clip-path="url(#clipPath2)" fill="rgb(217,213,213)" width="298.8323" height="24" stroke="none"/>
       <rect x="239.229" y="-37.1161" clip-path="url(#clipPath2)" fill="rgb(217,213,213)" width="298.8323" height="328.0177" stroke="none"/>
@@ -69,111 +69,87 @@
       <line clip-path="url(#clipPath2)" fill="silver" x1="9.5433" x2="9.5433" y1="-37.1161" y2="290.9016" stroke="none"/>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,6,107)" stroke-miterlimit="1.45">
-      <rect fill="none" x="9.5433" width="768.8545" height="382.0177" y="-91.1161" clip-path="url(#clipPath2)"/>
+      <rect fill="none" x="9.5433" width="769.1777" height="382.0177" y="-91.1161" clip-path="url(#clipPath2)"/>
       <rect fill="none" x="9.5433" width="229.6858" height="352.0177" y="-61.1161" clip-path="url(#clipPath2)"/>
       <rect fill="none" x="239.229" width="298.8323" height="352.0177" y="-61.1161" clip-path="url(#clipPath2)"/>
       <rect fill="none" x="538.0613" width="240.3364" height="352.0177" y="-61.1161" clip-path="url(#clipPath2)"/>
-      <rect fill="none" x="9.5433" width="768.8545" height="328.0177" y="-37.1161" clip-path="url(#clipPath2)"/>
+      <rect fill="none" x="9.5433" width="769.1777" height="328.0177" y="-37.1161" clip-path="url(#clipPath2)"/>
     </g>
-    <g font-family="sans-serif" font-size="15" transform="matrix(1,0,0,1,6,107)">
-      <text x="323.0391" xml:space="preserve" y="-70.8632" clip-path="url(#clipPath2)" stroke="none">Ansvarsdistribution</text>
-      <text x="37.6147" xml:space="preserve" font-size="12" y="-44.7138" clip-path="url(#clipPath2)" stroke="none">Vibrationsanalytiker / konsult</text>
-      <text x="341.2487" xml:space="preserve" font-size="12" y="-44.7138" clip-path="url(#clipPath2)" stroke="none">Underhållsenhet</text>
-      <text x="629.8496" xml:space="preserve" font-size="12" y="-44.7138" clip-path="url(#clipPath2)" stroke="none">Reparatör</text>
+    <g font-size="15" stroke-miterlimit="1.45" font-family="sans-serif" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt">
+      <text x="326.1927" xml:space="preserve" y="-71.1928" clip-path="url(#clipPath2)" stroke="none">Ansvarsfördelning</text>
+      <text x="36.2846" xml:space="preserve" font-size="12" y="-44.9775" clip-path="url(#clipPath2)" stroke="none">Vibrationsanalytiker / konsult</text>
+      <text x="339.2038" xml:space="preserve" font-size="12" y="-44.9775" clip-path="url(#clipPath2)" stroke="none">Underhållsenhet</text>
+      <text x="628.25" xml:space="preserve" font-size="12" y="-44.9775" clip-path="url(#clipPath2)" stroke="none">Reparatör</text>
     </g>
     <g fill="url(#linearGradient1)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient1)">
       <path d="M20.7773 82.3476 L113.2773 82.3476 L113.2773 122.3476 L20.7773 122.3476 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M20.7773 82.3476 L113.2773 82.3476 L113.2773 122.3476 L20.7773 122.3476 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="47.9873" xml:space="preserve" y="99.787" clip-path="url(#clipPath2)" stroke="none">Skapa </text>
-      <text x="27.79" xml:space="preserve" y="113.7499" clip-path="url(#clipPath2)" stroke="none">felmedelande</text>
+      <text x="46.6748" y="99.5175" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Skapa </text>
+      <text x="25.874" y="113.4863" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">felmedelande</text>
     </g>
     <g fill="url(#linearGradient2)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient2)">
       <path d="M148.5547 82.3476 L228.5547 82.3476 L228.5547 122.3476 L148.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M148.5547 82.3476 L228.5547 82.3476 L228.5547 122.3476 L148.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="153.8232" xml:space="preserve" y="106.7685" clip-path="url(#clipPath2)" stroke="none">Arbetsorder</text>
+      <text x="152.9004" y="106.5019" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Arbetsorder</text>
     </g>
     <g fill="url(#linearGradient3)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient3)">
       <path d="M248.5547 82.3476 L328.5547 82.3476 L328.5547 122.3476 L248.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M248.5547 82.3476 L328.5547 82.3476 L328.5547 122.3476 L248.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="265.457" xml:space="preserve" y="99.787" clip-path="url(#clipPath2)" stroke="none">Planera </text>
-      <text x="270.0801" xml:space="preserve" y="113.7499" clip-path="url(#clipPath2)" stroke="none">arbete</text>
+      <text x="264.0479" y="99.5175" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Planera </text>
+      <text x="268.8672" y="113.4863" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">arbete</text>
     </g>
     <g fill="url(#linearGradient4)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient4)">
       <path d="M348.5547 82.3476 L428.5547 82.3476 L428.5547 122.3476 L348.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M348.5547 82.3476 L428.5547 82.3476 L428.5547 122.3476 L348.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="353.7383" xml:space="preserve" y="99.787" clip-path="url(#clipPath2)" stroke="none">Schemalägg</text>
-      <text x="370.0801" xml:space="preserve" y="113.7499" clip-path="url(#clipPath2)" stroke="none">arbete</text>
+      <text x="351.4707" y="99.5175" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Schemalägg</text>
+      <text x="368.8672" y="113.4863" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">arbete</text>
     </g>
     <g fill="url(#linearGradient5)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient5)">
       <path d="M448.5547 82.3476 L528.5547 82.3476 L528.5547 122.3476 L448.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M448.5547 82.3476 L528.5547 82.3476 L528.5547 122.3476 L448.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="472.6113" xml:space="preserve" y="99.787" clip-path="url(#clipPath2)" stroke="none">Sänd </text>
-      <text x="454.6494" xml:space="preserve" y="113.7499" clip-path="url(#clipPath2)" stroke="none">arbetsorder</text>
+      <text x="471.5508" y="99.5175" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Sänd </text>
+      <text x="453.3281" y="113.4863" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">arbetsorder</text>
     </g>
     <g fill="url(#linearGradient6)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient6)">
       <path d="M548.5547 82.3476 L628.5547 82.3476 L628.5547 122.3476 L548.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M548.5547 82.3476 L628.5547 82.3476 L628.5547 122.3476 L548.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="553.4336" xml:space="preserve" y="106.7685" clip-path="url(#clipPath2)" stroke="none">Utför arbete</text>
+      <text x="551.9658" y="106.5019" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Utför arbete</text>
     </g>
     <g fill="url(#linearGradient7)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient7)">
       <path d="M648.5547 82.3476 L728.5547 82.3476 L728.5547 122.3476 L648.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M648.5547 82.3476 L728.5547 82.3476 L728.5547 122.3476 L648.5547 122.3476 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="650.6943" xml:space="preserve" y="106.7685" clip-path="url(#clipPath2)" stroke="none">Återkoppling</text>
+      <text x="650.2314" y="106.5019" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Återkoppling</text>
     </g>
     <g fill="url(#linearGradient8)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient8)">
       <path d="M306.7665 198.9218 L386.7665 198.9218 L386.7665 238.9218 L306.7665 238.9218 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M306.7665 198.9218 L386.7665 198.9218 L386.7665 238.9218 L306.7665 238.9218 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="319.957" xml:space="preserve" y="216.3612" clip-path="url(#clipPath2)" stroke="none">Tekniskt </text>
-      <text x="329.5869" xml:space="preserve" y="230.3241" clip-path="url(#clipPath2)" stroke="none">avslut</text>
+      <text x="319.6054" y="216.0917" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Tekniskt </text>
+      <text x="328.5908" y="230.0604" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">avslut</text>
     </g>
     <g fill="url(#linearGradient9)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient9)">
       <path d="M407.7558 193.2968 L500.2558 193.2968 L500.2558 244.5468 L407.7558 244.5468 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M407.7558 193.2968 L500.2558 193.2968 L500.2558 244.5468 L407.7558 244.5468 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="421.6152" xml:space="preserve" y="209.3798" clip-path="url(#clipPath2)" stroke="none">Rapport till</text>
-      <text x="419.1982" xml:space="preserve" y="223.3427" clip-path="url(#clipPath2)" stroke="none">skaparen av</text>
-      <text x="410.9921" xml:space="preserve" y="237.3056" clip-path="url(#clipPath2)" stroke="none">felmeddelande</text>
+      <text x="420.7919" y="209.1073" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Rapport till</text>
+      <text x="417.1474" y="223.0761" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">skaparen av</text>
+      <text x="409.0439" y="237.0448" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">felmeddelande</text>
     </g>
     <g fill="url(#linearGradient10)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient10)">
       <path d="M248.5547 -11.9613 L328.5547 -11.9613 L328.5547 28.0387 L248.5547 28.0387 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M248.5547 -11.9613 L328.5547 -11.9613 L328.5547 28.0387 L248.5547 28.0387 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="262.1055" xml:space="preserve" y="5.4782" clip-path="url(#clipPath2)" stroke="none">Samla in </text>
-      <text x="275.9072" xml:space="preserve" y="19.4411" clip-path="url(#clipPath2)" stroke="none">data</text>
+      <text x="260.5967" y="5.2086" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Samla in </text>
+      <text x="275.04" y="19.1774" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">data</text>
     </g>
     <g fill="url(#linearGradient11)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient11)">
       <path d="M131.5442 -22.7177 L180.2437 8.0387 L131.5442 38.7952 L82.8447 8.0387 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M131.5442 -22.7177 L180.2437 8.0387 L131.5442 38.7952 L82.8447 8.0387 Z" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="106.3577" xml:space="preserve" y="5.4782" clip-path="url(#clipPath2)" stroke="none">Finns ett</text>
-      <text x="104.6409" xml:space="preserve" y="19.4411" clip-path="url(#clipPath2)" stroke="none">problem?</text>
+      <text x="105.3909" y="5.2086" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Finns ett</text>
+      <text x="103.4016" y="19.1774" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">problem?</text>
     </g>
     <g fill="url(#linearGradient12)" stroke-miterlimit="1.45" transform="matrix(1,0,0,1,6,107)" stroke-linecap="butt" stroke="url(#linearGradient12)">
       <path d="M82.8447 200.4679 C85.7667 188.1653 177.3218 188.1653 180.2437 200.4679 L180.2437 237.3756 C177.3218 249.6782 85.7667 249.6782 82.8447 237.3756 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M82.8447 200.4679 C85.7667 188.1653 177.3218 188.1653 180.2437 200.4679 L180.2437 237.3756 C177.3218 249.6782 85.7667 249.6782 82.8447 237.3756 Z" clip-path="url(#clipPath2)" stroke="black"/>
       <path fill="none" d="M180.2437 200.4679 C177.3218 212.7705 85.7667 212.7705 82.8447 200.4679" clip-path="url(#clipPath2)" stroke="black"/>
-    </g>
-    <g font-family="sans-serif" transform="matrix(1,0,0,1,6,107)">
-      <text x="86.7727" xml:space="preserve" y="223.3427" clip-path="url(#clipPath2)" stroke="none">Lagring av data</text>
+      <text x="84.4143" y="223.0761" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">Lagring av data</text>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,6,107)" stroke-miterlimit="1.45">
       <path fill="none" d="M113.2773 102.3476 L140.5202 102.3476" clip-path="url(#clipPath2)"/>
@@ -198,12 +174,12 @@
       <path d="M180.2589 8.0387 L192.2589 13.0387 L189.2589 8.0387 L192.2589 3.0387 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M82.873 8.0387 L67.0273 8.0387 L67.0273 74.3162" clip-path="url(#clipPath2)"/>
       <path d="M67.0273 82.3162 L72.0273 70.3162 L67.0273 73.3162 L62.0273 70.3162 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <text x="65.1938" xml:space="preserve" y="1.4782" font-family="sans-serif" clip-path="url(#clipPath2)" stroke="none">Ja</text>
+      <text x="64.9272" xml:space="preserve" y="1.2086" font-family="sans-serif" clip-path="url(#clipPath2)" stroke="none">Ja</text>
       <path fill="none" d="M500.2595 218.9218 L523.4032 218.9218 L523.4032 272.5694 L131.5442 272.5694 L131.5442 254.61" clip-path="url(#clipPath2)"/>
       <path d="M131.5442 246.61 L126.5442 258.61 L131.5442 255.61 L136.5442 258.61 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path fill="none" d="M131.5442 38.8011 L131.5442 183.2616" clip-path="url(#clipPath2)"/>
       <path d="M131.5442 191.2616 L136.5442 179.2616 L131.5442 182.2616 L126.5442 179.2616 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <text x="108.343" xml:space="preserve" y="62.3225" font-family="sans-serif" clip-path="url(#clipPath2)" stroke="none">Nej</text>
+      <text x="107.8509" xml:space="preserve" y="62.0588" font-family="sans-serif" clip-path="url(#clipPath2)" stroke="none">Nej</text>
       <path fill="none" stroke-dasharray="6,2" d="M67.0273 122.3553 L67.0273 218.9218 L74.873 218.9218" clip-path="url(#clipPath2)"/>
       <path stroke-dasharray="6,2" d="M82.873 218.9218 L70.873 213.9218 L73.873 218.9218 L70.873 223.9218 Z" clip-path="url(#clipPath2)" stroke="none"/>
     </g>
