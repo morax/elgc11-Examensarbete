@@ -377,7 +377,7 @@ coast-down
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "coast-down"
-description "diagnostiskt test i form av utrullningsprov för identifikation av egenfrekvenser."
+description "Diagnostiskt test i form av utrullningsprov för identifikation av egenfrekvenser."
 
 \end_inset
 
